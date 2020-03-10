@@ -12,6 +12,7 @@
     <br><br>
    
     <center><h1>Calculate your Body Mass Index</h1></center>
+    <center><img src="/images/BMI.jpg"></center>
     <p id="subtitle">Body mass index (BMI) is a measure of body fat based on height and weight that applies to adult men and women.
     <br>Enter your weight and height below:
 
@@ -33,7 +34,7 @@
     
     <br>
 
-    <img src="/images/BMI.jpg">
+    
 
     <p>BMI Categories:
     <br>Normal  = 18.5–24.9
