@@ -13,13 +13,12 @@
 
 Route::get('/example', function () {
     return view('abc');
+    //return view('welcome');
 });
 
-Route::get('/', 'PageController@welcome');
 
-
-Route::get('/books', 'BookController@index');
-Route::get('/books/{title?}', 'BookController@show');
-Route::get('/filter/{category}/{subcategory?}', 'BookController@filter');
+Route::get('/example', function () {
+    return 'Example';
+});
 
 
