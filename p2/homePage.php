@@ -15,6 +15,8 @@
     <br>Enter your weight and height using standard or metric measures. 
     <br>Select "Calculate BMI" and your BMI will appear below.</p>
     <br>
+
+    <img src='/p2/public/images/BMI.jpg' alt="BMI Logo'>
     <p>BMI Categories:
 <br>Underweight = <18.5
 <br>Normal  = 18.5–24.9
@@ -22,8 +24,8 @@
 <br>Obesity = BMI of 30 or greater
     </p>
    
-
-
+    <a href='https://www.nhlbi.nih.gov/health/educational/lose_wt/BMI/bmi_tbl.htm'>The BMI Tables</a>
+ 
 
     
     
