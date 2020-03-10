@@ -17,7 +17,7 @@
     <br>Select "Calculate BMI" and your BMI will appear below.</p>
     <br>
 
-    <img src='/images/BMI.jpg' alt="BMI Logo">
+    <img src="/images/BMI.jpg">
 
     <p>BMI Categories:
     <br>Underweight = <18.5
@@ -26,10 +26,7 @@
     <br>Obesity = BMI of 30 or greater
     </p>
    
-    <a href='https://www.nhlbi.nih.gov/health/educational/lose_wt/BMI/bmi_tbl.htm'>The BMI Tables</a>
- 
-
-    
+        
     
 </body>
 </html>
