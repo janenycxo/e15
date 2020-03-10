@@ -36,10 +36,10 @@
     <img src="/images/BMI.jpg">
 
     <p>BMI Categories:
-    <br>Underweight = <18.5
     <br>Normal  = 18.5–24.9
     <br>Overweight = 25–29.9
-    <br>Obesity = BMI of 30<
+    <br>Obesity = 30-39.9
+    <br>Morbidly Obese = >40
     </p>
    
         
