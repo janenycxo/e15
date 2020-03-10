@@ -10,13 +10,14 @@
 
 <body>
     <br><br>
+   
     <h1>Calculate your Body Mass Index</h1>
     <p id="subtitle">Body mass index (BMI) is a measure of body fat based on height and weight that applies to adult men and women.
     <br>Enter your weight and height using standard or metric measures. 
     <br>Select "Calculate BMI" and your BMI will appear below.</p>
     <br>
 
-    <img src='/images/BMI.jpg' alt="BMI Logo'>
+    <img src='/images/BMI.jpg' alt="BMI Logo">
 
     <p>BMI Categories:
     <br>Underweight = <18.5
