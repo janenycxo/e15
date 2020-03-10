@@ -3,6 +3,17 @@
      
      session_start();
      
+     $results = null;
+
+
+     if(isset($_SESSION['results'])) {
+        $results = $_SESSION['results'];
+    
+        $_SESSION['results'] = null;
+    }
+    
+
+
      if ($_GET['calculate bmi']) { 
         $weight = $_GET['weight'];
         $height = $_GET['height'];
