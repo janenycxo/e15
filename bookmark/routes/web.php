@@ -12,6 +12,16 @@
 */
 
 Route::get('/example', function () {
+    $foo = [1,2,3];
+
+    #dump, die
+    //dd($foo);
+
+    #dump, die, debug
+    //ddd($foo);
+
+    Log::info($foo);
+
     return view('abc');
 });
 
