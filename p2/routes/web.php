@@ -14,3 +14,11 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+# Homepage
+Route::get('/', 'homePage@index');
+
+# Forms
+Route::get('/forms', 'BmiFormController@index');
+Route::get('/forms/{title?}', 'BmiFormController@show');

@@ -5,8 +5,46 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 class BmiController extends Controller
+
+$gender = ['Male', 'Female'];
+
+
+if ($_GET['calculate bmi']) { 
+   $weight = $_GET['weight'];
+   $height = $_GET['height'];
+
+   function BMI($weight,$height) {
+      $BMI = 703 * $weight / ($height * $height);
+      return $BMI;
+   }   
+
+      
+   if ($BMI <= 18.5) {
+       $output = "UNDERWEIGHT";
+
+       } else if ($BMI > 18.5 AND $BMI<=24.9 ) {
+       $output = "NORMAL";
+
+       } else if ($BMI > 25 AND $BMI<=29.9) {
+       $output = "OVERWEIGHT";
+
+       } else if ($BMI > 30 AND $BMI<=39.9) {
+       $output = "OBESE";
+
+       } else if ($BMI > 40.0) {
+       $output = "MORBIDLY OBESE";
+   }
+   echo "Your BMI value is  " . $BMI . "  and you are : "; 
+   echo "$output";
+}
+
+$_SESSION['results'] = $results;
+
+
 {
     
+
+
     public function index(Request $request) {
     
         $request->validate([
@@ -41,6 +79,6 @@ class BmiController extends Controller
     {
        $bmiFormFound = true;
         
-        return view('bmiForm.show')->with(['bmiForm' => $bmiForm, 'bmiFormFound' => $bmiFormFound]);
+        return view('forms.show')->with(['bmiForm' => $bmiForm, 'bmiFormFound' => $bmiFormFound]);
     }
 }

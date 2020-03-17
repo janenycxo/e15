@@ -1,5 +1,4 @@
-  
-@extends('homePage')
+@extends('layouts.welcome')
 
 @section('title')
     BMI Calculator
@@ -11,8 +10,11 @@
 <h2>{{ "RESULTS:" }}</h2>
 @endif
 
-@if($gender == 'Female' && $BMI == 18.5 = 24.9)
+@if ($gender == 'Female' && $BMI <= 18.5) 
 <ul>
+<li>{{ "You are Underweight"}}</li>;
+
+@elseif($gender == 'Female' && $BMI == 18.5 = 24.9)
 <li>{{ "You are in the Normal Range" }}</li>
 
 @elseif ($gender == 'Female' && $BMI == 25-29.9);
@@ -27,9 +29,11 @@
 </ul>
 @endif
 
-
-@if($gender == 'Male' && $BMI == 18.5 = 24.9)
+@if ($gender == 'Male' && $BMI <= 18.5) 
 <ul>
+<li>{{ "You are Underweight"}}</li>;
+
+@elseif($gender == 'Male' && $BMI == 18.5 = 24.9)
 <li>{{ "You are in the Normal Range" }}</li>
 
 @elseif ($gender == 'Male' && $BMI == 25-29.9);
