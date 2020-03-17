@@ -12,34 +12,39 @@
         $_SESSION['results'] = null;
     }
     
+    $gender = ['Male', 'Female'];
 
 
      if ($_GET['calculate bmi']) { 
         $weight = $_GET['weight'];
         $height = $_GET['height'];
     
-        function bmi($weight,$height) {
-            $bmi = $weight/($height*$height);
-            return $bmi;
+        function BMI($weight,$height) {
+           $BMI = 703 * $weight / ($height * $height);
+           return $BMI;
         }   
     
-        $bmi = bmi($weight,$height); 
-    
-        if ($bmi <= 18.5) {
+           
+        if ($BMI <= 18.5) {
             $output = "UNDERWEIGHT";
     
-            } else if ($bmi > 18.5 AND $bmi<=24.9 ) {
+            } else if ($BMI > 18.5 AND $BMI<=24.9 ) {
             $output = "NORMAL";
     
-            } else if ($bmi > 25 AND $bmi<=29.9) {
+            } else if ($BMI > 25 AND $BMI<=29.9) {
             $output = "OVERWEIGHT";
     
-            } else if ($bmi > 30.0) {
+            } else if ($BMI > 30 AND $BMI<=39.9) {
             $output = "OBESE";
+
+            } else if ($BMI > 40.0) {
+            $output = "MORBIDLY OBESE";
         }
-        echo "Your BMI value is  " . $bmi . "  and you are : "; 
+        echo "Your BMI value is  " . $BMI . "  and you are : "; 
         echo "$output";
     }
-     
-     require 'homePage.php';
+
+    $_SESSION['results'] = $results;
+    
+    require 'homePage.php';
    
