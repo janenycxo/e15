@@ -12,5 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return '<h1>Jane</h1>';
+    //return view('welcome');
 });
+
