@@ -28,7 +28,7 @@
 
 </ul>
 @endif 
- 
+  
 @if ($gender == 'Male' && $BMI <= 18.5) 
 <ul>
 <li>{{ "You are Underweight"}}</li>;
