@@ -29,9 +29,9 @@ class BmiController extends Controller
         $arr = range (18.5-24.9);
         $arr = range (25-25.9);
         $arr = range (30-39.9);
-        $arr = range (>40);
+        $arr = range (40-51);
 
-        return view('homePage')->with([
+        return view('welcome')->with([
             'gender' => $gender,
             'height' => $height,
             'weight' => $weight,

@@ -17,8 +17,8 @@ Route::get('/', function () {
 
 
 # Homepage
-Route::get('/', 'homePage@index');
+Route::get('/', 'welcome@index');
 
 # Forms
-Route::get('/forms', 'BmiFormController@index');
-Route::get('/forms/{title?}', 'BmiFormController@show');
+Route::get('/forms', 'FormController@index');
+Route::get('/forms/{title?}', 'FormController@show');
