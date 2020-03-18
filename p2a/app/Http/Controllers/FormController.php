@@ -22,16 +22,17 @@ class BmiController extends Controller
         
         $gender = $request->input('gender', null);
         $height = $request->input('height', null);
-        $weight = $request->input('weight', null);
+        $weight = $request->input('weight', null); 
 
-        $BMI = 703 * $weight / ($height * $height);
-           
         $arr = range (18.5-24.9);
         $arr = range (25-25.9);
         $arr = range (30-39.9);
-        $arr = range (>40);
+        $arr = range (40-42);
 
-        return view('homePage')->with([
+        $BMI = 703 * $weight / ($height * $height);
+           
+        return view('forms.index')->with
+        ([
             'gender' => $gender,
             'height' => $height,
             'weight' => $weight,

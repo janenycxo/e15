@@ -27,7 +27,7 @@
 <li>{{ "You are in the Morbidly Obese Range. Please consult a physician for help in achieving the ideal BMI." }}</li>
 
 </ul>
-@endif
+@endif 
 
 @if ($gender == 'Male' && $BMI <= 18.5) 
 <ul>
