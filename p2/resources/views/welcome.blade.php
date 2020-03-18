@@ -4,7 +4,7 @@
     <title>e15 Project 2</title>
     <meta charset='utf-8'>
    
-    <link href='styling.css' rel='stylesheet'>
+    <link href='/css/styling.css' rel='stylesheet'>
 </head>
 
 <body>
