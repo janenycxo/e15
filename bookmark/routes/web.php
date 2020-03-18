@@ -11,25 +11,16 @@
 |
 */
 
-Route::get('/example', function () {
-    $foo = [1,2,3];
-
-    #dump, die
-    //dd($foo);
-
-    #dump, die, debug
-    //ddd($foo);
-
-    Log::info($foo);
-
-    return view('abc');
+Route::get('/', function () {
+    //return'<h1>Jane says hello!</h1>';
+    return view('welcome');
 });
 
-Route::get('/', 'PageController@welcome');
+//Additional routes
+Route::get('/example', function () {
+    return 'Example...';
+});
 
-
-Route::get('/books', 'BookController@index');
-Route::get('/books/{title?}', 'BookController@show');
-Route::get('/filter/{category}/{subcategory?}', 'BookController@filter');
-
-
+Route::get('/book/{title}', function () {
+    return 'Testing...';
+});

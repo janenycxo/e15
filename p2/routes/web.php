@@ -10,9 +10,11 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+//Home
 Route::get('/', function () {
-    return '<h1>Jane</h1>';
-    //return view('welcome');
+    return view('welcome');
 });
 
+//BMI Calculator
+Route::get('/BMI', 'BmiController@index');
+Route::get('/BMI/{title?}', 'BmiController@index');

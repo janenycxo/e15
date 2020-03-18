@@ -1,100 +1,124 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang='en'>
+<head>
+    <title>e15 Project 2</title>
+    <meta charset='utf-8'>
+   
+    <link href='/css/styling.css' rel='stylesheet'>
+</head>
 
-        <title>Laravel</title>
-
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-            }
-
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 13px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @auth
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ route('login') }}">Login</a>
-
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://vapor.laravel.com">Vapor</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
-            </div>
+<body>
+    <header>
+   
+  <h1>Calculate your Body Mass Index</h1>
+  <br>
+    
+    
+   <img src="/images/BMI.jpg" id="BMI Logo" alt= "BMI Calculator"></a>
+    
+    </header>
+    
+   <br>
+   <h2>Body mass index (BMI) is a measure of body fat based on height and weight that applies to adult men and women.</h2>
+   
+   <br>
+    <h3>BMI Categories:</h3>
+    <br>Underweight = < 18.5
+    <br>Normal  = 18.5–24.9
+    <br>Overweight = 25–29.9
+    <br>Obesity = 30-39.9
+    <br>Morbidly Obese = >40
+           
+    <br>
+    <h3>
+    
+    Please follow these guidelines as indicated below to begin: </h3>
+    <br>1. Select your gender.
+    <br>2. Enter your weight.  
+    <br>3. Enter your height.
+  
+    
+<br><br>
+<form method='GET' action='/bmi'>
+        
+        <br>      
+        <br>
+        
+   <fieldset>
+       <legend>
+        <h2>BMI Calculator</h2>
+        </legend>
+      
+        <br>
+       <h3>Please select your Gender:</h3>
+        
+        <div>
+         <label for='Male'> Male</label>
+          <input type='radio' value='Gender' id='Male' name='Male'>
+<br>
+          <label for='Female'> Female</label>
+          <input type='radio' value='Gender' id='Female' name='Female'>
+<br>      
         </div>
-    </body>
+        
+      <br>
+     <br>    
+           
+          <h3> Please enter your height in Inches:</h3>
+         
+          
+          <div>
+          <input type='text' id='height' placeholder= 'Enter your Height'>
+          </div>
+         
+         <br>
+           <br>                 
+                  
+       
+         <h3>
+         Please enter your weight in pounds:</h3>
+       
+         
+         <input type='text' id='weight' placeholder= 'Enter your Weight'>   
+           
+          <br><br>
+          
+          <div>
+   <div>
+          <br>
+          <button type='submit' title='What is your BMI?'>Calculate BMI</button>
+        </div>
+          </div>   
+        
+          </fieldset>
+            </form> 
+   
+    
+    <br><br>
+
+  <h2>Results</h2>
+    
+    <h3>
+    Your BMI is:
+    </h3>
+       
+    <h3>
+    You fall under the range: 
+    </h3>
+      
+      <br><br>
+      
+    
+    <h4>*Note: The BMI calculator is only an estimate and may not be accurate for people with greater muscle mass (such as athletes) or in older people and others who have lost muscle mass. </h4>
+      
+         
+    
+    <footer>
+      <br>
+      <h3>
+      <a href="http://e15p2.janenycxo.me">Click here to recalculate BMI Calculator</a></h3>
+      
+      <br>
+    </footer>  
+</body>
 </html>
