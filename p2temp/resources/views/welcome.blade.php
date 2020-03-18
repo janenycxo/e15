@@ -1,5 +1,5 @@
 @extends('layouts.master')
-  
+
 @section('content')
 <<h2>Body mass index (BMI) is a measure of body fat based on height and weight that applies to adult men and women.</h2>
 
@@ -41,8 +41,8 @@
 <br>      
         </div>
         
-    <br>
-    <br>    
+      <br>
+     <br>    
            
           <h3> Please enter your height in Inches:</h3>
          
@@ -51,19 +51,20 @@
           <input type='text' id='height' placeholder= 'Enter your Height' required>
           </div>
          
-    <br>
-    <br>                 
+         <br>
+           <br>                 
                   
        
-         <h3>Please enter your weight in pounds:</h3>
+         <h3>
+         Please enter your weight in pounds:</h3>
        
          
          <input type='text' id='weight' placeholder= 'Enter your Weight' required>   
            
           <br><br>
           
-        <div>
-        <div>
+          <div>
+   <div>
           <br>
           <button type='submit' title='What is your BMI?'>Calculate BMI</button>
         </div>
@@ -72,8 +73,14 @@
           </fieldset>
             </form> 
    
+    
     <br><br>
-      
+    
+ 
+    
+          
+       
+        
   <h2>Results</h2>
     
     <h3>

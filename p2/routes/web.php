@@ -14,11 +14,3 @@
 Route::get('/', function () {
     return view('welcome');
 });
-
-
-# Homepage
-Route::get('/', 'welcome@index');
-
-# Forms
-Route::get('/forms', 'FormController@index');
-Route::get('/forms/{title?}', 'FormController@show');
