@@ -22,7 +22,7 @@ class BmiController extends Controller
         
         $gender = $request->input('gender', null);
         $height = $request->input('height', null);
-        $weight = $request->input('weight', null); 
+        $weight = $request->input('weight', null);  
 
         $arr = range (18.5-24.9);
         $arr = range (25-25.9);
