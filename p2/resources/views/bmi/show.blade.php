@@ -5,7 +5,7 @@
 @endsection
 
 @section('head')
-<link href='/css/styling.css' rel='stylesheet'>
+<link href='styling.css' rel='stylesheet'>
 
 @endsection
 
