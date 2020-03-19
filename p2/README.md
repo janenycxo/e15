@@ -12,4 +12,4 @@ https://jsfiddle.net/JaneNYCxo/d8p6v5a7/65/
 
 
 ## Notes for instructor
-+ Code Validator https://validator.w3.org/
++ Code Validator https://validator.w3.org/ 

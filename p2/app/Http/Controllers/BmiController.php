@@ -26,7 +26,7 @@ class BmiController extends Controller
         $arr = range (25-25.9);
         $arr = range (30-39.9);
         $arr = range (40-51);
-
+ 
         return view('bmi.index')->with([
             'gender' => $gender,
             'height' => $height,

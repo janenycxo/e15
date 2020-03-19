@@ -1,5 +1,5 @@
 @extends('format.master')
-
+ 
 @section('title')
 {{ $title }}
 @endsection

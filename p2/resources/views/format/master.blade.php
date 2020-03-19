@@ -5,7 +5,7 @@
     <title>@yield('title', 'Project 2 BMI Calculator')</title>
     <meta charset='utf-8'>
 
-    <link href='/css/styling.css' rel='stylesheet'>
+    <link href='/css/styling.css' rel='stylesheet'> 
 
     @yield('head')
 </head>

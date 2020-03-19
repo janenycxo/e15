@@ -17,3 +17,4 @@ Route::get('/', 'HomeController@index');
 //BMI Calculator
 Route::get('/bmi', 'BmiController@index');
 Route::get('/bmi/{title?}', 'BmiController@show');
+ 

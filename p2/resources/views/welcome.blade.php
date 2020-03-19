@@ -22,7 +22,7 @@
     <br>      
     <br>
         
-    <fieldset>
+    <fieldset> 
 
     <legend><h2>BMI Calculator</h2></legend>
     <br>
