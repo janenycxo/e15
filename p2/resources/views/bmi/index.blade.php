@@ -1,4 +1,4 @@
-@extends('welcome')
+@extends('format.master')
 
 @section('title')
     BMI Calculator

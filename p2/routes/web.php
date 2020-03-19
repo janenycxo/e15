@@ -11,10 +11,9 @@
 |
 */
 //Home
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'HomeController@index');
+  
 
 //BMI Calculator
-Route::get('/BMI', 'BmiController@index');
-Route::get('/BMI/{title?}', 'BmiController@index');
+Route::get('/bmi', 'BmiController@index');
+Route::get('/bmi/{title?}', 'BmiController@show');
