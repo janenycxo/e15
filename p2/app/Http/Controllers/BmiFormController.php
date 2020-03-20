@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class BmiController extends Controller
+class BmiFormController extends Controller
 
 {  
     public function index(Request $request) {

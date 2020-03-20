@@ -13,6 +13,7 @@
 <body>
 
 <header>
+      <br>
       <h1>E15 Spring 2020 Project 2 BMI Calculator</h1>
       <br>
       <br>
