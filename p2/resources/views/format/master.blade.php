@@ -13,12 +13,16 @@
 <body>
 
 <header>
-    <a href='/'><img src='/images/BMI.jpg' id='Bmi Scale' alt='Bmi Scale'></a>
-        <h1>E15 Spring 2020 Project 2 BMI Calculator</h1>
+      <h1>E15 Spring 2020 Project 2 BMI Calculator</h1>
+      <br>
+      <br>
+      <a href='/'><img src='/images/BMI.jpg' id='Bmi Scale' alt='Bmi Scale'></a>
 </header>
 
 <section>
-    @yield('content')
+    <br>
+    <br>
+       @yield('content')
 </section>
 
 <footer>

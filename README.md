@@ -13,6 +13,9 @@
 # Project 4 
 + URL: <http://e15p4.janenycxo.me>
 
+# Independent Study
++ 
+
 ## Outside resources
 n/a
 
