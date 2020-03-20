@@ -14,14 +14,13 @@ class BmiFormController extends Controller
             'height' => 'required',
             'weight' => 'required'
         ]);
-       
-        
-        $gender = $request->input('gender', null);
-        $height = $request->input('height', null);
-        $weight = $request->input('weight', null);
-
-        $BMI = 703 * $weight / ($height * $height);
-           
+                          
+            $gender = $_GET['gender'];
+            $weight = $_GET['weight'];
+            $height = $_GET['height'];
+            
+            $BodyMassIndex = $weight/($height*$height);
+               
         $arr = range (18.5-24.9);
         $arr = range (25-25.9);
         $arr = range (30-39.9);
@@ -31,11 +30,12 @@ class BmiFormController extends Controller
             'gender' => $gender,
             'height' => $height,
             'weight' => $weight,
-            'BMI' => $BMI
+            'BodyMassIndex' => $BodyMassIndex
         ]);
 
 
     }
+    
 
     public function show($title)
     {
