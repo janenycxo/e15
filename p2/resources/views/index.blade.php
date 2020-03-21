@@ -1,14 +1,5 @@
 @extends('format.master')
 
-@section('head')
-<link href='/css/styling.css' type='text/css' rel='stylesheet'>
-@endsection
-
-@section('title')
-  BMI Calculator
-  Your result {{$BodyMassIndex}}  
-@endsection
-
 @section('content')
 <h2>Body mass index (BMI) is a measure of body fat based on height and weight that applies to adult men and women.</h2>
 
@@ -22,13 +13,13 @@
     <br>Morbidly Obese = >40
            
     <br>
-    <br>
+    <br> 
+
     <h3>Please follow these guidelines as indicated below to begin: </h3>
     <br>1. Select your gender.
     <br>2. Enter your height in inches.   
     <br>3. Enter your weight in pounds.
     <br>***All Fields are Required.***
-    <br>
     <br>
     <br>
     <form method='GET' action='/bmi'>
@@ -94,7 +85,7 @@
     <h3>Please enter your weight in pounds:</h3>   
     <div id='weight-block'>
             <label>Weight in lbs.
-                <input type="number" name='weight' step='0.1' value='{{ old("weight") }}'>
+                <input type="number" name='weight' step='1.0' value='{{ old("weight") }}'>
             </label>
         </div>
     <div>
@@ -104,60 +95,8 @@
     </fieldset>
     </form> 
 
-    
-@if($BodyMassIndex)
-<h2>{{ "RESULTS:" }}</h2>
-@endif
-
-@if ($gender == 'Female' && $BodyMassIndex <= 18.5) 
-<li>{{ "You are Underweight" }}</li>;
-
-@elseif($gender == 'Female' && $BodyMassIndex == 18.5 = 24.9)
-<li>{{ "You are in the Normal Range" }}</li>
-
-@elseif ($gender == 'Female' && $BodyMassIndex == 25-29.9);
-<li>{{ "You are in the Overweight Range. Healthy diet and excercise can help you achieve the desired BMI range." }}</li>
-
-@elseif ($gender == 'Female' && $BodyMassIndex == 30-39.9);
-<li>{{ "You are in the Obese Range. Please remember to stay active and maintain a healthy lifestyle for overall wellness." }}</li>
-
-@elseif ($gender == 'Female' && $BodyMassIndex == > 40);
-<li>{{ "You are in the Morbidly Obese Range. Please consult a physician for help in achieving the ideal BMI." }}</li>
-@endif
-
-@if ($gender == 'Male' && $BodyMassIndex <= 18.5) 
-<li>{{ "You are Underweight" }}</li>;
-
-@elseif($gender == 'Male' && $BodyMassIndex == 18.5 = 24.9)
-<li>{{ "You are in the Normal Range" }}</li>
-
-@elseif ($gender == 'Male' && $BodyMassIndex == 25-29.9);
-<li>{{ "You are in the Overweight Range. Healthy diet and excercise can help you achieve the desired BMI range." }}</li>
-
-@elseif ($gender == 'Male' && $BodyMassIndex == 30-39.9);
-<li>{{ "You are in the Obese Range. Please remember to stay active and maintain a healthy lifestyle for overall wellness." }}</li>
-
-@elseif ($gender == 'Male' && $BodyMassIndex == > 40);
-<li>{{ "You are in the Morbidly Obese Range. Please consult a physician for help in achieving the ideal BMI." }}</li>
-@endif
-
-<br>
-    <br>
-    @if(!empty($BodyMassIndex))
-    <div class="alert alert-success">
-    Your BMI is: {{ $BodyMassIndex }}
-    </div>
-    @endif
     <br>
     <br>
-
-<br>
-<br>
-<div>
-<h3>Refresh The P2 App - Beyond BMI Page by Clicking the Button Below.</h3>
-<a href='/'>Click here to Retry BMI Calculator</a>
-</div>
-<br>
-<br>
-
+   
 @endsection
+
