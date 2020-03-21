@@ -18,3 +18,12 @@ Route::get('/', 'HomeController@index');
 Route::get('/bmi', 'BmiFormController@index');
 Route::get('/bmi/{title?}', 'BmiFormController@show');
  
+
+//return [
+   // '/' => ['AppController', 'index'],
+   // '/save-new-result'=> ['AppController', 'saveNewResult'],
+   // '/selections' => ['AppController', 'selections'],
+   // '/selection' => ['AppController', 'selection'],
+    
+// ]; 
+
