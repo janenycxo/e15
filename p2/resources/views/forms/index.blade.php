@@ -11,8 +11,12 @@
 
 @section('content')
 
-     
 @if($BodyMassIndex)
+
+ <h1><strong>The results of your BMI Calculation</h1></strong>
+  <h2>Your Bmi is: {{$BodyMassIndex}}</h2>
+
+<br>
 <h2>{{ "Here are the results of your BMI Calculations:" }}</h2>
 @endif
 
@@ -51,28 +55,21 @@
 
 @endif
 
+
+@if($BodyMassIndex)
+
+</form>
+</div>
+
+@endif
+<br>
 <br>
 <br>
 Visit The Nutrition Source at <a href="https://www.hsph.harvard.edu/nutritionsource/healthy-eating-plate/">Harvard T.H. Chan School of Public Health </a>for a healthy eating plate. 
 <br>
 <br>
 Visit <a href="https://www.health.harvard.edu/">Harvard Health Publishing </a>to find tips and articles to help you achieve a healthier life. 
-
-@if($BodyMassIndex)
-
-</form>
-</div>
 <br>
 <br>
-
 <br>
-<br>
-<div>
-<h3>Refresh The P2 App - Beyond BMI Page by Clicking the Button Below.</h3>
-<a href='/'>Click here to Retry BMI Calculator</a>
-</div>
-<br>
-<br>
-@endif
-
 @endsection
