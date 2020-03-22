@@ -16,38 +16,38 @@
 <h2>{{ "Here are the results of your BMI Calculations:" }}</h2>
 @endif
 
-@if($gender == 'Female' && $BodyMassIndex <= 18.5) 
+@if($gender == 'Female' && $BodyMassIndex <=18.4)
 <ul>
-    <li><h3>{{ "You are Underweight" }}</h3></li>;
+    <li><h3>{{ "You are Underweight" }}</h3></li>
 
-@elseif($gender == 'Female' && $BodyMassIndex >= 24.9)
+@elseif($gender == 'Female' && $BodyMassIndex >=18.5 && $BodyMassIndex <=24.9)
     <li><h3>{{ "You are in the Normal Range" }}</h3></li>
 
-@elseif($gender == 'Female' && $BodyMassIndex >= 29.9);
+@elseif($gender == 'Female' && $BodyMassIndex >=25 && $BodyMassIndex <=29.9)
     <li><h3>{{ "You are in the Overweight Range. Healthy diet and excercise can help you achieve the desired BMI range." }}</h3></li>
 
-@elseif($gender == 'Female' && $BodyMassIndex >= 39.9);
+@elseif($gender == 'Female' && $BodyMassIndex >=30 && $BodyMassIndex <=39.9)
     <li><h3>{{ "You are in the Obese Range. Please remember to stay active and maintain a healthy lifestyle for overall wellness." }}</h3></li>
 
-@elseif($gender == 'Female' && $BodyMassIndex >= 40);
+@elseif($gender == 'Female' && $BodyMassIndex >=40)
     <li><h3>{{ "You are in the Morbidly Obese Range. Please consult a physician for help in achieving the ideal BMI." }}</h3></li>
 </ul>
 @endif
 
-@if($gender == 'Male' && $BodyMassIndex <= 18.5) 
+@if($gender == 'Male' && $BodyMassIndex <=18.4)
 <ul>
-    <li><h3>{{ "You are Underweight" }}</li>;
+    <li><h3>{{ "You are Underweight" }}</li>
 
-@elseif($gender == 'Male' && $BodyMassIndex >= 24.9)
+@elseif($gender == 'Male' && $BodyMassIndex >=18.5 && $BodyMassIndex <=24.9)
     <li><h3>{{ "You are in the Normal Range" }}</li>
 
-@elseif($gender == 'Male' && $BodyMassIndex >= 29.9);
+@elseif($gender == 'Male' && $BodyMassIndex >=25 && $BodyMassIndex <=29.9)
     <li><h3>{{ "You are in the Overweight Range. Healthy diet and excercise can help you achieve the desired BMI range." }}</h3></li>
 
-@elseif($gender == 'Male' && $BodyMassIndex >= 39.9);
+@elseif($gender == 'Male' && $BodyMassIndex >=30 && $BodyMassIndex <=39.9)
     <li><h3>{{ "You are in the Obese Range. Please remember to stay active and maintain a healthy lifestyle for overall wellness." }}</h3></li>
 
-@elseif($gender == 'Male' && $BodyMassIndex >= 40);
+@elseif($gender == 'Male' && $BodyMassIndex >=40)
     <li><h3>{{ "You are in the Morbidly Obese Range. Please consult a physician for help in achieving the ideal BMI." }}</h3></li>
 </ul>
 @endif

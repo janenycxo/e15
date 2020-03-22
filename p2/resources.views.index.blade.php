@@ -1,3 +1,6 @@
+resources>views>index.blade.php
+
+
 @extends('layouts.master')
 
 @section('head')
@@ -10,8 +13,8 @@
     <br>
     <h3>BMI Categories:</h3>
     <br>Underweight = < 18.5
-    <br>Normal  = 18.5â€“24.9
-    <br>Overweight = 25â€“29.9
+    <br>Normal  = 18.5–24.9
+    <br>Overweight = 25–29.9
     <br>Obesity = 30-39.9
     <br>Morbidly Obese = >40
            
