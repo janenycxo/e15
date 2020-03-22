@@ -48,10 +48,10 @@
    
     <div>
     
-    <input type='checkbox' id='gender' name='gender' value='Male'>
+    <input type='radio' id='gender' name='gender' value='Male'>
     <label for='Male'>Male</label><br>
         
-    <input type='checkbox' id='gender' name='gender' value='Female'>
+    <input type='radio' id='gender' name='gender' value='Female'>
     <label for='Female'>Female</label><br>
     
          

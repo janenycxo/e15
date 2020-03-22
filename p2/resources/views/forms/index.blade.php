@@ -14,10 +14,10 @@
 @if($BodyMassIndex)
 
  <h1><strong>The results of your BMI Calculation</h1></strong>
-  <h2>Your Bmi is: {{$BodyMassIndex}}</h2>
+  <h3>Your Bmi is: {{$BodyMassIndex}}</h3>
 
 <br>
-<h2>{{ "Here are the results of your BMI Calculations:" }}</h2>
+<h1>{{ "Here are the results of your BMI Calculations:" }}</h1>
 @endif
 
 @if($gender == 'Female' && $BodyMassIndex <=18.4)
