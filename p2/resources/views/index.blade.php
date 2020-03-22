@@ -22,34 +22,35 @@
     <br>***All Fields are Required.***
     <br>
     <br>
+    <br>
     <form method='GET' action='/bmi'>
     <br>      
     <br>
-    <fieldset> 
-    <legend><h2>BMI Calculator</h2></legend>
-    <br>
-    
-    @if(!empty($BodyMassIndex))
-    <div class="alert alert-success">
-    Your BMI is: {{ $BodyMassIndex }}
-    </div>
-    @endif
 
-    <h3>Please select your Gender:</h3>
+    <legend><h1>BMI Calculator</h1></legend>
+    <br>
+
+<fieldset> 
+    <p><h4>Step 1.</h4><h3> Please select your Gender:</h3><p>
         
+    <p>
     <div>
     <label for='Male'> Male</label>
-    <input type='radio' value='Gender' id='Male' name='Male'>
-    <br>
+    <input type='radio' value='Gender' id='Male' name='Male' checked>
+    </div>
+    <div>
     <label for='Female'> Female</label>
     <input type='radio' value='Gender' id='Female' name='Female'>
     <br>      
     </div>
-      
+</fieldset>
+
     <div>
     <br>
     <br>    
-    <h3> Please enter your height in Inches:</h3>         
+
+<fieldset>
+<p><h4>Step 2.</h4> <h3>Please enter your height in Inches:</h3>  </p>      
      <div id='height-block'>
             <label>Height in feet
                 <select name="heightFeet" >                  
@@ -79,24 +80,42 @@
                     <option value="11" {{ (old('heightInches')=='11') ? 'selected' : '' }}>11</option>
                 </select>
             </label>
-        </div>  
+        </div> 
+</fieldset>  
+
     <br>
-    <br>                               
-    <h3>Please enter your weight in pounds:</h3>   
+    <br>  
+<fieldset>                                
+    <p><h4>Step 3.</h4><h3> Please enter your weight in pounds:</h3> <p>  
     <div id='weight-block'>
-            <label>Weight in lbs.
+            <label>Weight in lbs.<br><br>
                 <input type="number" name='weight' step='1.0' value='{{ old("weight") }}'>
             </label>
         </div>
     <div>
     <br>
-    <button type='submit' title='What is your BMI?'>Calculate BMI</button>
+    <button type='submit' title='Calculate BMI Now' value='Calculate BMI Now' onclick='calcBMI()'>Find your BMI</button>
     </div> 
-    </fieldset>
-    </form> 
-
-    <br>
-    <br>
+</fieldset>
    
+<br>
+    <br>
+
+
+			<legend><h1>BMI Results</legend></h1>
+			<fieldset>
+            <div>
+            <h4><label for='Results'>Your calculated BMI is:</label></h4>
+            <br>
+            <br>
+            <input type='text' value='results' id='yourbmi' readonly="readonly">
+			</div>
+</fieldset>
+		</form>
+    <br>
+    <br>
+
+
+      
 @endsection
 
