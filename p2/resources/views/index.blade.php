@@ -1,8 +1,11 @@
-@extends('format.master')
+@extends('layouts.master')
+
+@section('head')
 
 @section('content')
+<p>
 <h2>Body mass index (BMI) is a measure of body fat based on height and weight that applies to adult men and women.</h2>
-
+</p>
     <br>
     <br>
     <h3>BMI Categories:</h3>
@@ -15,7 +18,7 @@
     <br>
     <br> 
 
-    <h3>Please follow these guidelines as indicated below to begin: </h3>
+    <h1>Please follow these guidelines as indicated below to determine what range you fall under: </h1>
     <br>1. Select your gender.
     <br>2. Enter your height in inches.   
     <br>3. Enter your weight in pounds.
@@ -23,36 +26,48 @@
     <br>
     <br>
     <br>
-    <form method='GET' action='/bmi'>
+    <form method='GET' action='/forms'>
     <br>      
     <br>
 
+        @if(count($errors) > 0)
+    <ul>
+        @foreach ($errors->all() as $error)
+          <li class='error'>{{ $error }}</li>
+        @endforeach
+    </ul>
+        @endif
+      
     <legend><h1>BMI Calculator</h1></legend>
     <br>
 
 <fieldset> 
-    <p><h4>Step 1.</h4><h3> Please select your Gender:</h3><p>
+     <h4>Step 1.</h4>
+     <h3>Please select your Gender:</h3>
+   
+    <div>
+    
+    <input type='checkbox' id='gender' name='gender' value='Male'>
+    <label for='Male'>Male</label><br>
         
-    <p>
-    <div>
-    <label for='Male'> Male</label>
-    <input type='radio' value='Gender' id='Male' name='Male' checked>
+    <input type='checkbox' id='gender' name='gender' value='Female'>
+    <label for='Female'>Female</label><br>
+    
+         
     </div>
-    <div>
-    <label for='Female'> Female</label>
-    <input type='radio' value='Gender' id='Female' name='Female'>
-    <br>      
-    </div>
-</fieldset>
 
+</fieldset>
+ 
     <div>
     <br>
     <br>    
 
 <fieldset>
-<p><h4>Step 2.</h4> <h3>Please enter your height in Inches:</h3>  </p>      
+<p><h4>Step 2.</h4> 
+<h3>Please enter your height in Inches:</h3>  </p>      
      <div id='height-block'>
-            <label>Height in feet
+            <label>Height in feet</label>
+     
                 <select name="heightFeet" >                  
                     <option value='1' {{ (old('heightFeet') == '1') ? 'selected' : '' }}>1</option>
                     <option value="2" {{ (old('heightFeet')=='2') ? 'selected' : '' }}>2</option>
@@ -65,6 +80,7 @@
                 </select>
             </label>
             <label>Height in inches
+           
                 <select name="heightInches" >
                     <option value="0" {{ (old('heightInches')=='0') ? 'selected' : '' }}>0</option>
                     <option value="1" {{ (old('heightInches')=='1') ? 'selected' : '' }}>1</option>
@@ -82,7 +98,6 @@
             </label>
         </div> 
 </fieldset>  
-
     <br>
     <br>  
 <fieldset>                                
@@ -94,28 +109,13 @@
         </div>
     <div>
     <br>
-    <button type='submit' title='Calculate BMI Now' value='Calculate BMI Now' onclick='calcBMI()'>Find your BMI</button>
+    <button type='submit' title='Calculate BMI Now'>Find your BMI</button>
     </div> 
 </fieldset>
-   
-<br>
-    <br>
+	</form>
 
-
-			<legend><h1>BMI Results</legend></h1>
-			<fieldset>
-            <div>
-            <h4><label for='Results'>Your calculated BMI is:</label></h4>
-            <br>
-            <br>
-            <input type='text' value='results' id='yourbmi' readonly="readonly">
-			</div>
-</fieldset>
-		</form>
     <br>
     <br>
-
-
       
 @endsection
 

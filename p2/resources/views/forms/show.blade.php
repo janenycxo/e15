@@ -1,4 +1,4 @@
-@extends('format.master')
+@extends('layouts.master')
  
 @section('title')
 {{ $title }}

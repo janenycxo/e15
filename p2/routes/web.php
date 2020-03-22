@@ -11,12 +11,15 @@
 |
 */
 //Home
-Route::get('/', 'HomeController@index');
+Route::get('/', 'PageController@index');
+
+Route::get('/forms', 'BmiController@index');
+Route::get('/forms/{BodyMassIndex?}', 'BmiController@show');
   
 
 //BMI Calculator
-Route::get('/bmi', 'BmiFormController@index');
-Route::get('/bmi/{title?}', 'BmiFormController@show');
+//Route::get('/bmi', 'HomeController@bmi');
+//Route::get('/bmi/{title?}', 'HomeController@show');
  
 
 //return [
