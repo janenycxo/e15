@@ -159,7 +159,7 @@
             </div>
 </fieldset>  
     <br>
-    <br>  
+    <br>   
 <fieldset>                                
     <p><h4>Step 3.</h4><h3> Please enter your weight in pounds:</h3> <p>  
     <div id='weight-block'>
@@ -175,7 +175,7 @@
 	</form>
 
     <br>
-    <br>
+    <br> 
       
 @endsection
 

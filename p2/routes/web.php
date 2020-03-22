@@ -21,7 +21,7 @@ Route::get('/forms/{BodyMassIndex?}', 'BmiController@show');
 //Route::get('/bmi', 'HomeController@bmi');
 //Route::get('/bmi/{title?}', 'HomeController@show');
  
-
+ 
 //return [
    // '/' => ['AppController', 'index'],
    // '/save-new-result'=> ['AppController', 'saveNewResult'],
