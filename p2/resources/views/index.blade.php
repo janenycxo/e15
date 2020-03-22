@@ -156,7 +156,7 @@
                     <option value="83" {{ (old('heightInches')=='83') ? 'selected' : '' }}>83</option>
                     <option value="84" {{ (old('heightInches')=='84') ? 'selected' : '' }}>84</option>
                 </select>
-            </div>
+            </div> 
 </fieldset>  
     <br> 
     <br>   

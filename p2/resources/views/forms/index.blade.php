@@ -8,7 +8,7 @@
   BMI Calculator
   Your Bmi is: {{$BodyMassIndex}}  
 @endsection 
-
+ 
 @section('content')
 
 @if($BodyMassIndex)
