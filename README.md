@@ -10,11 +10,8 @@
 # Project 3 
 + URL: <http://e15p3.janenycxo.me>
 
-# Project 4 
-+ URL: <http://e15p4.janenycxo.me>
-
-# Independent Study
-+ 
+# Independent Study Final
++ URL: <https://github.com/janenycxo/e15/blob/master/independent-study/README.md>
 
 ## Outside resources
 n/a
