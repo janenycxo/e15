@@ -2,13 +2,20 @@
 + By: Jane Yeh
 + Production URL: 
 <https://github.com/janenycxo/e15/blob/master/independent-study>
-+ Draft Outline
+
+<img src="images/cybersecurity-2019.jpg">
+
+## Draft Outline Week 8 Assignment
 + Introduction-
-+ •	How to secure a website
-+ •	What is cybersecurity
++ What is Cybersecurity-
+Cyber security refers to the technology to protect organizations from malicious attacks.
+Fortunately there are many steps that can be taken to reduce cybersecurity risks and how to manage a better secured website.
+
+##	How to secure a website
 + •	Why it is important
 + •	How it impacts the internet
-+ Cybersecurity-
+
+## Cybersecurity-
 + •	Types of Cyber Attacks
 + •	DoS (Denial of Service Attack)
 +  o	Hacking
@@ -25,10 +32,12 @@
 +  o	Internet of things (ioT) Security
 +  o	Challenges
 +  o	Increased security
-+ •	Ways to secure data
+
+## Ways to Secure Data
 +  o	SSL
 +  o	HTTPS
-+ •	Measures to Keep Data Secure
+
+## Measures to Keep Data Secure
 + • Security Features-
 +  o	Separate webserver 
 +  o	Database server
@@ -39,8 +48,7 @@
 +  o	Security patches and updates
 +  o	Train Users
  
-## Outside resources
-+ REFERENCES
+## REFERENCES
 + A Scoville Heat Scale For Measuring Cybersecurity
 Chuck Brooks - https://www.forbes.com/sites/cognitiveworld/2018/09/05/a-scoville-heat-scale-for-measuring-cybersecurity/#7df7c57a3327 
 + Barrett, Matthew. “Framework For Improving Critical Infrastructure Cybersecurity Version 1.1 .” - https://www.nist.gov/publications/framework-improving-critical-infrastructure-cybersecurity-version-11
@@ -62,12 +70,8 @@ Jose Pagliery-Ryan Browne - https://www.cnn.com/2018/09/18/politics/us-military-
 + Bruce Schneier - https://www.cnn.com/2018/11/09/opinions/cybersecurity-laws-internet-of-things-schneier/index.html 
 + 30 Years Ago, the World's First Cyberattack Set the Stage For Modern Cybersecurity Challenges
 Scott Shackelford - https://theconversation.com/30-years-ago-the-worlds-first-cyberattack-set-the-stage-for-modern-cybersecurity-challenges-105449 
-+   
-+ 
-+ 
-+ HTML & CSS Code Playground 
-https://jsfiddle.net/JaneNYCxo/
-
-
+ 
 ## Notes for instructor
 + Code Validator https://validator.w3.org/ 
++ HTML & CSS Code Playground 
+https://jsfiddle.net/
