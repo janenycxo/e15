@@ -41,4 +41,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
  return 'CSCI E15 Project 3 Jando Eats';
-});
+}); 

@@ -7,7 +7,102 @@ use App\Book;
 use Str;
 
 class PracticeController extends Controller
+
+    {
+    /**
+     * Week 9 Assignment Examples
+     */
+ 
+    public function practice17()    
+    {
+    $result=Book::all();
+    dump($result->toArray());
+}
+
+
+    public function practice16()    {
+        $result=Book::where('author', '=', 'Rowling')->first();
+        if (!$result) {
+            dump('Did not delete- Author containing Rowling not found.');
+        } else {
+            $result->delete();
+            dump('Deletion complete; check the database to see if it worked...');
+        }
+    }
+
+
+
+    public function practice15()    {
+        $result=Book::where('author', '=', 'JK Rowling')->get();
+        dump($result->toArray());
+        }
+
+
+
+    public function practice14()
+    {
+        $result=Book::where('author', '=', 'J.K. Rowling')
+        ->update(['author' => 'JK Rowling']);
+        $result = Book::all();
+        dump($result->toArray());
+        }
+
+    
+
+//latest()
+    public function practice13()
+    {
+        $result = Book::orderByDesc
+    ('created_at')->limit(2)->get();
+        dump($result->toArray());
+        }
+
+
+    public function practice12()
 {
+$result = Book::whereIn('id', [1,2,3,4,5,6,7])->get();
+    dump($result->toArray());
+}
+
+    public function practice11()
+    {
+    $result = Book::orderBy('published_year', 'desc')->get();
+    dump($result->toArray());
+    }
+
+    public function practice10()
+    {
+    $result = Book::orderBy('title', 'asc')->get();
+    dump($result->toArray());
+    }
+
+
+
+    public function practice9()
+        {$result = Book::all();
+    dump($result->toArray());
+    }
+
+
+    # Get only books published after 1950
+#   `where` is the design method
+#   `get` is the execution method
+
+# Get all rows
+
+# A second param can be passed to `orderBy` constraint to specify descending order
+
+
+public function practice8()
+    {
+$results = Book::where('published_year', '>', 1950)->get();
+dump($results->toArray()); 
+    }
+
+# Study the results
+
+    
+    
     /**
      * Demonstrates deleting data
      */
