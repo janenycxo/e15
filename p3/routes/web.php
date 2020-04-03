@@ -37,7 +37,7 @@ use Illuminate\Support\Facades\Route;
     //}
 
     //dump($debug);
-//});
+//}); 
 
 Route::get('/', function () {
  return 'CSCI E15 Project 3 Jando Eats';
