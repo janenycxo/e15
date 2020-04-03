@@ -13,11 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/debug', function () {
+//Route::get('/debug', function () {
 
-    $debug = [
-        'Environment' => App::environment(),
-    ];
+    //$debug = [
+        //'Environment' => App::environment(),
+    //];
 
     /*
     The following commented out line will print your MySQL credentials.
@@ -28,17 +28,17 @@ Route::get('/debug', function () {
     */
     #$debug['MySQL connection config'] = config('database.connections.mysql');
 
-    try {
-        $databases = DB::select('SHOW DATABASES;');
-        $debug['Database connection test'] = 'PASSED';
-        $debug['Databases'] = array_column($databases, 'Database');
-    } catch (Exception $e) {
-        $debug['Database connection test'] = 'FAILED: '.$e->getMessage();
-    }
+    //try {
+        //$databases = DB::select('SHOW DATABASES;');
+        //$debug['Database connection test'] = 'PASSED';
+        //$debug['Databases'] = array_column($databases, 'Database');
+    //} catch (Exception $e) {
+        //$debug['Database connection test'] = 'FAILED: '.$e->getMessage();
+    //}
 
-    dump($debug);
-});
+    //dump($debug);
+//});
 
 Route::get('/', function () {
- return view('welcome');
+ return 'CSCI E15 Project 3 Jando Eats';
 });
