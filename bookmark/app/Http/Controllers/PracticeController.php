@@ -8,7 +8,37 @@ use Str;
 
 class PracticeController extends Controller
 
+{
+    /**
+     * Week 10 Assignment Examples
+     */
+ 
+    public function practice41()    
     {
+    //$results=Book::find(1);
+    //dump($results);
+
+    //$results=Book::orderBy('title')->first();
+    //dump($results);
+
+    # Yields a collection of multiple books
+//$results = Book::all(); 
+//dump($results);
+//$results = Book::orderBy('title')->get(); 
+
+# Should match 1 book; yields a Collection of 1 Book
+//$results = Book::where('author', 'F. Scott Fitzgerald')->get();
+
+# Should match 0 books; yields an empty Collection
+//$results = Book::where('author', 'Virginia Wolf')->get();
+
+# Even though we limit it to 1 book, we're using the `get` fetch method so we get a Collection (of 1 Book)
+//$results = Book::limit(1)->get();
+}
+
+
+
+    
     /**
      * Week 9 Assignment Examples
      */
@@ -20,15 +50,55 @@ class PracticeController extends Controller
 }
 
 
+
     public function practice16()    {
-        $result=Book::where('author', '=', 'Rowling')->first();
-        if (!$result) {
-            dump('Did not delete- Author containing Rowling not found.');
-        } else {
-            $result->delete();
-            dump('Deletion complete; check the database to see if it worked...');
+        $result=Book::where('author', 'LIKE', '%Rowling%')->delete();
+    dump($result);  
+    dump('Deletion complete; check the database to see if it worked...');   
+    }
+
+
+    public function practice25()    {
+# First get a book to delete
+$result = Book::where('author', 'LIKE', '%Rowling%')->first();
+
+if (!$result) {
+    dump('Did not delete- Author not found.');
+} else {
+    $result->delete();
+
+    dump($result->author);
+    dump($result->toArray());
+    dump('Deletion complete; check the database to see if it worked...');
+
+}
+}
+
+public function practice28()    
+    
+    {
+        $results = Book::where('author', '=', 'J.K. Rowling')->get();
+        foreach ($results as $result) {
+        
+        $result->author = 'JK Rowling';
+        $result->save();
+        
         }
     }
+
+    public function practice27()    
+    
+    {
+        # First get a book to delete
+        $result = Book::where('author', 'LIKE', '%Rowling%')->delete();
+        dump('Deletion complete; check the database to see if it worked...');
+    
+        
+            
+        
+        }
+           
+
 
 
 
@@ -47,7 +117,35 @@ class PracticeController extends Controller
         dump($result->toArray());
         }
 
+       
+        public function practice22()
+        {
+        $result = Book::where('author', '=', 'J.K. Rowling')->get();
+
+        if (!$result) {
+            dump("No Matches Found");
+        } else {
+            # Change some properties
+            $result->author = 'JK Rowling';
+            
+        }                
+        dump($result->author);
+        dump($result->toArray());
+            }
+             
+            
     
+
+
+    public function practice24()
+    {
+        $result = Book::where('author', 'LIKE', '%Rowling%')->first();
+        dump($result->title);
+        
+        }
+
+
+
 
 //latest()
     public function practice13()
