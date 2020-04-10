@@ -12,7 +12,58 @@ class PracticeController extends Controller
     /**
      * Week 10 Assignment Examples
      */
- 
+    
+    public function practice47()
+    {     
+        $books = Book::where('author', '=', 'Fitzgerald')->delete();
+        dump($books);
+      }
+
+    
+     public function practice46()    
+    {
+    $books = Book::all();
+    echo $books;
+    }
+
+    public function practice45()    
+    {
+        $books = Book::where('author', 'F. Scott Fitzgerald')->get();
+        dump($books->first());
+
+        $results=Book::where('author', 'F. Scott Fitzgerald')->first();
+        dump($results);
+    }
+
+    public function practice44()    
+    {
+    $books = Book::orderBy('id', 'desc')->get();
+    dump($books->first());
+
+    $books = $books->first();
+    dump($books);
+    
+}
+
+public function practice43()    
+{
+    $books = Book::all();
+
+# loop through the Collection and access just the data
+foreach ($books as $book) {
+    dump($book->title);
+}
+}
+
+    public function practice42()    
+    {
+
+    $books = Book::all();
+    dump($books);
+    echo($books);
+    }
+
+
     public function practice41()    
     {
     //$results=Book::find(1);
@@ -21,19 +72,28 @@ class PracticeController extends Controller
     //$results=Book::orderBy('title')->first();
     //dump($results);
 
+
+
     # Yields a collection of multiple books
 //$results = Book::all(); 
+
 //dump($results);
 //$results = Book::orderBy('title')->get(); 
-
+//dump($results);
 # Should match 1 book; yields a Collection of 1 Book
 //$results = Book::where('author', 'F. Scott Fitzgerald')->get();
-
+//foreach ($results as $book) {
+    //$book->title='ABC';
+    //$book->save();
+//}
+//dump($results);
 # Should match 0 books; yields an empty Collection
 //$results = Book::where('author', 'Virginia Wolf')->get();
+//dump($results);
 
 # Even though we limit it to 1 book, we're using the `get` fetch method so we get a Collection (of 1 Book)
 //$results = Book::limit(1)->get();
+
 }
 
 
