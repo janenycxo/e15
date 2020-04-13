@@ -15,6 +15,7 @@ Looking ahead to 2020 and beyond, there are many hurdles to address that may wel
 ##	What is Health Insurance?
 •	How does it work?
 •	and Why is it Important?
+
 Many of us have benefited from health services one way or another in our lives, and I want to touch on insurance a little bit.
 What IS health insurance, how it works, and why it’s important to us. 
 
