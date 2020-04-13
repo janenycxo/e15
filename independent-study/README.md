@@ -6,7 +6,7 @@
 <img src="images/ChallengesofEnablingMobileAccesstoHealthcareData.jpg">
 
 ## INTRODUCTION-
-+ The healthcare industry is ever evolving and heavily monitored by government regulations, technology and expectations. Running a successful health system, or medical practice isn’t just about treating patients anymore. 
+The healthcare industry is ever evolving and heavily monitored by government regulations, technology and expectations. Running a successful health system, or medical practice isn’t just about treating patients anymore. 
 
 Security concerns, relationship building,  provider network, quality, performance, business partnerships, and sometimes even political commitment are all part of the equation in a smooth operation.
 
@@ -15,7 +15,7 @@ Looking ahead to 2020 and beyond, there are many hurdles to address that may wel
 ##	What is Health Insurance?
 •	How does it work?
 •	and Why is it Important?
-+ Many of us have benefited from health services one way or another in our lives, and I want to touch on insurance a little bit.
+Many of us have benefited from health services one way or another in our lives, and I want to touch on insurance a little bit.
 What IS health insurance, how it works, and why it’s important to us. 
 
 In present day, the law requires nearly all Americans to have health coverage referred to as the health care reform. The purpose is to ensure that health insurance is affordable and available to all Americans. At one point in time, there was a penalty assessed on your tax return for failure to obtain health insurance, however the Trump administration has changed the rules and eliminated the penalty on the federal level in 2019 though a handful of states still continue to assess their own penalties. In theory, the Affordable Care Act is still in effect, but there’s no longer a penalty to enforce it. 
@@ -38,29 +38,28 @@ Fortunately, advanced data and technologies, breakthrough solutions and consumer
 ##	CURRENT Databases-
 To give you an idea of the programs I worked with at Unitedhealthcare. Is anyone familiar with these databases? Many are outdated, and independent of each other. They each require individual login credentials, and a have a unique approach in retrieving data.
 
-o	RACF  -Resource Access Control Facility (verification –ID, Password, rights, protected access)
-o	NDB - Network Database Provides enhanced capability and efficiency for physician and health
-		care professional information with releases focused on upgraded infrastructure, demographic maintenance and 		strategic contracting.
-o	EDSS - Expanded Disability Status Scale
-o	IDRS - Independent Dispute Resolution
-o	COSMOS-claims processing system
-o	UNET – claims processing system
-o	ORS – Outcome results systems (track and report service requests)
-o	iBAGG – Benefits administration
-o	NPI Registry - National Provider Identifier Registry (search for providers in the NPPES (National Plan and Provider Enumeration 		System) The NPI number is a unique 10-digit identification number issued to covered health care providers by the 		CMS (Centers for Medicare and Medicaid Services). 
-o	Webex – Cisco online video conferencing
-o	Topsking – Inter-department communications platform
-o	ISET – UHC Operations system
-o	Orbit – dashboard reporting
-o	Phycon – Emergency Medical Billing/Coding/practice management
-o 	CAQH Proview – Council for Affordable Quality Healthcare credentialing database
-o	DRG - Diagnosis Related Group (standardizes payment to hospitals and cost initiatives)
-o	Facets – Integrated health care payer solution (claims processing, service monitoring)
-o	Rainbow –Home health care transportation console
-o	ePaces – Medicaid status verifier
-o	Caremark Pharmacy Access – Prescription authorization
-o	CRM – Marketing software
-o	Footprints – workflow automation and change management for healthcare service
++ o	RACF  -Resource Access Control Facility (verification –ID, Password, rights, protected access)
++ o	NDB - Network Database Provides enhanced capability and efficiency for physician and health care professional information with releases focused on upgraded infrastructure, demographic maintenance and strategic contracting.
++  o	EDSS - Expanded Disability Status Scale
++  o	IDRS - Independent Dispute Resolution
++  o	COSMOS-claims processing system
++  o	UNET – claims processing system
++  o	ORS – Outcome results systems (track and report service requests)
++  o	iBAGG – Benefits administration
++  o	NPI Registry - National Provider Identifier Registry (search for providers in the NPPES (National Plan and Provider Enumeration System) The NPI number is a unique 10-digit identification number issued to covered health care providers by the CMS (Centers for Medicare and Medicaid Services). 
++  o	Webex – Cisco online video conferencing
++  o	Topsking – Inter-department communications platform
++  o	ISET – UHC Operations system
++  o	Orbit – dashboard reporting
++  o	Phycon – Emergency Medical Billing/Coding/practice management
++  o 	CAQH Proview – Council for Affordable Quality Healthcare credentialing database
++  o	DRG - Diagnosis Related Group (standardizes payment to hospitals and cost initiatives)
++  o	Facets – Integrated health care payer solution (claims processing, service monitoring)
++  o	Rainbow –Home health care transportation console
++  o	ePaces – Medicaid status verifier
++  o	Caremark Pharmacy Access – Prescription authorization
++  o	CRM – Marketing software
++  o	Footprints – workflow automation and change management for healthcare service
 
 Unitedhealthcare utilized over 20 databases to retrieve data ranging from claims, fees, credentialing, location services, education, internal communication, and many more. There seemed to be an application for every item we needed to look up, most which did not speak to one another.
 
@@ -74,7 +73,7 @@ Even with our in house business health solution department -Optum –lock outs w
 Filtering each console, and manipulating multiple logins to collect and retrieve data here and there also posed difficulty for those on the field. Multi-system database is complicated and onboarding of a new employee by training multiple databases is confusing. Outdated systems did not talk to each other.
 
 ##	CHALLENGES-
-+ With such concerns….it begs the question    
+With such concerns….it begs the question    
 “Why isn’t all this information readily available on my smartphone?”
 
 There are 3 groups of challenges that need to be addressed before UHC can make that information available:
@@ -84,7 +83,7 @@ There are 3 groups of challenges that need to be addressed before UHC can make t
 + People
 
 ## REGULATORY-
-+ In addition to data privacy laws that apply to all industries, healthcare is subject to additional laws like HIPAA and HITECH.
+In addition to data privacy laws that apply to all industries, healthcare is subject to additional laws like HIPAA and HITECH.
 HIPAA’s Privacy Rule defines the use and disclosure of Protected Health Information or “PHI”. 
 
 HIPAA is the Health Insurance Portability and Accountability Act and its purpose was to help people maintain health insurance. 
@@ -108,7 +107,7 @@ However, organizations are not the only ones who can be penalized.  HITECH also 
 Given these penalties, organizations are risk adverse when it comes to making data available.  The culture is more along the lines of HIPAA’s Minimum Necessary Standard …. Giving you the minimum data necessary to do your job.
 
 ## TECHNOLOGY-
-+ Operating under HIPAA, there is a very conscious effort to protect information.  Let’s take a look at some of the Technology challenges:
+Operating under HIPAA, there is a very conscious effort to protect information.  Let’s take a look at some of the Technology challenges:
 
 Lack of Interoperability between information systems – Healthcare information systems designed by different vendors generally do not talk to each other … and its difficult to export information out of them.  This is because there is very little incentive for the vendor to make it easy.  This helps lock-in their business while they use HIPAA and data protection as an excuse for keeping the data in a silo.
 
@@ -119,7 +118,7 @@ Viruses, Malware, Spyware or any malicious software.
 HIPAA also requires that the data be protected in transit.  The challenge here is Unsecure Networks.   The internet by default is not secure.  Emails are also not secure….and the public WIFI at Starbucks is definitely not secure.
 
 ## PEOPLE-
-+ Last but not least, we have the challenges related to “People”.  You can have the most secure networks and computers, but the weakest link tends to be people.  
+Last but not least, we have the challenges related to “People”.  You can have the most secure networks and computers, but the weakest link tends to be people.  
 
 Examples are easy to guess passwords.  This is a list of the top 20 most popular passwords…do any of them look familiar?
 
@@ -130,17 +129,17 @@ Carelessness is also a problem.  A lost laptop, phone or USB drive can easily co
 All of these problems are compounded by people’s natural resistance to change.  Change is not easy, especially if you want them to behave in a secure manner that often times are inconvenient.
 
 ## RECOMMENDATIONS-
-+ With so many challenges, what can a large healthcare organization like UnitedHealth do to start moving their data to a mobile platform?  
+With so many challenges, what can a large healthcare organization like UnitedHealth do to start moving their data to a mobile platform?  
 I’ll talk about some recommendations.
 
 ## REGULATORY STANDPOINT-
-+ From a Regulatory Standpoint,  In 2009, the U.S. passed the HITECH Act, which proposed the “Meaningful Use” of interoperable electronic health records throughout the U.S. healthcare delivery system as a national goal.
+From a Regulatory Standpoint,  In 2009, the U.S. passed the HITECH Act, which proposed the “Meaningful Use” of interoperable electronic health records throughout the U.S. healthcare delivery system as a national goal.
 
 “Meaningful Use” was defined as the use of certified electronic health records technology in a meaningful manner (for example electronic prescribing) and ensuring that the technology provides for the electronic exchange of health information.  To encourage this, The Center for Medicare and Medicaid Services or “CMS” initially provided financial incentives for organizations who adopted software systems that were certified for Meaningful Use. 
 
 Eventually, the incentives turned into penalties for late adopters.  The current goal is to promote interoperability among Electronic Health Record Systems to facilitate health information exchange.  Although this “Meaningful Use” forces vendors to “talk” to each other, the actual implementation is left up to the vendors.
 
-Some specific interoperability standards were developed by Health Level Seven, a non profit standards development organization that focuses on healthcare.  Their standards include HL7 which defines a standard message format for data exchange between healthcare systems and its successor, Fast Healthcare Interoperability Resource or “FHIR” which takes a more modern, internet-based approach for connecting systems together so they can talk to each other.
+Some specific interoperability standards were developed by Health Level Seven, a non profit standards development organization that focuses on healthcare.  Their standards include HL7 which defines a standard message format for data exchange between healthcare systems and its successor, Fast Healthcare Interoperability Resource or “FHIR” which takes a more modern,internet-based approach for connecting systems together so they can talk to each other.
 
 For sending secure messages between systems over the internet,  the Direct message standard was specifically created to support health data exchange by allowing for encrypted email serviced by a specialized Health Internet Service Providers.
 
@@ -189,7 +188,7 @@ Some recommendations:
 6) Education to install a “Secure” mindset.  Examples like, don’t click on email links, don’t use simple passwords like ‘123’ and log out of applications when done.
 
 ## BENEFITS-
-+ Let’s talk about some of the direct benefits of moving data to mobile access…
+Let’s talk about some of the direct benefits of moving data to mobile access…
 
 With information at our fingertips, we are able to analyze and resolve claims. We can review covered benefits, and issue authorizations quickly.
 Being able to pull up their account we can verify activity, and assure continued compliance.
@@ -203,10 +202,10 @@ In the past we were not able to do this, because we have to return to the office
 Mobile access to data also expedites new provider enrollment. It allows us to see current account status, and review the provider’s credential (specialties, what group practices they are currently participating, the locations they operate, and whether there are concerning factors such as sanctions, or fraud.)
 
 Adding a provider to their practice would be less hassle, more pleasant and which translates to higher profit margins and increased productivity.
-
+ 
 ## CONCLUSION-
 
-+ All things considered, 
+All things considered, 
 
 Health IT has always been about getting the right information to the right people at the right time. 
 But with HIPAA you have to also worry about the information getting to the wrong people as well.
