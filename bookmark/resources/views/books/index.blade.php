@@ -9,8 +9,8 @@
 @endsection
 
 @section('content')
-    
-    <div id='newBooks'>
+  
+      <div id='newBooks'>
         <h2>Recently Added Books</h2>
             <ul>
             @foreach($newBooks as $book)

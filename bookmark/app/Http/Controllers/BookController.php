@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Arr;
 use Str;
 use App\Book;
+use App\Author;
 
 class BookController extends Controller
 {
@@ -15,7 +16,14 @@ class BookController extends Controller
     */
     public function create(Request $request)
     {
-        return view('books.create');
+        # Get authors for our dropdown
+        $authors = Author::orderBy('last_name')
+            ->select(['id', 'first_name', 'last_name'])
+            ->get();
+
+        return view('books.create')->with([
+            'authors' => $authors
+        ]);
     }
 
 
@@ -32,7 +40,7 @@ class BookController extends Controller
         $request->validate([
             'slug' => 'required|unique:books,slug|alpha_dash',
             'title' => 'required',
-            'author' => 'required',
+            'author_id' => 'required',
             'published_year' => 'required|digits:4',
             'cover_url' => 'url',
             'info_url' => 'url',
@@ -47,7 +55,7 @@ class BookController extends Controller
         $newBook = new Book();
         $newBook->slug = $request->slug;
         $newBook->title = $request->title;
-        $newBook->author = $request->author;
+        $newBook->author_id = $request->author_id;
         $newBook->published_year = $request->published_year;
         $newBook->cover_url = $request->cover_url;
         $newBook->info_url = $request->info_url;
@@ -55,7 +63,9 @@ class BookController extends Controller
         $newBook->description = $request->description;
         $newBook->save();
 
-       return redirect('/books/create')->with(['flash-alert' => 'Your book '.$newBook->title.' was added.']);
+        return redirect('/books/create')->with([
+            'flash-alert' => 'Your book '.$newBook->title.' was added.'
+        ]);
     }
 
     /**
@@ -132,7 +142,7 @@ class BookController extends Controller
         # Query database for new books
         //$newBooks = Book::orderByDesc('created_at')->orderBy('title')->limit(3)->get();
 
-        # Collection
+        # Or, filter out the new books from the existing $books Collection
         $newBooks = $books->sortByDesc('created_at')->take(3);
         
         return view('books.index')->with([
@@ -149,7 +159,6 @@ class BookController extends Controller
     {
         $book = Book::where('slug', '=', $slug)->first();
 
-
         return view('books.show')->with([
             'book' => $book,
             'slug' => $slug,
@@ -162,35 +171,29 @@ class BookController extends Controller
     public function edit(Request $request, $slug)
     {
         $book = Book::where('slug', '=', $slug)->first();
-        
+
         return view('books.edit')->with([
-            'book' =>$book
+            'book' => $book
         ]);
     }
-        
-        //->with([
-           // 'book' => $book
-        //]);
-    
 
     /**
      * PUT /books/{$slug}
      */
     public function update(Request $request, $slug)
     {
-    $book = Book::where('slug', '=', $slug)->first();
+        $book = Book::where('slug', '=', $slug)->first();
 
-    $request->validate([
-        'slug' => 'required|unique:books,slug,'.$book->id.'|alpha_dash',
-        'title' => 'required',
-        'author' => 'required',
-        'published_year' => 'required|digits:4',
-        'cover_url' => 'url',
-        'info_url' => 'url',
-        'purchase_url' => 'required|url',
-        'description' => 'required|min:255'
-    ]);
-
+        $request->validate([
+            'slug' => 'required|unique:books,slug,'.$book->id.'|alpha_dash',
+            'title' => 'required',
+            'author' => 'required',
+            'published_year' => 'required|digits:4',
+            'cover_url' => 'url',
+            'info_url' => 'url',
+            'purchase_url' => 'required|url',
+            'description' => 'required|min:255'
+        ]);
 
         $book->slug = $request->slug;
         $book->title = $request->title;
@@ -205,7 +208,40 @@ class BookController extends Controller
         return redirect('/books/'.$slug.'/edit')->with([
             'flash-alert' => 'Your changes were saved.'
         ]);
-    
+    }
+
+    /**
+    * Asks user to confirm they want to delete the book
+    * GET /books/{slug}/delete
+    */
+    public function delete($slug)
+    {
+        $book = Book::findBySlug($slug);
+
+        if (!$book) {
+            return redirect('/books')->with([
+                'flash-alert' => 'Book not found'
+            ]);
+        }
+
+        return view('books.delete')->with([
+            'book' => $book,
+        ]);
+    }
+
+    /**
+    * Deletes the book
+    * DELETE /books/{slug}/delete
+    */
+    public function destroy($slug)
+    {
+        $book = Book::findBySlug($slug);
+
+        $book->delete();
+
+        return redirect('/books')->with([
+            'flash-alert' => '“' . $book->title . '” was removed.'
+        ]);
     }
 
     /**
