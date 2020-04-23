@@ -11,7 +11,7 @@
 + URL: <http://e15p3.janenycxo.me>
 
 # Independent Study Final
-+ URL: <https://github.com/janenycxo/e15/blob/master/independent-study/README.md>
++ URL: <https://github.com/janenycxo/e15/blob/master/independent-study>
 
 ## Outside resources
 n/a
