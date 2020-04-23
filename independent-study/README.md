@@ -151,6 +151,7 @@ All of these problems are compounded by people’s natural resistance to change.
 
 ## RECOMMENDATIONS
 With so many challenges, what can a large healthcare organization like UnitedHealth do to start moving their data to a mobile platform?  
+
 I’ll talk about some recommendations.
 
 ## REGULATORY STANDPOINT
@@ -185,11 +186,16 @@ Also, the use of a Virtual Private Network or “VPN” can also be used to crea
 Even if the Network is secure, the PC or phone used to access the application and data also needs to be secure.  Some ways to secure a computer includes:
 
 #1 - Using strong passwords.  Don’t use easily guessable passwords like ‘123456’
+
 #2 – Encrypt the hard drive using a Trusted Platform Module or “TPM”.A “TPM” is a chip on your computer that is needed to unlock your hard drive.  In the event that your hard drive is stolen, the contents of your hard drive cannot be read if it has been removed from your PC.
+
 #3 – Disable booting from CD or USB.  This helps prevent a hacker from unlocking your computer using their boot up password hacking tools.
+
 #4 – Install anti-malware software and keep it updated.
+
 #5 – Avoid using public WIFI hotspots.  They are not secure.
 And last, but not least
+
 #6 – Keep all the security patches up to date.
 
 The “People” challenge is the most difficult to overcome.  You can have the securest computer over the securest network, but you have one user who creates a password like ‘123’ …
