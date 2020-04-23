@@ -1,7 +1,5 @@
 # Independent Study Final Week 12 Assignment Final Notes
 + By: Jane Yeh
-+ Production URL: 
-<https://github.com/janenycxo/e15/blob/master/independent-study>
 
 <img src="images/ChallengesofEnablingMobileAccesstoHealthcareData.jpg">
 
@@ -161,7 +159,7 @@ From a Regulatory Standpoint,  In 2009, the U.S. passed the HITECH Act, which pr
 
 Eventually, the incentives turned into penalties for late adopters.  The current goal is to promote interoperability among Electronic Health Record Systems (EHR) to facilitate health information exchange.  Although this “Meaningful Use” forces vendors to “talk” to each other, the actual implementation is left up to the vendors.
 
-EHR-An electronic health record (EHR) is the digital version of a patient's medical records which are made available to authorized agents in real time. 
+EHR-An electronic health record (EHR) is the digital version of a patient's medical records which are made available to authorized agents in real time. Aside from authorized medical staff, the electronic health records are only provided to you or your personal representative. 
 
 Electronic prescribing (e-prescribing or e-Rx) is the electronic submission of prescription medications. E-prescribing reduces the risks associated to faulty prescipription fulfillment. 
 
@@ -238,12 +236,13 @@ Despite the growing interest for electronic access, this is just the early steps
 
 Fortunately, advanced data and technologies, breakthrough solutions and consumer choice are redefining what can be achieved. With hospitals and facilities adopting to technology its only a matter of time the system approaches mobile access to healthcare data.
 
-EHR- electronic health records
-Only you or your personal representative has the right to access your records.
+## RESOURCES
++ Production URL: 
+<https://github.com/janenycxo/e15/blob/master/independent-study/README.md>
++ Code Validator https://validator.w3.org/ 
++ HTML & CSS Code Playground 
+https://jsfiddle.net/
 
-The Privacy Rule does not require the provider to share information with other providers. HIPAA gives you important rights to access your medical record and to keep your information private.
-
- 
 ## REFERENCES
 + Health Information Privacy - https://www.hhs.gov/hipaa/index.html
 + HITECH Act - https://www.hhs.gov/hipaa/for-professionals/special-topics/hitech-act-enforcement-interim-final-rule/index.html 
@@ -256,9 +255,3 @@ The Privacy Rule does not require the provider to share information with other p
 + Cloud Computing - https://medium.com/mycloudseries/how-to-start-using-cloud-computing-as-a-startup-77055c60f74f
 + Tech Radar - https://www.techradar.com/news/mobile-computing/laptops/10-ways-to-secure-a-laptop-1148348
 + HIPAA Journal - https://www.hipaajournal.com/
-
- 
-## Notes for instructor
-+ Code Validator https://validator.w3.org/ 
-+ HTML & CSS Code Playground 
-https://jsfiddle.net/
