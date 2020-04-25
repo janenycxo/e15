@@ -145,7 +145,8 @@ HIPAA also requires that the data be protected in transit.  The challenge here i
 ## PEOPLE
 <img src="images/people challenge.jpg">
 
-Last but not least, we have the challenges related to “People”.  You can have the most secure networks and computers, but the weakest link tends to be people.  
+Last but not least, we have the challenges related to “People”.  
+You can have the most secure networks and computers, but the weakest link tends to be people.  
 
 Examples are easy to guess passwords.  This is a list of the top 20 most popular passwords…do any of them look familiar?
 <img src="images/Top-50-most-common-passwords.png">
@@ -221,6 +222,8 @@ Some recommendations:
 Education to instill a “Secure” mindset.  Examples like, don’t click on email links, don’t use simple passwords like ‘123’ and log out of applications when done.
 
 ## BENEFITS
+<img src="images/BenefitsMobileAccess.jpg">
+
 Let’s talk about some of the direct benefits of moving data to mobile access…
 
 With information at our fingertips, we are able to analyze and resolve claims. We can review covered benefits, and issue authorizations quickly.
