@@ -97,8 +97,7 @@ There are 3 groups of challenges that need to be addressed before UHC can make t
 + People
 
 ## REGULATORY
-<img src="images/hitech.jpg"> <br><br>
-<img src="images/HIPAA-Compliance-Web-Page-graphic.png">
+<img src="images/hitech.jpg"> <img src="images/HIPAA-Compliance-Web-Page-graphic.png">
 
 In addition to data privacy laws that apply to all industries, healthcare is subject to additional laws like HIPAA and HITECH.
 HIPAA’s Privacy Rule defines the use and disclosure of Protected Health Information or “PHI”. 
