@@ -13,6 +13,8 @@ Security concerns, relationship building,  provider network, quality, performanc
 Looking ahead to 2020 and beyond, there are many hurdles to address that may well impact health plans, hospitals and patients…but today, I want to focus on mobile access to healthcare data.
 
 ##	WHAT IS HEALTH INSURANCE?
+<img src="images/Health-insurance.jpg">
+
 + How does it work?
 + Why is it Important?
 
@@ -95,6 +97,9 @@ There are 3 groups of challenges that need to be addressed before UHC can make t
 + People
 
 ## REGULATORY
+<img src="images/hitech.jpg">
+<img src="images/HIPPAA-Compliance-Web-Page-graphic.jpg">
+
 In addition to data privacy laws that apply to all industries, healthcare is subject to additional laws like HIPAA and HITECH.
 HIPAA’s Privacy Rule defines the use and disclosure of Protected Health Information or “PHI”. 
 
@@ -126,6 +131,8 @@ One example of this would be when a surgeon, Huping Zhou of Los Angeles, was sen
 Given these penalties, organizations are risk adverse when it comes to making data available.  The culture is more along the lines of HIPAA’s Minimum Necessary Standard …. Giving you the minimum data necessary to do your job.
 
 ## TECHNOLOGY
+<img src="images/technologychallenge.jpg">
+
 Operating under HIPAA, there is a very conscious effort to protect information.  Let’s take a look at some of the Technology challenges:
 
 Lack of Interoperability between information systems – Healthcare information systems designed by different vendors generally do not talk to each other … and its difficult to export information out of them.  This is because there is very little incentive for the vendor to make it easy.  This helps lock-in their business while they use HIPAA and data protection as an excuse for keeping the data in a silo.
@@ -137,9 +144,12 @@ Viruses, Malware, Spyware or any malicious software.
 HIPAA also requires that the data be protected in transit.  The challenge here is Unsecure Networks.   The internet by default is not secure.  Emails are also not secure….and the public WIFI at Starbucks is definitely not secure.
 
 ## PEOPLE
+<img src="images/people challenge.jpg">
+
 Last but not least, we have the challenges related to “People”.  You can have the most secure networks and computers, but the weakest link tends to be people.  
 
 Examples are easy to guess passwords.  This is a list of the top 20 most popular passwords…do any of them look familiar?
+<img src="images/Top-50-most-common-passwords.png">
 
 Another problem is that there are still people who click on links from either phishing emails or fake web sites.
 
@@ -255,3 +265,4 @@ https://jsfiddle.net/
 + Cloud Computing - https://medium.com/mycloudseries/how-to-start-using-cloud-computing-as-a-startup-77055c60f74f
 + Tech Radar - https://www.techradar.com/news/mobile-computing/laptops/10-ways-to-secure-a-laptop-1148348
 + HIPAA Journal - https://www.hipaajournal.com/
++ World's Worst (Most Common) Passwords https://securityscorecard.com/blog/worlds-worst-passwords 
