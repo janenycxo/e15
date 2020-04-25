@@ -97,7 +97,7 @@ There are 3 groups of challenges that need to be addressed before UHC can make t
 + People
 
 ## REGULATORY
-<img src="images/HIPAA-Compliance-Web-Page-graphic.png"> <img src="images/hitech.jpg">
+<img src="images/HIPAA-Compliance-Web-Page-graphic.png"> 
 
 In addition to data privacy laws that apply to all industries, healthcare is subject to additional laws like HIPAA and HITECH.
 HIPAA’s Privacy Rule defines the use and disclosure of Protected Health Information or “PHI”. 
@@ -113,6 +113,7 @@ Requires industry specific quality measures for information exchange and the pro
 
 Under the HIPAA minimum necessary standard, HIPAA-covered entities are required to make reasonable efforts to ensure that access to PHI is limited to the minimum necessary information to accomplish the intended purpose of a particular use, disclosure, or request.
 
+<img src="images/hitech.jpg">
 Health Information Technology for Economic and Clinical Health Act or “HITECH” was passed in 2009 and it expanded the scope of privacy and security protections available under HIPAA compliance by increasing the potential legal liability for non-compliance and provided an even more stringent enforcement.
 
 HIPPA is the acronym for the Health Insurance Portability and Accountability Act that was passed by Congress in 1996.  HIPAA does the following:
