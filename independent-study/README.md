@@ -161,10 +161,10 @@ From a Regulatory Standpoint,  In 2009, the U.S. passed the HITECH Act, which pr
 
 Eventually, the incentives turned into penalties for late adopters.  The current goal is to promote interoperability among Electronic Health Record Systems (EHR) to facilitate health information exchange.  Although this “Meaningful Use” forces vendors to “talk” to each other, the actual implementation is left up to the vendors.
 
-EHR-An electronic health record (EHR) is the digital version of a patient's medical records which are made available to authorized agents in real time. Aside from authorized medical staff, the electronic health records are only provided to you or your personal representative. 
+EHR-An electronic health record (EHR) is the digital version of a patient's medical records which are made available to authorized agents in real time. Aside from authorized medical staff, the electronic health records are only provided to you or your personal representative. Shown below is an example of an EHR Chart, the format is simple to understand, easy to read and efficient for data retrieval.
 <img src="images/SampleEhrChart.jpg">
 
-Electronic prescribing (e-prescribing or e-Rx) is the electronic submission of prescription medications. E-prescribing reduces the risks associated to faulty prescipription fulfillment. 
+Electronic prescribing (e-prescribing or e-Rx) is the electronic submission of prescription medications. E-prescribing reduces the risks associated to faulty prescipription fulfillment. An example of the E-Rx is shown below, the provider can either call in the script or submit request on the portal. <img src="images/SampleErx.jpg">
 
 Some specific interoperability standards were developed by Health Level Seven, a non profit standards development organization that focuses on healthcare.  Their standards include HL7 which defines a standard message format for data exchange between healthcare systems and its successor, Fast Healthcare Interoperability Resource or “FHIR” which takes a more modern,internet-based approach for connecting systems together so they can talk to each other.
 
