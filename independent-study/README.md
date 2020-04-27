@@ -73,7 +73,6 @@ To give you an idea of the programs I worked with at Unitedhealthcare. Is anyone
 
 Unitedhealthcare utilized over 20 databases to retrieve data ranging from claims, fees, credentialing, location services, education, internal communication, and many more. There seemed to be an application for every item we needed to look up, most which did not speak to one another.
 
-
 Manually logging in to each system, required a unique identifier which also required frequent pass code changes. 
 
 So with more databases than you can count on both hands, many people started to print and keep a log on their desk. This in itself defeated the purpose of encryption. It also violates so many privacy and security issues. 
@@ -95,7 +94,6 @@ So with more databases than you can count on both hands, many people started to 
 + Caremark Pharmacy Access – Prescription authorization
 + CRM – Marketing software
 + Footprints – workflow automation and change management for healthcare service
-
 
 Even with our in house business health solution department -Optum –lock outs were a pain to lift and caused major downtime. 
 
