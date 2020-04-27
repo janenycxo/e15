@@ -20,12 +20,12 @@ Looking ahead to 2020 and beyond, there are many hurdles to address that may wel
 
 Many of us have benefited from health services one way or another in our lives, and I want to touch on insurance a little bit.
 
-<img src="images/HEALTHreformtimeline.jpg">
-The timeline shown above details some of the changes that have taken place. Many changes are still expected over the next several years.
-
-In present day, the law requires nearly all Americans to have health coverage referred to as the health care reform. The purpose is to ensure that health insurance is affordable and available to all Americans. At one point in time, there was a penalty assessed on your tax return for failure to obtain health insurance, however the Trump administration has changed the rules and eliminated the penalty on the federal level in 2019 though a handful of states still continue to assess their own penalties. These 6 states are New Jersey, DC, Massachusetts, Vermont, Rhode Island and Maryland. The prior tax penalty for not having health insurance in 2018 was $695 for adults and $347.50 for children or 2% of your yearly income, whichever amount is more. There are exceptions to the rule which makes you exempt from this, such as being a recipient of government funded programs, or if you are native American or simply just live outside of the U.S. 
+The law requires nearly all Americans to have health coverage referred to as the health care reform. The purpose is to ensure that health insurance is affordable and available to all Americans. At one point in time, there was a penalty assessed on your tax return for failure to obtain health insurance, however the Trump administration has changed the rules and eliminated the penalty on the federal level in 2019 though a handful of states still continue to assess their own penalties. These 6 states are New Jersey, DC, Massachusetts, Vermont, Rhode Island and Maryland. The prior tax penalty for not having health insurance in 2018 was $695 for adults and $347.50 for children or 2% of your yearly income, whichever amount is more. There are exceptions to the rule which makes you exempt from this, such as being a recipient of government funded programs, or if you are native American or simply just live outside of the U.S. 
 
 In theory, the Affordable Care Act is still in effect, but there’s no longer a penalty to enforce it. 
+
+<img src="images/HEALTHreformtimeline.jpg">
+The timeline shown above details some of the changes that have taken place. Many changes are still expected over the next several years. 
 
 Health insurance covers medical expenses for illnesses, injuries and conditions. Medical expenses can be high, and health insurance is a way to help alleviate how you are going to pay.
 
@@ -67,11 +67,11 @@ NPI Registry - National Provider Identifier Registry. The NPI number is a uniqu
 Facets – Integrated health care payer solution (claims processing, service monitoring).
 <img src="images/Facets.jpg">
 
-ePaces – Medicaid status verifier.
-<img src="images/epaces.jpg">
-
 Phycon – Emergency Medical Billing/Coding/practice management.
 <img src="images/phycon.jpg">
+
+ePaces – Medicaid status verifier.
+<img src="images/epaces.jpg">
 
 Unitedhealthcare utilized over 20 databases to retrieve data ranging from claims, fees, credentialing, location services, education, internal communication, and many more. There seemed to be an application for every item we needed to look up, most which did not speak to one another.
 
@@ -93,11 +93,11 @@ There are 3 groups of challenges that need to be addressed before UHC can make t
 
 ## REGULATORY
 <img src="images/HEALTHreform.jpg">
-In addition to data privacy laws that apply to all industries, healthcare is subject to additional laws like HIPAA and HITECH.
+In addition to data privacy laws that apply to all industries, healthcare is subject to additional laws like HIPAA and HITECH. 
 HIPAA’s Privacy Rule defines the use and disclosure of Protected Health Information or “PHI”. PHI is any information regarding the health status, provision of health care, or health care payment that can be linked to any individual.  
 
-<img src="images/HIPAA-Compliance-Web-Page-graphic.png"> 
 HIPAA is the Health Insurance Portability and Accountability Act and its purpose was to help people maintain health insurance. HIPAA is the acronym for the Health Insurance Portability and Accountability Act that was passed by Congress in 1996.  
+<img src="images/HIPAA-Compliance-Web-Page-graphic.png"> 
 
 HIPAA does the following:
 Provides continued health coverage for American workers and their family in the event they switch workplace lose their job.
@@ -105,8 +105,8 @@ HIPPA helps reduce fraud and/or abuse, regulate industry standard measures for h
 
 Under the HIPAA minimum necessary standard, HIPAA-covered entities are required to make reasonable efforts to ensure that access to PHI is limited to the minimum necessary information to accomplish the intended purpose of a particular use, disclosure, or request.
 
-<img src="images/hitech.jpg">
 Health Information Technology for Economic and Clinical Health Act or “HITECH” was passed in 2009 and it widened the protections available by increasing the legal liability.
+<img src="images/hitech.jpg">
 
 The average penalty for an organization is in the millions, and it has been steadily increasing over time. A data breach can easily cost a company millions of dollars in fines. 
 
