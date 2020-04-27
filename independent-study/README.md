@@ -13,13 +13,17 @@ Security concerns, relationship building,  provider network, quality, performanc
 Looking ahead to 2020 and beyond, there are many hurdles to address that may well impact health plans, hospitals and patients…but today, I want to focus on mobile access to healthcare data.
 
 ##	WHAT IS HEALTH INSURANCE?
-<img src="images/Health-insurance.jpg">
+<img src="images/GEThealthcoverage.jpg">
 
 + How does it work?
 + Why is it Important?
 
 Many of us have benefited from health services one way or another in our lives, and I want to touch on insurance a little bit.
+
 What IS health insurance, how it works, and why it’s important to us. 
+
+<img src="images/HEALTHreformtimeline.jpg">
+The timeline shown above details some of the changes that have taken place. Many changes are still expected over the next several years. 
 
 In present day, the law requires nearly all Americans to have health coverage referred to as the health care reform. The purpose is to ensure that health insurance is affordable and available to all Americans. At one point in time, there was a penalty assessed on your tax return for failure to obtain health insurance, however the Trump administration has changed the rules and eliminated the penalty on the federal level in 2019 though a handful of states still continue to assess their own penalties. These 6 states are New Jersey, DC, Massachusetts, Vermont, Rhode Island and Maryland. The prior tax penalty for not having health insurance in 2018 was $695 for adults and $347.50 for children or 2% of your yearly income, whichever amount is more. There are exceptions to the rule which makes you exempt from this, such as being a recipient of government funded programs, or if you are native American or simply just live outside of the U.S. 
 
@@ -31,6 +35,7 @@ It is a safeguard to your wellness. Being a member of a health plan provides you
 
 Health insurance works together with hospitals, providers and specialty groups to ensure you are protected.
 
+<img src="images/GETstarted.jpg">
 UnitedHealth Group employs approximately 168,000 individuals in 21 countries, including Australia, Canada, China, India, Philippines, Ireland, Italy and the United Kingdom.
 
 UnitedHealthcare covers approximately 45 million individuals worldwide.  In 2015, UnitedHealth Group ranked No. 1 on Fortune's "World's Most Admired Companies" list in the insurance and managed care section for the fifth year in a row. 
@@ -45,12 +50,33 @@ As such, I initiated and executed contracts for qualified group practices.  This
 
 Aside from the workload which frequently kept me in the field and away from my desk,  I was often jotting down notes on pen and paper since the only way for me to look up information was back at my office.
 
-I looked forward to be able to access information from my computer and developed a habit to travel with stacks of literature, claims, codes, contracts as hard copy. They were difficult to maintain and run the risk of getting damaged or misplaced. I hoped for a better way to make the health system work better for everyone and to create a system that is connected and more affordable while being useful with mobile access.
+I looked forward to be able to access information from my computer and developed a habit to travel with stacks of literature, claims, codes, contracts as hard copy. A sample health insurance claim form is shown below:
+<img src="images/HEALTHinsuranceclaimforsample.jpg">
+
+Carrying around file folders containing contracts, claims, and credentials were difficult to maintain and run the risk of getting damaged or misplaced. I hoped for a better way to make the health system work better for everyone and to create a system that is connected and more affordable while being useful with mobile access.
 
 Fortunately, advanced data and technologies, breakthrough solutions and consumer choice are redefining what can be achieved.
 
 ##	CURRENT DATABASES
 To give you an idea of the programs I worked with at Unitedhealthcare. Is anyone familiar with these databases? Many are outdated, and independent of each other. They each require individual login credentials, and a have a unique approach in retrieving data.
+
+<img src="images/CAQH proview.jpg">
++ CAQH Proview – Council for Affordable Quality Healthcare credentialing database
+<img src="images/NPIsearchlogin.jpg">
++ NPI Registry - National Provider Identifier Registry (search for providers in the NPPES (National Plan and Provider Enumeration System) The NPI number is a unique 10-digit identification number issued to covered health care providers by the CMS (Centers for Medicare and Medicaid Services). 
+<img src="images/Facets.jpg">
++ Facets – Integrated health care payer solution (claims processing, service monitoring)
+<img src="images/epaces.jpg">
++ ePaces – Medicaid status verifier
+<img src="images/phycon.jpg">
++ Phycon – Emergency Medical Billing/Coding/practice management
+
+Unitedhealthcare utilized over 20 databases to retrieve data ranging from claims, fees, credentialing, location services, education, internal communication, and many more. There seemed to be an application for every item we needed to look up, most which did not speak to one another.
+
+
+Manually logging in to each system, required a unique identifier which also required frequent pass code changes. 
+
+So with more databases than you can count on both hands, many people started to print and keep a log on their desk. This in itself defeated the purpose of encryption. It also violates so many privacy and security issues. 
 
 + RACF  -Resource Access Control Facility (verification –ID, Password, rights, protected access)
 + NDB - Network Database Provides enhanced capability and efficiency for physician and health care professional information with releases focused on upgraded infrastructure, demographic maintenance and strategic contracting.
@@ -60,27 +86,16 @@ To give you an idea of the programs I worked with at Unitedhealthcare. Is anyone
 + UNET – claims processing system
 + ORS – Outcome results systems (track and report service requests)
 + iBAGG – Benefits administration
-+ NPI Registry - National Provider Identifier Registry (search for providers in the NPPES (National Plan and Provider Enumeration System) The NPI number is a unique 10-digit identification number issued to covered health care providers by the CMS (Centers for Medicare and Medicaid Services). 
 + Webex – Cisco online video conferencing
 + Topsking – Inter-department communications platform
 + ISET – UHC Operations system
 + Orbit – dashboard reporting
-+ Phycon – Emergency Medical Billing/Coding/practice management
-+ CAQH Proview – Council for Affordable Quality Healthcare credentialing database
 + DRG - Diagnosis Related Group (standardizes payment to hospitals and cost initiatives)
-+ Facets – Integrated health care payer solution (claims processing, service monitoring)
 + Rainbow –Home health care transportation console
-+ ePaces – Medicaid status verifier
 + Caremark Pharmacy Access – Prescription authorization
 + CRM – Marketing software
 + Footprints – workflow automation and change management for healthcare service
 
-Unitedhealthcare utilized over 20 databases to retrieve data ranging from claims, fees, credentialing, location services, education, internal communication, and many more. There seemed to be an application for every item we needed to look up, most which did not speak to one another.
-
-Manually logging in to each system, required a unique identifier which also required frequent pass code changes. 
-
-So with more databases than you can count on both hands, many people started to print and keep a log on their desk. 
-This in itself defeated the purpose of encryption. It also violates so many privacy and security issues. 
 
 Even with our in house business health solution department -Optum –lock outs were a pain to lift and caused major downtime. 
 
@@ -97,35 +112,29 @@ There are 3 groups of challenges that need to be addressed before UHC can make t
 + People
 
 ## REGULATORY
-<img src="images/HIPAA-Compliance-Web-Page-graphic.png"> 
+<img src="images/HEALTHreform.jpg">
 In addition to data privacy laws that apply to all industries, healthcare is subject to additional laws like HIPAA and HITECH.
-HIPAA’s Privacy Rule defines the use and disclosure of Protected Health Information or “PHI”. 
+HIPAA’s Privacy Rule defines the use and disclosure of Protected Health Information or “PHI”. PHI is any information regarding the health status, provision of health care, or health care payment that can be linked to any individual.  
 
-PHI is any information regarding the health status, provision of health care, or health care payment that can be linked to any individual.  
-
+<img src="images/HIPAA-Compliance-Web-Page-graphic.png"> 
 HIPAA is the Health Insurance Portability and Accountability Act and its purpose was to help people maintain health insurance. HIPAA is the acronym for the Health Insurance Portability and Accountability Act that was passed by Congress in 1996.  
 
 HIPAA does the following:
-Provides continued health coverage for Americans that change jobs, or the ability to transfer their health coverage in the event they lose their job.
-HIPPA helps combat and reduce fraud and/or abuse.
-Requires industry specific quality measures for information exchange and the protection of sharing confidential information.
+Provides continued health coverage for American workers and their family in the event they switch workplace lose their job.
+HIPPA helps reduce fraud and/or abuse, regulate industry standard measures for health information sharing.
 
 Under the HIPAA minimum necessary standard, HIPAA-covered entities are required to make reasonable efforts to ensure that access to PHI is limited to the minimum necessary information to accomplish the intended purpose of a particular use, disclosure, or request.
 
 <img src="images/hitech.jpg">
-Health Information Technology for Economic and Clinical Health Act or “HITECH” was passed in 2009 and it expanded the scope of privacy and security protections available under HIPAA compliance by increasing the potential legal liability for non-compliance and provided an even more stringent enforcement.
-
-HIPPA is the acronym for the Health Insurance Portability and Accountability Act that was passed by Congress in 1996.  HIPAA does the following:
-Provides the ability to transfer and continue health insurance coverage for millions of American workers and their families when they change or lose their jobs;
-Reduces health care fraud and abuse;
-Mandates industry-wide standards for health care information on electronic billing and other processes; and
-Requires the protection and confidential handling of protected health information
+Health Information Technology for Economic and Clinical Health Act or “HITECH” was passed in 2009 and it widened the protections available by increasing the legal liability.
 
 The average penalty for an organization is in the millions, and it has been steadily increasing over time. A data breach can easily cost a company millions of dollars in fines. 
 
+<img src="images/REPORTfraud.jpg">
 However, organizations are not the only ones who can be penalized.  HITECH also allows for fines and jail time for individuals who willfully violate HIPAA’s privacy rules, with a maximum fine of $250,000 and up to one year in prison.
 
 One example of this would be when a surgeon, Huping Zhou of Los Angeles, was sentenced to jail for 4 months and received $2,000 in fines for sharing medical records of his superiors, and celebrities' PHI. 
+<img src="images/HupingZhou.jpg">
 
 Given these penalties, organizations are risk adverse when it comes to making data available.  The culture is more along the lines of HIPAA’s Minimum Necessary Standard …. Giving you the minimum data necessary to do your job.
 
@@ -139,6 +148,7 @@ Lack of Interoperability between information systems – Healthcare information 
 The next challenge is unsecure computers and servers.  HIPAA requires that data be protected on your computer.  In order to do that, you need to make sure that the computer used to view the data is also protected from things like:
 
 Viruses, Malware, Spyware or any malicious software.
+<img src="images/ProtectHospitalMalware.jpg">
 
 HIPAA also requires that the data be protected in transit.  The challenge here is Unsecure Networks.   The internet by default is not secure.  Emails are also not secure….and the public WIFI at Starbucks is definitely not secure.
 
@@ -211,13 +221,14 @@ The “People” challenge is the most difficult to overcome.  You can have the 
 I don’t believe people do that to be difficult, rather, it’s the security mindset that is difficult.  If we can make it a little easier, then we would get better results.
 
 Some recommendations:
-
+<img src="images/Singlesignon.jpg">
 + Single Sign On.  There are too many systems with too many user ids and passwords.  A single sign on system will allow us to use a single user id and password for all the systems.
 + Strong, but reasonable Passwords.  No ‘123’, but also not make it 16 characters requiring an uppercase, lowercase, number and special character.
 + Multifactor Authentication.  In addition to a strong password, use a biometric device or DUO.
 + Install anti-malware that explains problems in plain English.
 + Hosted Applications.  If there is nothing installed and stored locally, there is no data to lose if the laptop is stolen.
 
+<img src="images/Securemindset.jpg">
 + And perhaps the most important step to securing people:
 Education to instill a “Secure” mindset.  Examples like, don’t click on email links, don’t use simple passwords like ‘123’ and log out of applications when done.
 
@@ -228,6 +239,7 @@ Let’s talk about some of the direct benefits of moving data to mobile access�
 
 With information at our fingertips, we are able to analyze and resolve claims. We can review covered benefits, and issue authorizations quickly.
 Being able to pull up their account we can verify activity, and assure continued compliance.
+<img src="images/Singlesignonbenefits.jpg">
 
 To assist in provider claims concerning compliance, and possible fraud we review compliance issues, then address and identify root cause, train provider staff on correct procedures, and provide written report of findings to prevent further abuse right away. Having information on the go not only helps identify fraud very quickly, and address problems but it nip it in the bud.
 
@@ -263,8 +275,11 @@ https://jsfiddle.net/
 + Affordable Care Act - https://www.healthcare.gov/glossary/affordable-care-act/
 + Unitedhealthcare - https://www.uhc.com/
 + Optum Health Services - https://www.unitedhealthgroup.com/businesses/optum.html 
++ The FBI Federal Bureau of Investigation - https://archives.fbi.gov/archives/losangeles/press-releases/2010/la010810a.htm
 + Big Commerce- https://www.bigcommerce.com/blog/data-security/
 + Cloud Computing - https://medium.com/mycloudseries/how-to-start-using-cloud-computing-as-a-startup-77055c60f74f
++ HIPAA Journal, Protect Hospital Computers from Malware - https://www.hipaajournal.com/protect-hospital-computers-from-malware/
 + Tech Radar - https://www.techradar.com/news/mobile-computing/laptops/10-ways-to-secure-a-laptop-1148348
 + HIPAA Journal - https://www.hipaajournal.com/
 + World's Worst (Most Common) Passwords https://securityscorecard.com/blog/worlds-worst-passwords 
++ Idaptive Single Sign-on - https://www.idaptive.com/product/single-sign-on/?utm_source=google&utm_medium=cpc&utm_campaign=r2i-idaptive-product-sso-broad&utm_content=1x1&_bt=347479782957&_bk=single%20sign%20on&_bm=p&_bn=g&_bg=68920238534&gclid=EAIaIQobChMIy4eU4vGH6QIVF8DICh0ZNw17EAAYASAAEgLiIPD_BwE 
