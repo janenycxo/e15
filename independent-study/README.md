@@ -58,44 +58,28 @@ Carrying around file folders containing contracts, claims, and credentials were 
 Fortunately, advanced data and technologies, breakthrough solutions and consumer choice are redefining what can be achieved.
 
 ##	CURRENT DATABASES
-To give you an idea of the programs I worked with at Unitedhealthcare. Is anyone familiar with these databases? Many are outdated, and independent of each other. They each require individual login credentials, and a have a unique approach in retrieving data.
+Here are a few of the programs I worked with at Unitedhealthcare. They each require individual login credentials, and a have a unique approach in retrieving data.
 
-<img src="images/CAQH proview.jpg">
-+ CAQH Proview – Council for Affordable Quality Healthcare credentialing database
+CAQH Proview – Council for Affordable Quality Healthcare credentialing database.
+<img src="images/CAQH Proview.jpg">
+
+NPI Registry - National Provider Identifier Registry. The NPI number is a unique 10-digit identification number issued to covered health care providers by CMS - Centers for Medicare and Medicaid Services. 
 <img src="images/NPIsearchlogin.jpg">
-+ NPI Registry - National Provider Identifier Registry (search for providers in the NPPES (National Plan and Provider Enumeration System) The NPI number is a unique 10-digit identification number issued to covered health care providers by the CMS (Centers for Medicare and Medicaid Services). 
+
+Facets – Integrated health care payer solution (claims processing, service monitoring).
 <img src="images/Facets.jpg">
-+ Facets – Integrated health care payer solution (claims processing, service monitoring)
+
+ePaces – Medicaid status verifier.
 <img src="images/epaces.jpg">
-+ ePaces – Medicaid status verifier
+
+Phycon – Emergency Medical Billing/Coding/practice management.
 <img src="images/phycon.jpg">
-+ Phycon – Emergency Medical Billing/Coding/practice management
 
 Unitedhealthcare utilized over 20 databases to retrieve data ranging from claims, fees, credentialing, location services, education, internal communication, and many more. There seemed to be an application for every item we needed to look up, most which did not speak to one another.
 
 Manually logging in to each system, required a unique identifier which also required frequent pass code changes. 
 
-So with more databases than you can count on both hands, many people started to print and keep a log on their desk. This in itself defeated the purpose of encryption. It also violates so many privacy and security issues. 
-
-+ RACF  -Resource Access Control Facility (verification –ID, Password, rights, protected access)
-+ NDB - Network Database Provides enhanced capability and efficiency for physician and health care professional information with releases focused on upgraded infrastructure, demographic maintenance and strategic contracting.
-+ EDSS - Expanded Disability Status Scale
-+ IDRS - Independent Dispute Resolution
-+ COSMOS-claims processing system
-+ UNET – claims processing system
-+ ORS – Outcome results systems (track and report service requests)
-+ iBAGG – Benefits administration
-+ Webex – Cisco online video conferencing
-+ Topsking – Inter-department communications platform
-+ ISET – UHC Operations system
-+ Orbit – dashboard reporting
-+ DRG - Diagnosis Related Group (standardizes payment to hospitals and cost initiatives)
-+ Rainbow –Home health care transportation console
-+ Caremark Pharmacy Access – Prescription authorization
-+ CRM – Marketing software
-+ Footprints – workflow automation and change management for healthcare service
-
-Even with our in house business health solution department -Optum –lock outs were a pain to lift and caused major downtime. 
+People started to keep a log on their desk with their login credentials. This in itself defeated the purpose of encryption. It also violates so many privacy and security issues. Even with our in house business health solution department -Optum –lock outs were a pain to lift and caused major downtime. 
 
 Filtering each console, and manipulating multiple logins to collect and retrieve data here and there also posed difficulty for those on the field. Multi-system database is complicated and onboarding of a new employee by training multiple databases is confusing. Outdated systems did not talk to each other.
 
