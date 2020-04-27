@@ -20,10 +20,8 @@ Looking ahead to 2020 and beyond, there are many hurdles to address that may wel
 
 Many of us have benefited from health services one way or another in our lives, and I want to touch on insurance a little bit.
 
-What IS health insurance, how it works, and why it’s important to us. 
-
 <img src="images/HEALTHreformtimeline.jpg">
-The timeline shown above details some of the changes that have taken place. Many changes are still expected over the next several years. 
+The timeline shown above details some of the changes that have taken place. Many changes are still expected over the next several years.
 
 In present day, the law requires nearly all Americans to have health coverage referred to as the health care reform. The purpose is to ensure that health insurance is affordable and available to all Americans. At one point in time, there was a penalty assessed on your tax return for failure to obtain health insurance, however the Trump administration has changed the rules and eliminated the penalty on the federal level in 2019 though a handful of states still continue to assess their own penalties. These 6 states are New Jersey, DC, Massachusetts, Vermont, Rhode Island and Maryland. The prior tax penalty for not having health insurance in 2018 was $695 for adults and $347.50 for children or 2% of your yearly income, whichever amount is more. There are exceptions to the rule which makes you exempt from this, such as being a recipient of government funded programs, or if you are native American or simply just live outside of the U.S. 
 
