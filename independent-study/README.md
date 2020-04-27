@@ -162,6 +162,7 @@ From a Regulatory Standpoint,  In 2009, the U.S. passed the HITECH Act, which pr
 Eventually, the incentives turned into penalties for late adopters.  The current goal is to promote interoperability among Electronic Health Record Systems (EHR) to facilitate health information exchange.  Although this “Meaningful Use” forces vendors to “talk” to each other, the actual implementation is left up to the vendors.
 
 EHR-An electronic health record (EHR) is the digital version of a patient's medical records which are made available to authorized agents in real time. Aside from authorized medical staff, the electronic health records are only provided to you or your personal representative. 
+<img src="images/SampleEhrChart.jpg">
 
 Electronic prescribing (e-prescribing or e-Rx) is the electronic submission of prescription medications. E-prescribing reduces the risks associated to faulty prescipription fulfillment. 
 
