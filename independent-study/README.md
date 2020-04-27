@@ -25,9 +25,7 @@ The law requires nearly all Americans to have health coverage referred to as the
 In theory, the Affordable Care Act is still in effect, but there’s no longer a penalty to enforce it. 
 
 <img src="images/HEALTHreformtimeline.jpg">
-The timeline shown above details some of the changes that have taken place. Many changes are still expected over the next several years. 
-
-Health insurance covers medical expenses for illnesses, injuries and conditions. Medical expenses can be high, and health insurance is a way to help alleviate how you are going to pay.
+The timeline shown above details some of the changes that have taken place. Many changes are still expected over the next several years. Health insurance covers medical expenses for illnesses, injuries and conditions. Medical expenses can be high, and health insurance is a way to help alleviate how you are going to pay.
 
 It is a safeguard to your wellness. Being a member of a health plan provides you with access to a network of doctors and hospitals, which have a negotiated service rate and a promise for quality care. The level of coverage and out of pocket expense varies dependent on plan and its important to remember insurance truly carries its’ weight. Sometimes it pays for your hospital stays, prescription drugs, doctor visits, or whether you will receive treatment (for a chronic illness or emergency accident). 
 
@@ -94,10 +92,11 @@ There are 3 groups of challenges that need to be addressed before UHC can make t
 ## REGULATORY
 <img src="images/HEALTHreform.jpg">
 In addition to data privacy laws that apply to all industries, healthcare is subject to additional laws like HIPAA and HITECH. 
-HIPAA’s Privacy Rule defines the use and disclosure of Protected Health Information or “PHI”. PHI is any information regarding the health status, provision of health care, or health care payment that can be linked to any individual.  
+
+HIPAA’s Privacy Rule defines the use and disclosure of Protected Health Information or “PHI”. PHI is any information regarding the health status, provision of health care, or health care payment that can be linked to any individual.
 
 HIPAA is the Health Insurance Portability and Accountability Act and its purpose was to help people maintain health insurance. HIPAA is the acronym for the Health Insurance Portability and Accountability Act that was passed by Congress in 1996.  
-<img src="images/HIPAA-Compliance-Web-Page-graphic.png"> 
+<img src="images/HIPAA-Compliance-Web-Page-graphic.png">
 
 HIPAA does the following:
 Provides continued health coverage for American workers and their family in the event they switch workplace lose their job.
@@ -208,19 +207,18 @@ Some recommendations:
 + Multifactor Authentication.  In addition to a strong password, use a biometric device or DUO.
 + Install anti-malware that explains problems in plain English.
 + Hosted Applications.  If there is nothing installed and stored locally, there is no data to lose if the laptop is stolen.
-
-<img src="images/Securemindset.jpg">
 + And perhaps the most important step to securing people:
 Education to instill a “Secure” mindset.  Examples like, don’t click on email links, don’t use simple passwords like ‘123’ and log out of applications when done.
+<img src="images/Securemindset.jpg">
 
 ## BENEFITS
-<img src="images/BenefitsMobileAccess.jpg">
+<img src="images/Singlesignonbenefits.jpg">
 
 Let’s talk about some of the direct benefits of moving data to mobile access…
 
 With information at our fingertips, we are able to analyze and resolve claims. We can review covered benefits, and issue authorizations quickly.
 Being able to pull up their account we can verify activity, and assure continued compliance.
-<img src="images/Singlesignonbenefits.jpg">
+<img src="images/BenefitsMobileAccess.jpg">
 
 To assist in provider claims concerning compliance, and possible fraud we review compliance issues, then address and identify root cause, train provider staff on correct procedures, and provide written report of findings to prevent further abuse right away. Having information on the go not only helps identify fraud very quickly, and address problems but it nip it in the bud.
 
