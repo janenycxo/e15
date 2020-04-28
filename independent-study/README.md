@@ -108,6 +108,7 @@ HIPPA helps reduce fraud and/or abuse, regulate industry standard measures for h
 Under the HIPAA minimum necessary standard, HIPAA-covered entities are required to make reasonable efforts to ensure that access to PHI is limited to the minimum necessary information to accomplish the intended purpose of a particular use, disclosure, or request.
 
 Health Information Technology for Economic and Clinical Health Act or “HITECH” was passed in 2009 and it widened the protections available by increasing the legal liability.
+
 <img src="images/hitech.jpg">
 
 The average penalty for an organization is in the millions, and it has been steadily increasing over time. A data breach can easily cost a company millions of dollars in fines. 
@@ -205,7 +206,7 @@ The “People” challenge is the most difficult to overcome.  You can have the 
 
 I don’t believe people do that to be difficult, rather, it’s the security mindset that is difficult.  If we can make it a little easier, then we would get better results.
 
-Some recommendations:
+SOME RECOMMENDATIONS:
 <img src="images/Singlesignon.jpg">
 + Single Sign On.  There are too many systems with too many user ids and passwords.  A single sign on system will allow us to use a single user id and password for all the systems.
 + Strong, but reasonable Passwords.  No ‘123’, but also not make it 16 characters requiring an uppercase, lowercase, number and special character.
@@ -220,7 +221,7 @@ Education to instill a “Secure” mindset.  Examples like, don’t click on em
 
 Let’s talk about some of the direct benefits from having easier access to healhthcare data…
 
-+ With information at our fingertips, we are able to analyze and resolve claims. We can review covered benefits, and issue authorizations quickly.
+With information at our fingertips, we are able to analyze and resolve claims. We can review covered benefits, and issue authorizations quickly.
 
 Being able to pull up their account we can verify activity, and assure continued compliance.
 <img src="images/Singlesignonbenefits.jpg">
