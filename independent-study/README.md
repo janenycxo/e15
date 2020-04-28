@@ -4,30 +4,32 @@
 <img src="images/ChallengesofEnablingAccesstoHealthcareData.jpg">
 
 ## INTRODUCTION
+
 The healthcare industry is ever evolving and heavily monitored by government regulations, technology and expectations. 
 
 Operating a successful health system, or medical practice isn’t just about treating patients anymore. 
 
 Security concerns, relationship building,  provider network, quality, performance, business partnerships, and sometimes even political commitment are all part of the equation in a smooth operation in today's world.
 
-Looking ahead to 2020 and beyond, there are many hurdles to address that may well impact health plans, hospitals and patients…but today, I want to focus on mobile access to healthcare data.
+Looking ahead to 2020 and beyond, there are many hurdles to address that may well impact health plans, hospitals and patients
 
 ##	WHAT IS HEALTH INSURANCE?
-<img src="images/GEThealthcoverage.jpg">
-
 + How does it work?
 + Why is it Important?
+<img src="images/GEThealthcoverage.jpg">
 
 Many of us have benefited from health services one way or another in our lives, and I want to touch on insurance a little bit.
 
-The law requires nearly all Americans to have health coverage referred to as the health care reform. The purpose is to ensure that health insurance is affordable and available to all Americans. At one point in time, there was a penalty assessed on your tax return for failure to obtain health insurance, however the Trump administration has changed the rules and eliminated the penalty on the federal level in 2019 though a handful of states still continue to assess their own penalties. These 6 states are New Jersey, DC, Massachusetts, Vermont, Rhode Island and Maryland. The prior tax penalty for not having health insurance in 2018 was $695 for adults and $347.50 for children or 2% of your yearly income, whichever amount is more. There are exceptions to the rule which makes you exempt from this, such as being a recipient of government funded programs, or if you are native American or simply just live outside of the U.S. 
+The law requires nearly all Americans to have health coverage referred to as the health care reform. The purpose is to ensure that health insurance is affordable and available to all Americans.
+
+At one point in time, there was a penalty assessed on your tax return for failure to obtain health insurance, however the Trump administration has changed the rules and eliminated the penalty on the federal level in 2019 though a handful of states still continue to assess their own penalties. These 6 states are New Jersey, DC, Massachusetts, Vermont, Rhode Island and Maryland. The prior tax penalty for not having health insurance in 2018 was $695 for adults and $347.50 for children or 2% of your yearly income, whichever amount is more. There are exceptions to the rule which makes you exempt from this, such as being a recipient of government funded programs, or if you are native American or simply just live outside of the U.S. 
 
 In theory, the Affordable Care Act is still in effect, but there’s no longer a penalty to enforce it. 
 
 <img src="images/HEALTHreformtimeline.jpg">
 The timeline shown above details some of the changes that have taken place. Many changes are still expected over the next several years. Health insurance covers medical expenses for illnesses, injuries and conditions. Medical expenses can be high, and health insurance is a way to help alleviate how you are going to pay.
 
-It is a safeguard to your wellness. Being a member of a health plan provides you with access to a network of doctors and hospitals, which have a negotiated service rate and a promise for quality care. The level of coverage and out of pocket expense varies dependent on plan and its important to remember insurance truly carries its’ weight. Sometimes it pays for your hospital stays, prescription drugs, doctor visits, or whether you will receive treatment (for a chronic illness or emergency accident). 
+Being a member of a health plan provides you with access to a network of doctors and hospitals, which have a negotiated service rate and a promise for quality care. The level of coverage and out of pocket expense varies dependent on plan and its important to remember insurance truly carries its’ weight. Sometimes it pays for your hospital stays, prescription drugs, doctor visits, or whether you will receive treatment (for a chronic illness or emergency accident). 
 
 Health insurance works together with hospitals, providers and specialty groups to ensure you are protected.
 
@@ -49,11 +51,12 @@ Aside from the workload which frequently kept me in the field and away from my d
 I looked forward to be able to access information from my computer and developed a habit to travel with stacks of literature, claims, codes, contracts as hard copy. A sample health insurance claim form is shown below:
 <img src="images/HEALTHinsuranceclaimforsample.jpg">
 
-Carrying around file folders containing contracts, claims, and credentials were difficult to maintain and run the risk of getting damaged or misplaced. I hoped for a better way to make the health system work better for everyone and to create a system that is connected and more affordable while being useful with mobile access.
+Carrying around file folders containing contracts, claims, and credentials were difficult to maintain and run the risk of getting damaged or misplaced. I hoped for a better way to make the health system work better for everyone and to create a system that is connected and more affordable while being useful access to healthcare records.
 
 Fortunately, advanced data and technologies, breakthrough solutions and consumer choice are redefining what can be achieved.
 
 ##	CURRENT DATABASES
+
 Here are a few of the programs I worked with at Unitedhealthcare. They each require individual login credentials, and a have a unique approach in retrieving data.
 
 CAQH Proview – Council for Affordable Quality Healthcare credentialing database.
@@ -80,8 +83,8 @@ People started to keep a log on their desk with their login credentials. This in
 Filtering each console, and manipulating multiple logins to collect and retrieve data here and there also posed difficulty for those on the field. Multi-system database is complicated and onboarding of a new employee by training multiple databases is confusing. Outdated systems did not talk to each other.
 
 ##	CHALLENGES
-With such concerns….it begs one important question.
-“Why isn’t all this information readily available on my smartphone?”
+
+With such concerns….it begs one important question. “Why isn’t all this information more easily accessible on a website or my smartphone?”
 
 There are 3 groups of challenges that need to be addressed before UHC can make that information available:
 
@@ -119,7 +122,6 @@ Given these penalties, organizations are risk adverse when it comes to making da
 
 ## TECHNOLOGY
 <img src="images/technologychallenge.jpg">
-
 Operating under HIPAA, there is a very conscious effort to protect information.  Let’s take a look at some of the Technology challenges:
 
 Lack of Interoperability between information systems – Healthcare information systems designed by different vendors generally do not talk to each other … and its difficult to export information out of them.  This is because there is very little incentive for the vendor to make it easy.  This helps lock-in their business while they use HIPAA and data protection as an excuse for keeping the data in a silo.
@@ -133,7 +135,6 @@ HIPAA also requires that the data be protected in transit.  The challenge here i
 
 ## PEOPLE
 <img src="images/people challenge.jpg">
-
 Last but not least, we have the challenges related to “People”.  
 You can have the most secure networks and computers, but the weakest link tends to be people.  
 
@@ -147,11 +148,13 @@ Carelessness is also a problem.  A lost laptop, phone or USB drive can easily co
 All of these problems are compounded by people’s natural resistance to change.  Change is not easy, especially if you want them to behave in a secure manner that often times are inconvenient.
 
 ## RECOMMENDATIONS
-With so many challenges, what can a large healthcare organization like UnitedHealth do to start moving their data to a mobile platform?  
+
+With so many challenges, what can a large healthcare organization like UnitedHealth do to start moving their data to a more streamlined platform?  
 
 I’ll talk about some recommendations.
 
 ## REGULATORY STANDPOINT
+
 From a Regulatory Standpoint,  In 2009, the U.S. passed the HITECH Act, which proposed the “Meaningful Use” of interoperable electronic health records throughout the U.S. healthcare delivery system as a national goal.
 
 “Meaningful Use” was defined as the use of certified electronic health records technology in a meaningful manner (for example electronic prescribing) and ensuring that the technology provides for the electronic exchange of health information.  To encourage this, The Center for Medicare and Medicaid Services or “CMS” initially provided financial incentives for organizations who adopted software systems that were certified for Meaningful Use. 
@@ -161,7 +164,8 @@ Eventually, the incentives turned into penalties for late adopters.  The current
 EHR-An electronic health record (EHR) is the digital version of a patient's medical records which are made available to authorized agents in real time. Aside from authorized medical staff, the electronic health records are only provided to you or your personal representative. Shown below is an example of an EHR Chart, the format is simple to understand, easy to read and efficient for data retrieval.
 <img src="images/SampleEhrChart.jpg">
 
-Electronic prescribing (e-prescribing or e-Rx) is the electronic submission of prescription medications. E-prescribing reduces the risks associated to faulty prescipription fulfillment. An example of the E-Rx is shown below, the provider can either call in the script or submit request on the portal. <img src="images/SampleErx.jpg">
+Electronic prescribing (e-prescribing or e-Rx) is the electronic submission of prescription medications. E-prescribing reduces the risks associated to faulty prescipription fulfillment. An example of the E-Rx is shown below, the provider can either call in the script or submit request on the portal.
+<img src="images/SampleErx.jpg">
 
 Some specific interoperability standards were developed by Health Level Seven, a non profit standards development organization that focuses on healthcare.  Their standards include HL7 which defines a standard message format for data exchange between healthcare systems and its successor, Fast Healthcare Interoperability Resource or “FHIR” which takes a more modern,internet-based approach for connecting systems together so they can talk to each other.
 
@@ -176,6 +180,7 @@ Responsibilities such as:
 + Server Patching and updating
 
 These become the Cloud Provider’s responsibility.
+<img src="images/cloudsecurity.jpg">
 
 Unfortunately, UHC would still need to be responsible for user security and the security of our own applications.
 
@@ -212,13 +217,13 @@ Education to instill a “Secure” mindset.  Examples like, don’t click on em
 <img src="images/Securemindset.jpg">
 
 ## BENEFITS
-<img src="images/Singlesignonbenefits.jpg">
 
-Let’s talk about some of the direct benefits of moving data to mobile access…
+Let’s talk about some of the direct benefits from having easier access to healhthcare data…
 
-With information at our fingertips, we are able to analyze and resolve claims. We can review covered benefits, and issue authorizations quickly.
++ With information at our fingertips, we are able to analyze and resolve claims. We can review covered benefits, and issue authorizations quickly.
+
 Being able to pull up their account we can verify activity, and assure continued compliance.
-<img src="images/BenefitsMobileAccess.jpg">
+<img src="images/Singlesignonbenefits.jpg">
 
 To assist in provider claims concerning compliance, and possible fraud we review compliance issues, then address and identify root cause, train provider staff on correct procedures, and provide written report of findings to prevent further abuse right away. Having information on the go not only helps identify fraud very quickly, and address problems but it nip it in the bud.
 
@@ -226,7 +231,7 @@ In assisting contract negotiations, we are able to pull up the most commonly bil
 
 In the past we were not able to do this, because we have to return to the office. Look it up, review our findings, and get back to them in a few days. Sometimes, contracts can take months to years to close, and sometimes fraudulent claims require the assistance from SIU (special investigative unit) to flag the account to prompt compliance.
 
-Mobile access to data also expedites new provider enrollment. It allows us to see current account status, and review the provider’s credential (specialties, what group practices they are currently participating, the locations they operate, and whether there are concerning factors such as sanctions, or fraud.)
+Access to healthcare data also expedites new provider enrollment. It allows us to see current account status, and review the provider’s credential (specialties, what group practices they are currently participating, the locations they operate, and whether there are concerning factors such as sanctions, or fraud.)
 
 Adding a provider to their practice would be less hassle, more pleasant and which translates to higher profit margins and increased productivity.
  
@@ -237,7 +242,7 @@ But with HIPAA you have to also worry about the information getting to the wrong
 
 Despite the growing interest for electronic access, this is just the early steps to improve access to healthcare information. High costs and heavily regulated requirements have prevented implementing these initiatives and limited more efficient use of resources but change is foreseeable.
 
-Fortunately, advanced data and technologies, breakthrough solutions and consumer choice are redefining what can be achieved. With hospitals and facilities adopting to technology its only a matter of time the system approaches mobile access to healthcare data.
+Fortunately, advanced data and technologies, breakthrough solutions and consumer choice are redefining what can be achieved. With hospitals and facilities adopting to technology its only a matter of time the system approaches an increased approach to retrieving and accessing healthcare data.
 
 ## RESOURCES
 + Production URL: 
