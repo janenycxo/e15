@@ -1,7 +1,7 @@
 # Independent Study Final Week 12 Assignment Final Notes
 + By: Jane Yeh
 
-<img src="images/ChallengesofEnablingMobileAccesstoHealthcareData.jpg">
+<img src="images/ChallengesofEnablingAccesstoHealthcareData.jpg">
 
 ## INTRODUCTION
 The healthcare industry is ever evolving and heavily monitored by government regulations, technology and expectations. 
