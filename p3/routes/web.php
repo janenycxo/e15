@@ -40,10 +40,11 @@ use Illuminate\Support\Facades\Route;
 //}); 
 
 //Home
-Route::get('/', 'PageController@index');
 
-Route::get('/forms', 'RetaurantController@index');
-Route::get('/forms/{BodyMassIndex?}', 'BmiController@show');
+Route::get('/', 'PageController@welcome');
+
+//Route::get('/forms', 'RetaurantController@index');
+//Route::get('/forms/{BodyMassIndex?}', 'BmiController@show');
   
 
 
