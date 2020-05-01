@@ -39,6 +39,48 @@ use Illuminate\Support\Facades\Route;
     //dump($debug);
 //}); 
 
-Route::get('/', function () {
- return 'CSCI E15 Project 3 Jando Eats';
-}); 
+    Route::get('/', function () {
+    return 'CSCI E15 Project 3 Jando Eats';
+    }); 
+
+
+
+/**
+ * Miscellaneous mostly-static pages
+ */
+    Route::get('/', 'PageController@welcome');
+    Route::get('/support', 'PageController@support');
+
+
+/**
+ * Restaurants
+ */
+    Route::group(['middleware' => 'auth'], function () {
+    # Add a restaurant
+    Route::get('/restaurants/create', 'RestaurantController@create');
+    Route::post('/restaurants', 'RestaurantController@store');
+
+    # Update a restaurant
+    Route::get('/restaurants/{slug}/edit', 'RestaurantController@edit');
+    Route::put('/restaurants/{slug}', 'RestaurantController@update');
+
+    # Show list of restaurants
+    Route::get('/restaurants', 'RestaurantController@index');
+
+    # Show a restaurant
+    Route::get('/restaurant/{slug?}', 'RestaurantController@show');
+
+    # Delete
+    Route::get('/restaurant/{slug}/delete', 'RestaurantController@delete');
+
+    # Process deletion of restaurant
+    Route::delete('/restaurant/{slug}', 'RestaurantController@destroy');
+    });
+
+    # Misc
+    Route::get('/search', 'RestaurantController@search');
+    Route::get('/list', 'RestaurantController@list');
+
+
+
+    Auth::routes();
