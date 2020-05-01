@@ -53,7 +53,8 @@
     </header>
 
     <section id='main'>
-
+&copy; JandoEats 2020 <br>
+        Questions? Email us at {{ config('mail.supportEmail') }}
 </section>
 
 
