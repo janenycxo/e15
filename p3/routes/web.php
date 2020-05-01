@@ -27,3 +27,5 @@ Route::get('/restaurants', 'RestaurantController@index');
 Route::get('/restaurants/{name}', 'RestaurantController@show');
 Auth::routes();
 
+
+Auth::routes();
