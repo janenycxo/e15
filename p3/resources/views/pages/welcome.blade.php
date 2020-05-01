@@ -1,89 +1,70 @@
-@extends('layouts.master')
+<!doctype html>
+<html lang='en'>
 
-@section('head')
-<link href='/css/pages/welcome.css' rel='stylesheet'>
-@endsection
+<head>
+    <title>@yield('title', 'Project 3 Jando Eats')</title>
+    <meta charset='utf-8'>
+ 
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href='/css/bookmark.css' rel='stylesheet'>
 
-@section('content')
-
-@if(!Auth::user())
-    <p>
-        Welcome to JandoEats - an online public forum where users can input personal reviews and enter information on local restaurants.
-    </p>
-        <a href='/register'>Register now to get started...</a>
-    
-@else
-   <p>
-   Welcome back, {{ $userName }}
-   </p> 
-    <form method='GET' action='/search'>
-
-        <strong>Search for a restaurant to add to your list:</strong>
-
-        <fieldset>
-            <label for='searchTerms'>
-                Search terms:
-                <input type='text' name='searchTerms' value='{{ old('searchTerms', $searchTerms) }}'>
-            </label>
-        </fieldset>
-
-        <fieldset>
-            <label>
-                Search type:
-            </label>
-
-            <input 
-                type='radio' 
-                name='searchType' 
-                id='title' 
-                value='title'
-                {{ (old('searchType') == 'title' or $searchType == 'title') ? 'checked' : '' }}
-            >
-            <label for='title'> Restaurant Name</label>
-            
-            <input 
-                type='radio' 
-                name='searchType' 
-                id='name' 
-                value='name'
-                {{ (old('searchType') == 'author' or $searchType == 'name') ? 'checked' : '' }}
-            >
-            <label for='name'> Restaurant Name</label>
-            
-        </fieldset>
-
-        <input type='submit' class='btn btn-primary' value='Search'>
-
-        @if(count($errors) > 0)
-        <ul class='alert alert-danger error'>
-            @foreach ($errors->all() as $error)
-                <li>{{ $error }}</li>
-            @endforeach
-        </ul>
-        @endif
-
-    </form>
-
-    @if(!is_null($searchResults))
-        @if(count($searchResults) == 0)
-            <div class='results alert alert-warning'>
-                No results found.
-                <a href='/restaurants/create'>Want to add this restaurant to our collection?</a>
-            </div>
-        @else
-            <div class='results alert alert-primary'>
-
-            {{ count($searchResults) }} 
-            {{ Str::plural('Result', count($searchResults)) }}:
-
-                <ul>
-                    @foreach($searchResults as $slug => $restaurant)
-                    <li><a href='/restaurants/{{ $slug }}'> {{ $restaurant['name'] }}</a></li>
-                    @endforeach
-                </ul>
-            </div>
-        @endif
+    @yield('head')
+</head>
+<body>
+@if(session('flash-alert'))
+    <div class='flash-alert'>
+        {{ session('flash-alert') }}
+    </div>
     @endif
-@endif
 
-@endsection
+<header>
+      <img src='/JandoEatsKnifeandfork.jpg'>
+      <br>
+      <h1>Welcome to JandoEats - an online public forum where users can input personal reviews and assign ratings of local restaurants.</h1>
+      <br>
+      <br>
+      <a href='/'><img src='/images/JandoEats.jpg' id='JandoEatsLogo' alt='JandoEatsLogo'></a>
+
+<nav>
+            <ul>
+                <li><a href='/'>Home</a></li>
+
+                @if(Auth::user())
+                <li><a href='/all'>All Restaurants</a></li>
+                <li><a href='/restaurants/create'>Add a Restaurant</a></li>
+                <li><a href='/list'>Your Saved Restaurant List</a></li>
+                @endif
+
+                <li><a href='/support'>Support</a></li>
+
+                <li>
+                    @if(!Auth::user())
+                        <a href='/login'>Login</a>
+                    @else
+                        <form method='POST' id='logout' action='/logout'>
+                            {{ csrf_field() }}
+                            <a href='#' onClick='document.getElementById("logout").submit();'>Logout {{ $user->name }}</a>
+                        </form>
+                    @endif
+                </li>
+            </ul>
+        </nav>
+
+</header>
+<br>
+<br>
+
+    <section id='main'>
+        @yield('content')
+    </section>
+
+    <footer>
+        &copy; JandoEats <br>
+        Questions? Email us at {{ config('mail.supportEmail') }}
+    </footer>
+
+</body>
+
+</html>
+

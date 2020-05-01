@@ -39,7 +39,10 @@ use Illuminate\Support\Facades\Route;
     //dump($debug);
 //}); 
 
-   
+    Route::get('/', function () {
+        return view('welcome');
+    });
+
 /**
  * Miscellaneous mostly-static pages
  */
