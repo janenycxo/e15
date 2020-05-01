@@ -13,6 +13,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+# New route
+Route::get('/example', function () {
+    return 'hello there!';
+});
+
+# Existing route
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/restaurants', 'RestaurantController@index');
+Route::get('/restaurants/{name}', 'RestaurantController@show');
