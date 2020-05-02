@@ -22,3 +22,4 @@ Route::get('/example', function () {
 Route::get('/', function () {
     return view('welcome');
 });
+Auth::routes();

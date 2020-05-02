@@ -1,0 +1,40 @@
+#newRestaurants {
+    background-color: lightyellow;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#newRestaurants ul {
+    list-style-type: none;
+}
+
+#restaurants {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+
+h3 {
+    font-size: 1.5rem;
+    height: 55px;
+}
+
+h2 {
+   width: 60%;
+  border: 3px solid #FFA07A;
+  padding: 10px;
+text-align: center;
+    font-size: 1.5rem;
+    height: 55px;
+}
+
+a:hover.book {
+    background-color: rgb(208, 246, 253);
+}
+
+.cover {
+    width: 125px;
+    margin: 10px;
+}
