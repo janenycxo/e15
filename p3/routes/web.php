@@ -12,6 +12,21 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/debug', function () {
+    $debug = [
+    'Environment' =>App::environment(),
+    ];
+
+try {
+    $databases = DB::select('SHOW DATABASES;');
+    $debug['Database connection test'] = 'PASSED';
+    $debug['Databases'] = array_column($databases, 'Database');
+} catch (Exception $e) {
+    $debug['Database connection test'] = 'FAILED: '.$e->getMessage();
+}
+
+    dump($debug);
+});
 
 # New route
 Route::get('/example', function () {

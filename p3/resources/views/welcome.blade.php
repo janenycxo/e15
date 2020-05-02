@@ -21,7 +21,7 @@ Welcome to JandoEats&mdash; an online public forum where users can input persona
     
 @else
     <p>
-    Welcome back, {{ $userName }}
+    Welcome back, {{ $userName ?? '' }}
     </p>
 
     <form method='GET' action='/search'>

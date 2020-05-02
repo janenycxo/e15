@@ -39,6 +39,7 @@
 
     </form>
 
+    {{--
     @if(count($errors) > 0)
     <ul class='alert alert-danger error'>
         @foreach ($errors->all() as $error)
@@ -46,4 +47,5 @@
         @endforeach
     </ul>
     @endif
+    --}}
 @endsection

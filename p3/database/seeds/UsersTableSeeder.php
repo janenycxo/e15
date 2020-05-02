@@ -22,5 +22,12 @@ public function run()
         ['email' => 'jamal@harvard.edu', 'name' => 'Jamal Harvard'],
         ['password' => Hash::make('helloworld')
     ]);
+
+
+    $user = User::updateOrCreate(
+        ['email' => 'jay213@g.harvard.edu', 'name' => 'Jane Yeh'],
+        ['password' => Hash::make('helloworld')
+    ]);
+
 }
 }
