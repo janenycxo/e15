@@ -126,8 +126,12 @@ class RestaurantController extends Controller
 */
 public function show($name)
 {
-    return view('restaurants.show')->with([
-        'name' => $name
-    ]);
+    return 'Here are the details for the restaurant: ' . $name;
+
+    //return view('restaurants.show')->with([
+     //   'name' => $name
+    //]);
+
+
 }
 }

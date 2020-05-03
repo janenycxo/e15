@@ -1,6 +1,11 @@
 <?php
 
 namespace App;
+use Arr;
+use Str;
+use App\Restaurant;
+use App\Location;
+
 
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;

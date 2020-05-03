@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use Illuminate\Database\Eloquent\Model;
+use App\Restaurant;
+use App\User;
 
 class DatabaseSeeder extends Seeder
 {
@@ -11,6 +14,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        $this->call(UserSeeder::class);
+        $this->call(UsersTableSeeder::class);
+        $this->call(RestaurantsTableSeeder::class);
     }
 }

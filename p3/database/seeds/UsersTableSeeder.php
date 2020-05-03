@@ -1,7 +1,9 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use Illuminate\Database\Eloquent\Model;
 use App\User;
+use App\Restaurant;
 
 class UsersTableSeeder extends Seeder
 {

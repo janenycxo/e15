@@ -28,6 +28,20 @@ try {
     dump($debug);
 });
 
+Route::get('/cuisines', function () {
+    return 'Here are all the different cuisines...';
+});
+
+Route::get('/eateries', function () {
+    return 'Here are all the restaurants...';
+});
+
+
+Route::get('/locations', function () {
+    return 'Here are all the locations...';
+});
+
+
 # New route
 Route::get('/example', function () {
     return 'hello there!';
@@ -37,6 +51,9 @@ Route::get('/example', function () {
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+
 
 Route::get('/restaurants', 'RestaurantController@index');
 Route::get('/restaurants/{name}', 'RestaurantController@show');

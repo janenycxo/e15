@@ -13,6 +13,24 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/debug', function () {
+    $debug = [
+    'Environment' =>App::environment(),
+    ];
+
+try {
+    $databases = DB::select('SHOW DATABASES;');
+    $debug['Database connection test'] = 'PASSED';
+    $debug['Databases'] = array_column($databases, 'Database');
+} catch (Exception $e) {
+    $debug['Database connection test'] = 'FAILED: '.$e->getMessage();
+}
+
+    dump($debug);
+});
+
+
+
 # New route
 Route::get('/example', function () {
     return 'hello there!';
@@ -22,4 +40,10 @@ Route::get('/example', function () {
 Route::get('/', function () {
     return view('welcome');
 });
+
+
 Auth::routes();
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
