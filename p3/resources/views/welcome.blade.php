@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('head')
-     <link href='/css/bookmark.css' rel='stylesheet'>
+     <link href='/css/restaurant.css' rel='stylesheet'>
 @endsection
 
 @section('content')

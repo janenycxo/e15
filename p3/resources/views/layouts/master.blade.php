@@ -6,7 +6,7 @@
 
     <meta charset='utf-8'>
 
-    <link href='/css/bookmark.css' rel='stylesheet'>
+    <link href='/css/restaurant.css' rel='stylesheet'>
 
     @yield('head')
 </head>
@@ -54,7 +54,7 @@
 
     <section id='main'>
 &copy; JandoEats 2020 <br>
-        Questions? Email us at {{ config('mail.supportEmail') }}
+        Questions? Email us at eateries@JandoEats.com
 </section>
 
 

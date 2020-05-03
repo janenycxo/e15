@@ -35,5 +35,18 @@ class PageController extends Controller
     public function support()
     {
         return view('pages.support');
+    
+    }
+
+public function cuisines()
+    {
+        return view('pages.cuisines');
+    }
+
+
+
+public function locations()
+    {
+        return view('pages.locations');
     }
 }
