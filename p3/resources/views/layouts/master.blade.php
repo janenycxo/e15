@@ -36,10 +36,10 @@
                 <li><a href='/list'>Your list</a></li>
                 @endif
 
-                <li><a href='/support'>Support</a></li>
+                
                 <li><a href='/cuisines'>Cuisines</a></li>
                 <li><a href='/locations'>Locations</a></li>
-
+                <li><a href='/support'>Support</a></li>
 
 
                 <li>
