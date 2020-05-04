@@ -42,7 +42,7 @@
                 name='searchType' 
                 id='name' 
                 value='name'
-                {{ (old('searchType') == 'name' or $searchType == 'name') ? 'checked' : '' }}
+                {{ (old('searchType') == 'name' or $searchType ?? '' == 'name') ? 'checked' : '' }}
             >
             <label for='name'> Name of Restaurant</label>
             
