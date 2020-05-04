@@ -28,7 +28,7 @@
  <fieldset>
             <label for='searchTerms'>
                 Search terms:
-                <input type='text' name='searchTerms' value='{{ old('searchTerms', $searchTerms) }}'>
+                <input type='text' name='searchTerms' value='{{ old('searchTerms', $searchTerms ?? '') }}'>
             </label>
         </fieldset>
 
