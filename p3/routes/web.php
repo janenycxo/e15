@@ -56,15 +56,20 @@ Route::get('/', function () {
 });
 
 
+Route::group(['middleware' => 'auth'], function () {
+    # Create a restaurant listing
+    Route::get('/restaurants/create', 'RestaurantController@create');
+    Route::post('/restaurants', 'RestaurantController@store');
+
+    # Edit a listing
+    Route::get('/restaurants/{slug}/edit', 'RestaurantController@edit');
+    Route::put('/restaurants/{slug}', 'RestaurantController@update');
+
+    # [... etc ...]
+});
 
 
 Route::get('/restaurants', 'RestaurantController@index');
 Route::get('/restaurants/{name}', 'RestaurantController@show');
 Auth::routes();
 
-
-Auth::routes();
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
