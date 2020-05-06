@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('head')
-    <link href='/css/bookmark.css' rel='stylesheet'>
+   <link href='/css/restaurant.css' rel='stylesheet'>
 @endsection
 
 @section('content')
@@ -28,7 +28,7 @@
  <fieldset>
             <label for='searchTerms'>
                 Search terms:
-                <input type='text' name='searchTerms' value='{{ old('searchTerms', $searchTerms) }}'>
+                <input type='text' name='searchTerms' value='{{ old('searchTerms', $searchTerms ?? '' ) }}'>
             </label>
         </fieldset>
 
@@ -43,7 +43,7 @@
                 name='searchType' 
                 id='name' 
                 value='name'
-                {{ (old('searchType') == 'name' or $searchType == 'name') ? 'checked' : '' }}
+                {{ (old('searchType') == 'name' or $searchType ?? '' == 'name') ? 'checked' : '' }}
             >
             <label for='name'> Restaurant Name</label>
 
@@ -52,7 +52,7 @@
                 name='searchType' 
                 id='location' 
                 value='location'
-                {{ (old('searchType') == 'location' or $searchType == 'location') ? 'checked' : '' }}
+                {{ (old('searchType') == 'location' or $searchType ?? '' == 'location') ? 'checked' : '' }}
             >
             <label for='location'> Location</label>
             
@@ -61,7 +61,7 @@
                 name='searchType' 
                 id='cuisine' 
                 value='cuisine'
-                {{ (old('searchType') == 'cuisine' or $searchType == 'cuisine') ? 'checked' : '' }}
+                {{ (old('searchType') == 'cuisine' or $searchType ?? '' == 'cuisine') ? 'checked' : '' }}
             >
             <label for='cuisine'> Cuisine</label>
             
@@ -79,8 +79,8 @@
 
     </form>
 
-    @if(!is_null($searchResults))
-        @if(count($searchResults) == 0)
+    @if(!is_null($searchResults ?? '' ))
+        @if(count($searchResults ?? '' ) == 0)
             <div class='results alert alert-warning'>
                 No results found.
                 <a href='/restaurants/create'>Want to add this restaurant to our distribution list?</a>
@@ -88,12 +88,12 @@
         @else
             <div class='results alert alert-primary'>
 
-            {{ count($searchResults) }} 
-            {{ Str::plural('Result', count($searchResults)) }}:
+            {{ count($searchResults ?? '' ) }} 
+            {{ Str::plural('Result', count($searchResults ?? '' )) }}:
 
                 <ul>
-                    @foreach($searchResults as $slug => $restaurant)
-                    <li><a href='/restaurants/{{ $slug }}'> {{ $restaurant['name'] }}</a></li>
+                    @foreach($searchResults ?? '' as $restaurant_name => $restaurant)
+                    <li><a href='/restaurants/{{ $restaurant_name }}'> {{ $restaurant['name'] }}</a></li>
                     @endforeach
                 </ul>
             </div>
