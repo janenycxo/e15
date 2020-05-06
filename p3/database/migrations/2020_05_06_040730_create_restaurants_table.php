@@ -17,14 +17,14 @@ class CreateRestaurantsTable extends Migration
             #Auto-incrementing UNSIGNED BIGINT
             $table->bigIncrements('id');
             
-            #Adds nullable created_at and updated_at TIMESTAMP
-            $table->timestamps()->nullable();
+            #TIMESTAMP
+            $table->timestamps();
             
             #Name of Restaurant  VARCHAR
             $table->string('restaurant_name');
             
             #The year restaurant opened TINYINT
-            $table->tinyInteger('year_open')->nullable();
+            $table->smallInteger('year_open');
                       
             #Location or address of Restaurant VARCHAR
             $table->string('location', 100);
@@ -45,7 +45,7 @@ class CreateRestaurantsTable extends Migration
             $table->text('review', 100);
 
             #User rating of overall visit  TEXT
-            $table->tinyInteger('rating', 5);
+            $table->tinyInteger('rating');
 
         });
     }

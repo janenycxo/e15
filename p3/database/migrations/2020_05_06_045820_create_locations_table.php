@@ -18,7 +18,7 @@ class CreateLocationsTable extends Migration
           $table->bigIncrements('id');
             
           #Adds nullable created_at and updated_at TIMESTAMP
-          $table->timestamps()->nullable();
+          $table->timestamps();
           
           #Name of Restaurant  VARCHAR
           $table->string('restaurant_name');
