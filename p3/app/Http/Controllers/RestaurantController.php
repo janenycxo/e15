@@ -1,5 +1,7 @@
 <?php
+
 namespace App\Http\Controllers;
+
 use Illuminate\Http\Request;
 use Arr;
 use Str;
@@ -11,7 +13,7 @@ class RestaurantController extends Controller
     
     public function create(Request $request)
     {
-        # Get Restaurants for our dropdown
+        # Get authors for our dropdown
         $locations = location::orderBy('county')
             ->select(['id', 'borough'])
             ->get();
@@ -29,14 +31,16 @@ class RestaurantController extends Controller
     public function store(Request $request)
     {
             $request->validate([
-            'name'=> 'required',
+            'restaurant_name' => 'required',
+            'year_opened' => 'required|digits:4',
+            'location' => 'required',
             'cuisine' => 'required',
-            'location_id' => 'required',
-            'established_year' => 'required|digits:4',
-            'cover_url' => 'url',
-            'info_url' => 'url',
-            'details_url' => 'required|url',
-            'description' => 'required|min:255'
+            'meal' => 'required',
+            'restaurant_url' => 'required|url',
+            'description' => 'required|min:50',
+            'review' => 'required|min:50',
+            'rating' => 'required|min:1',
+     
         ]);
     /**
         * Add /restaurants
@@ -68,6 +72,8 @@ class RestaurantController extends Controller
         $request->validate([
             'searchTerms' => 'required',
             'searchType' => 'required',
+
+
         ]);
 
       
@@ -106,32 +112,116 @@ class RestaurantController extends Controller
      */
     public function index()
     {
+        # Query DB alphabetical listing of all the restaurants in database
         $restaurants = Restaurant::orderBy('name')->get();
-
-       $newRestaurants = $restaurants->sortByDesc('created_at')->take(3);
-        
+        # Query existing restaurants for the 3 most recently added listings
+        $newRestaurants = $restaurants->sortByDesc('created_at')->take(3);
         return view('restaurants.index')->with([
             'restaurants' => $restaurants,
             'newRestaurants' => $newRestaurants
         ]);
     }
 
- //add delete restaurant
- //add confirm delete restaurant
 
 
+ /**
+     * GET 
+     * Show the details for an individual restaurant
+     */
+    public function show($restaurant)
+    {
+        $restaurant = Restaurant::where('restaurant_name', '=', $restaurant_name)->first();
 
-/**
-* GET /restaurant/{name}
-*/
-public function show($name)
-{
-    return 'Here are the details for the restaurant: ' . $name;
+        return view('restauants.show')->with([
+            'restaurant_name' => $restaurant_name,
+            'restaurant_url' => $restaurant_url,
+        ]);
+    }
 
-    //return view('restaurants.show')->with([
-     //   'name' => $name
-    //]);
+    /**
+     * edit
+     */
+    public function edit(Request $request, $restaurant)
+    {
+        $restaurant = Restaurant::where('restaurant_name', '=', $restaurant_name)->first();
 
+        return view('restaurants.edit')->with([
+            'restaurant' => $restaurant
+        ]);
+    }
 
-}
+    /**
+     *update
+     */
+    public function update(Request $request, $restaurant)
+    {
+        $restaurant = Restaurant::where('restaurant_name', '=', $restaurant_name)->first();
+
+        $restaurant->validate([
+                'restaurant_name' => 'required',
+                'year_opened' => 'required|digits:4',
+                'location' => 'required',
+                'cuisine' => 'required',
+                'meal' => 'required',
+                'restaurant_url' => 'required|url',
+                'description' => 'required|min:50',
+                'review' => 'required|min:50',
+                'rating' => 'required|min:1',
+        ]);
+
+        $newRestaurant = new Restaurant();
+        $newRestaurant->name = $request->name;
+        $newRestaurant->cuisine = $request->cuisine;
+        $newRestaurant->location_id = $request->location_id;
+        $newRestaurant->established_year = $request->established_year;
+        $newRestaurant->cover_url = $request->cover_url;
+        $newRestaurant->info_url = $request->info_url;
+        $newRestaurant->details_url = $request->details_url;
+        $newRestaurant->description = $request->description;
+        $newRestaurant->save();
+
+        return redirect('/restaurants/'.$restaurant.'/edit')->with([
+            'flash-alert' => 'Your changes were saved.'
+        ]);
+    }
+ 
+ 
+    //add delete restaurant
+
+    /**
+    * confirm whether user wishes to delete the restaurant listing
+    * delete
+    */
+    public function delete($restaurant)
+    {
+        $restaurant = Restaurant::findBySlug($restaurant);
+
+        if (!$restaurant) {
+            return redirect('/restaurants')->with([
+                'flash-alert' => 'Restaurant not found'
+            ]);
+        }
+
+        return view('restaurants.delete')->with([
+            'restaurant' => $restaurant,
+        ]);
+    }
+ 
+    //add confirm delete restaurant
+    /**
+    * Deletes the restaurant
+    * DELETE 
+    */
+    public function destroy($restaurant)
+    {
+        $restaurant = Restaurant::findByRestaurant($restaurant);
+
+        $restaurant->delete();
+
+        return redirect('/restaurants')->with([
+            'flash-alert' => '“' . $restaurant->restaurant_name. '” was removed.'
+        ]);
+    }
+
+    
 }

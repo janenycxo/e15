@@ -13,11 +13,22 @@ class RestaurantsTableSeeder extends Seeder
      */
     public function run()
     {
-        # Array of restaurant data to add
-    $restaurants = [
-    ['Milk Bar East Village', '2008', 'Bakeries', 'Brunch','251 E 13th St New York, NY 10003 b/t 3rd Ave & 2nd Ave East Village', 'https://www.yelp.com/biz/milk-bar-east-village-new-york-2?osq=Momofuku+Milk+Bar'],
+    # Add a Restaurant listing
+    $restaurant = new Restaurant();
+    $restaurant->restaurant_name = 'milk-bar-east-village';
+    $restaurant->year_open = '2008';
+    $restaurant->location = '251 E 13th St New York, NY 10003 b/t 3rd Ave & 2nd Ave East Village';
+    $restaurant->cuisine = 'Bakeries';
+    $restaurant->meal = 'Brunch';
+    $restaurant->restaurant_url = 'https://www.yelp.com/biz/milk-bar-east-village-new-york-2?osq=Momofuku+Milk+Bar';
+    $restaurant->description = 'Milk Bar is a sweet (and occasionally savory) shop that’s been turning familiar treats upside down and on their heads, shaking up the dessert scene since 2008. Bon Appetit magazine called us one of the most exciting bakeries in the country.';
+    $restaurant->review = 'Must get the cereal milk with the crunch!! It is a very small dessert spot and there is no indoor seating.';
+    $restaurant->rating = 4;
+    $restaurant->save();
+
+   
     ['ChickaLicious Dessert Bar', '2003', 'Coffee', 'Dessert', '203 E 10th St New York, NY 10003', 'https://www.yelp.com/biz/chikalicious-dessert-bar-new-york-3?osq=dessert'],
-    ['Clinton Street Baking COmpany', '2001', 'American', 'Breakfast', '4 Clinton St New York, NY 10002','https://www.yelp.com/search?find_desc=&find_loc=New+York%2C+NY'],
+    ['Clinton Street Baking Company', '2001', 'American', 'Breakfast', '4 Clinton St New York, NY 10002','https://www.yelp.com/search?find_desc=&find_loc=New+York%2C+NY'],
     ['Raclette', '2012', 'French', 'Lunch', '511 E 12th St New York, NY 10009' ,'https://www.yelp.com/biz/raclette-new-york'],
     ['Guadalupe Restaurant', '2004', 'Mexican', 'Dinner', '597 W 207 St New York, NY 10034' ,'https://www.yelp.com/biz/guadalupe-restaurant-new-york-3?osq=guadalupe+restaurant'],
     ['Haswell Greens', '2019', 'Cocktails', 'Happy Hour', '240 W 52 St New York, NY 10019' ,'https://www.yelp.com/biz/haswell-greens-new-york-3'],
@@ -34,7 +45,7 @@ foreach ($restaurants as $restaurantData) {
     $restaurant->cuisine = $restaurantData[2];  
     $restaurant->meal = $restaurantData[3];
     $restaurant->location = $restaurantData[4];
-    $restaurant->updated_at = $restaurantData[5];
+    $restaurant->restaurant_url = $restaurantData[5];
     $restaurant->save();
     $restaurant--;
 }

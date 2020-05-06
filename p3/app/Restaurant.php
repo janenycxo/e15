@@ -10,10 +10,17 @@ use Illuminate\Database\Eloquent\Model;
 
 class Restaurant extends Model
 {
-    public function cuisines()
+    public function cuisine()
     {
         # Restaurants include different cuisines and locations
         # Define a one-to-many relationship.
-        return $this->hasMany('App\Restaurant');
+        return $this->belongsTo('App\Cuisine');
     }
+
+    public static function findByMeal($meal)
+    {
+        return self::where('meal', '=', $meal)->first();
+    }
+
+    
 }
