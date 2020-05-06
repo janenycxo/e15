@@ -26,21 +26,6 @@ class RestaurantsTableSeeder extends Seeder
     $restaurant->rating = 4;
     $restaurant->save();
     
-    
-$count =count($restaurants);
-
-# Loop through each author, adding them to the database
-foreach ($restaurants as $restaurantData) {
-    $restaurant = new Restaurant();
-    $restaurant->restaurant_name = $restaurantData[0];
-    $restaurant->year_opened = $restaurantData[1];
-    $restaurant->cuisine = $restaurantData[2];  
-    $restaurant->meal = $restaurantData[3];
-    $restaurant->location = $restaurantData[4];
-    $restaurant->restaurant_url = $restaurantData[5];
-    $restaurant->save();
-    $restaurant--;
-}
-}
+    }
 }
 
