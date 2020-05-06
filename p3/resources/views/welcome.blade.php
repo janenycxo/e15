@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('head')
-   <link href='/css/restaurant.css' rel='stylesheet'>
+    <link href='/css/bookmark.css' rel='stylesheet'>
 @endsection
 
 @section('content')
@@ -92,8 +92,8 @@
             {{ Str::plural('Result', count($searchResults)) }}:
 
                 <ul>
-                    @foreach($searchResults as $restaurant_name => $restaurant)
-                    <li><a href='/restaurants/{{ $restaurant_name }}'> {{ $restaurant['name'] }}</a></li>
+                    @foreach($searchResults as $slug => $restaurant)
+                    <li><a href='/restaurants/{{ $slug }}'> {{ $restaurant['name'] }}</a></li>
                     @endforeach
                 </ul>
             </div>
