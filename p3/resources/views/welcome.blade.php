@@ -40,9 +40,9 @@
             <input 
                 type='radio' 
                 name='searchType' 
-                id='name' 
-                value='name'
-                {{ (old('searchType') == 'name' or $searchType ?? '' == 'name') ? 'checked' : '' }}
+                id='restaurant_name' 
+                value='restaurant_name'
+                {{ (old('searchType') == 'restaurant_name' or $searchType ?? '' == 'restaurant_name') ? 'checked' : '' }}
             >
             <label for='name'> Name of Restaurant</label>
             
@@ -69,8 +69,8 @@
 
     </form>
 
-    @if(!is_null($searchResults))
-        @if(count($searchResults) == 0)
+    @if(!is_null($searchResults ?? ''))
+        @if(count($searchResults ?? '') == 0)
             <div class='results alert alert-warning'>
                 No results found.
                 <a href='/restaurants/create'>Want to add this restaurant to our distribution list?</a>
@@ -78,12 +78,12 @@
         @else
             <div class='results alert alert-primary'>
 
-            {{ count($searchResults) }} 
-            {{ Str::plural('Result', count($searchResults)) }}:
+            {{ count($searchResults ?? '') }} 
+            {{ Str::plural('Result', count($searchResults ?? '')) }}:
 
                 <ul>
-                    @foreach($searchResults as $slug => $restaurant)
-                    <li><a href='/restaurants/{{ $slug }}'> {{ $restaurant['name'] }}</a></li>
+                    @foreach($searchResults ?? '' as $restaurant => $searchResults ?? '')
+                    <li><a href='/restaurants/{{ $restaurant }}'> {{ $searchResults ?? ''['restaurant_name'] }}</a></li>
                     @endforeach
                 </ul>
             </div>
