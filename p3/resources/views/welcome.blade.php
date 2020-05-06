@@ -82,8 +82,8 @@
             {{ Str::plural('Result', count($searchResults ?? '')) }}:
 
                 <ul>
-                    @foreach($searchResults ?? '' as $restaurant => $searchResults ?? '')
-                    <li><a href='/restaurants/{{ $restaurant }}'> {{ $searchResults ?? ''['restaurant_name'] }}</a></li>
+                    @foreach($searchResults as $restaurant_name => $restaurant)
+                    <li><a href='/restaurants/{{ $restaurant }}'> {{ $restaurant['restaurant_name'] }}</a></li>
                     @endforeach
                 </ul>
             </div>
