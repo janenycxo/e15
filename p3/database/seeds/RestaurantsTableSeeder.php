@@ -25,16 +25,8 @@ class RestaurantsTableSeeder extends Seeder
     $restaurant->review = 'Must get the cereal milk with the crunch!! It is a very small dessert spot and there is no indoor seating.';
     $restaurant->rating = 4;
     $restaurant->save();
-
-   
-    ['ChickaLicious Dessert Bar', '2003', 'Coffee', 'Dessert', '203 E 10th St New York, NY 10003', 'https://www.yelp.com/biz/chikalicious-dessert-bar-new-york-3?osq=dessert'],
-    ['Clinton Street Baking Company', '2001', 'American', 'Breakfast', '4 Clinton St New York, NY 10002','https://www.yelp.com/search?find_desc=&find_loc=New+York%2C+NY'],
-    ['Raclette', '2012', 'French', 'Lunch', '511 E 12th St New York, NY 10009' ,'https://www.yelp.com/biz/raclette-new-york'],
-    ['Guadalupe Restaurant', '2004', 'Mexican', 'Dinner', '597 W 207 St New York, NY 10034' ,'https://www.yelp.com/biz/guadalupe-restaurant-new-york-3?osq=guadalupe+restaurant'],
-    ['Haswell Greens', '2019', 'Cocktails', 'Happy Hour', '240 W 52 St New York, NY 10019' ,'https://www.yelp.com/biz/haswell-greens-new-york-3'],
-    ['Alta', '2010', 'Mediterranean', 'Tapas', 'https://www.yelp.com/biz/alta-new-york?osq=alta']
-];
-
+    
+    
 $count =count($restaurants);
 
 # Loop through each author, adding them to the database

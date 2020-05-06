@@ -51,7 +51,7 @@
                 name='searchType' 
                 id='cuisine' 
                 value='cuisine'
-                {{ (old('searchType') == 'cuisine' or $searchType == 'cuisine') ? 'checked' : '' }}
+                {{ (old('searchType') == 'cuisine' or $searchType ?? '' == 'cuisine') ? 'checked' : '' }}
             >
             <label for='cuisine'> Cuisine</label>
             
