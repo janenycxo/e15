@@ -80,7 +80,6 @@
     </form>
 
     @if(!is_null($searchResults ?? '' ))
-        @if(count((array)$searchResults ?? '' ) == 0)
             <div class='results alert alert-warning'>
                 No results found.
                 <a href='/restaurants/create'>Want to add this restaurant to our distribution list?</a>
@@ -99,6 +98,5 @@
             </div>
         @endif
     @endif
-@endif
 
 @endsection
