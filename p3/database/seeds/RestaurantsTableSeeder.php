@@ -18,6 +18,7 @@ class RestaurantsTableSeeder extends Seeder
     $restaurant->name = 'milk-bar-east-village';
     $restaurant->year_open = '2008';
     $restaurant->location = '251 E 13th St New York, NY 10003 b/t 3rd Ave & 2nd Ave East Village';
+    $restaurant->borough = 'Manhattan';
     $restaurant->cuisine = 'Bakeries';
     $restaurant->meal = 'Brunch';
     $restaurant->restaurant_url = 'https://www.yelp.com/biz/milk-bar-east-village-new-york-2?osq=Momofuku+Milk+Bar';

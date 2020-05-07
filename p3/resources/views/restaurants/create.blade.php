@@ -41,6 +41,10 @@
         <label for='location'>* Location </label>
         <input type='text' name='location' id='location' value='{{ old('location') }}'>
         @include('includes.error-field', ['fieldName' => 'location'])
+     
+        <label for='borough'>* Borough </label>
+        <input type='text' name='borough' id='borough' value='{{ old('borough') }}'>
+        @include('includes.error-field', ['fieldName' => 'borough'])
 
         <label for='description'>Description</label>
         <textarea name='description'>{{ old('description') }}</textarea>

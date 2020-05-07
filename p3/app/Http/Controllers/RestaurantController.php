@@ -219,7 +219,7 @@ class RestaurantController extends Controller
         $restaurant->delete();
 
         return redirect('/restaurants')->with([
-            'flash-alert' => '“' . $restaurant->restaurant_name. '” was removed.'
+            'flash-alert' => '“' . $restaurant->name. '” was removed.'
         ]);
     }
 
