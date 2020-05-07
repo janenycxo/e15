@@ -44,6 +44,7 @@ Route::get('/locations', function () {
 Route::get('/support', 'PageController@support');
 Route::get('/cuisines', 'PageController@cuisines');
 Route::get('/locations', 'PageController@locations');
+Route::get('/list', 'PageController@locations');
 
 # New route
 Route::get('/example', function () {
