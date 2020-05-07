@@ -15,7 +15,7 @@ class RestaurantController extends Controller
     {
         # Get authors for our dropdown
         $locations = location::orderBy('county')
-            ->select(['id', 'borough'])
+            ->select(['id'])
             ->get();
 
         return view('restaurant.create')->with([
@@ -130,10 +130,10 @@ class RestaurantController extends Controller
      */
     public function show($restaurant)
     {
-        $restaurant = Restaurant::where('restaurant_name', '=', $restaurant_name)->first();
+        $restaurant = Restaurant::where('name', '=', $name)->first();
 
         return view('restauants.show')->with([
-            'restaurant_name' => $restaurant_name,
+            'name' => $name,
             'restaurant_url' => $restaurant_url,
         ]);
     }
@@ -143,7 +143,7 @@ class RestaurantController extends Controller
      */
     public function edit(Request $request, $restaurant)
     {
-        $restaurant = Restaurant::where('restaurant_name', '=', $restaurant_name)->first();
+        $restaurant = Restaurant::where('name', '=', $name)->first();
 
         return view('restaurants.edit')->with([
             'restaurant' => $restaurant
@@ -155,10 +155,10 @@ class RestaurantController extends Controller
      */
     public function update(Request $request, $restaurant)
     {
-        $restaurant = Restaurant::where('restaurant_name', '=', $restaurant_name)->first();
+        $restaurant = Restaurant::where('name', '=', $name)->first();
 
         $restaurant->validate([
-                'restaurant_name' => 'required',
+                'name' => 'required',
                 'year_opened' => 'required|digits:4',
                 'location' => 'required',
                 'cuisine' => 'required',
