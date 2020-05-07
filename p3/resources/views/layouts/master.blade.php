@@ -1,8 +1,8 @@
 <!doctype html>
 <html lang='en'>
 <head>
-    <title>@yield('name')</title>
-    <img src='images/JandoEats.png'>
+    <title>@yield('name', 'JandoEats')</title>
+    
 
     <meta charset='utf-8'>
 
@@ -10,6 +10,7 @@
 
     @yield('head')
 </head>
+
 <body>
 
 
@@ -19,14 +20,10 @@
     </div>
     @endif
 
-    
+    <header>
+    <a href='/'><img src='images/JandoEats.png'></a>
 
-<section>
-    @yield('content')
-
-<header>
-
-        <nav>
+       <nav>
             <ul>
                 <li><a href='/'>Home</a></li>
 
@@ -53,7 +50,7 @@
                     @endif
                 </li>
             </ul>
-        </nav>
+        </nav> 
     </header>
 
     <section id='main'>

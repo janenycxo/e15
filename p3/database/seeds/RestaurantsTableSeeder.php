@@ -28,7 +28,6 @@ class RestaurantsTableSeeder extends Seeder
     $restaurant->save();
     
 
-
     # Add a Restaurant listing
     $restaurant = new Restaurant();
     $restaurant->name = 'toms';
@@ -87,8 +86,6 @@ class RestaurantsTableSeeder extends Seeder
      $restaurant->review = 'When you sit down you are given fresh parmesan blocks off of a giant wheel, the most delicious olives, warm bread and butter. Dip your bread in the oil from olives. I wanted to drink it. And they will bring you more bread w/o an extra charge. You will need it to sop up the tasty sauces and things.';
      $restaurant->rating = 4;
      $restaurant->save();
-
-
 
 
     }
