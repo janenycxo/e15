@@ -41,10 +41,10 @@ Route::get('/locations', function () {
     return 'Here are all the locations...';
 });
 
-Route::get('/support', 'PageController@support');
-Route::get('/cuisines', 'PageController@cuisines');
-Route::get('/locations', 'PageController@locations');
-Route::get('/list', 'PageController@locations');
+Route::get('/support', 'RestaurantController@support');
+Route::get('/cuisines', 'RestaurantController@cuisines');
+Route::get('/locations', 'RestaurantController@locations');
+Route::get('/list', 'RestaurantController@locations');
 
 # New route
 Route::get('/example', function () {
