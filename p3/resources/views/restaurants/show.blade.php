@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-{{ $restaurant ? $restaurant->name : 'Restaurant not found' }}
+{{ $rstaurant ? $restaurant->name : 'Restaurant not found' }}
 @endsection
 
 @section('head')
@@ -22,7 +22,7 @@
     {{ $restaurant->description }}
     <a href='{{ $restaurant->year_opened }}'>Year Opened.</a>
 </p>
-<a href='/restaurant/{{ $restaurant->name }}/edit'>Edit this Restaurant</a>
+<a href='/restaurant/{{ $restaurant->slug }}/edit'>Edit this Restaurant</a>
 @endif
 
 @endsection

@@ -23,7 +23,7 @@
 
     <form method='GET' action='/search'>
 
-        <strong>Search for a restaurant to add to our list:</strong>
+        <strong>Search for a restaurant to add to your list:</strong>
 
  <fieldset>
             <label for='searchTerms'>
@@ -91,8 +91,8 @@
             {{ Str::plural('Result', count($searchResults ?? '' )) }}:
 
                 <ul>
-                    @foreach($searchResults ?? '' as $name => $restaurant)
-                    <li><a href='/restaurants/{{ $name }}'> {{ $restaurant['name'] }}</a></li>
+                    @foreach($searchResults ?? '' as $restaurant_name => $restaurant)
+                    <li><a href='/restaurants/{{ $restaurant_name }}'> {{ $restaurant['name'] }}</a></li>
                     @endforeach
                 </ul>
             </div>
