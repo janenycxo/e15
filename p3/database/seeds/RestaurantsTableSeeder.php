@@ -15,7 +15,7 @@ class RestaurantsTableSeeder extends Seeder
     {
     # Add a Restaurant listing
     $restaurant = new Restaurant();
-    $restaurant->restaurant_name = 'milk-bar-east-village';
+    $restaurant->name = 'milk-bar-east-village';
     $restaurant->year_open = '2008';
     $restaurant->location = '251 E 13th St New York, NY 10003 b/t 3rd Ave & 2nd Ave East Village';
     $restaurant->cuisine = 'Bakeries';

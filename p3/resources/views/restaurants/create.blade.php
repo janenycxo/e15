@@ -17,12 +17,12 @@
 
     <p>Found a new pop-up, or simply just want to add a new restaurant you don't see on our list? You can add it here!</p>
 
-    <form method='POST' action='/rstaurants'>
+    <form method='POST' action='/restaurants'>
         <div class='details'>* Required fields</div>
         {{ csrf_field() }}
 
         <label for='title'>* Slug URL</label>
-        <div class='details'>* This slug may only contain letters, numbers, dashes and underscores.</div>
+        <div class='details'>* May only contain letters, numbers, dashes and underscores.</div>
         <input type='text' name='slug' id='slug' value='{{ old('slug') }}'>
         @include('includes.error-field', ['fieldName' => 'slug'])
 

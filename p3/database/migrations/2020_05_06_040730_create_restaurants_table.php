@@ -14,14 +14,14 @@ class CreateRestaurantsTable extends Migration
     public function up()
     {
         Schema::create('restaurants', function (Blueprint $table) {
-            #Auto-incrementing UNSIGNED BIGINT
-            $table->bigIncrements('id');
+            #Auto-incrementing 
+            $table->id();
             
             #TIMESTAMP
-            $table->timestamps();
+            $table->timestamps(0);
             
             #Name of Restaurant  VARCHAR
-            $table->string('restaurant_name');
+            $table->string('name');
             
             #The year restaurant opened TINYINT
             $table->smallInteger('year_open');

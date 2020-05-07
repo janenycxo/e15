@@ -15,13 +15,13 @@ class CreateLocationsTable extends Migration
     {
         Schema::create('locations', function (Blueprint $table) {
           #Auto-incrementing UNSIGNED BIGINT
-          $table->bigIncrements('id');
+          $table->id();
             
           #Adds nullable created_at and updated_at TIMESTAMP
           $table->timestamps();
           
           #Name of Restaurant  VARCHAR
-          $table->string('restaurant_name');
+          $table->string('name');
                       
           #Location or address of Restaurant VARCHAR
           $table->string('location', 100);

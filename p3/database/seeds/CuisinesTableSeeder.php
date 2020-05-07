@@ -31,7 +31,7 @@ foreach ($cuisines as $cuisineData) {
     
     $cuisine->created_at = Carbon\Carbon::now()->subDays($count)->toDateTimeString();
     $cuisine->updated_at = Carbon\Carbon::now()->subDays($count)->toDateTimeString();
-    $cuisine->restaurant_name = $cuisineData[0];
+    $cuisine->name = $cuisineData[0];
     $cuisine->cuisine = $cuisineData[1];
     $cuisine->restaurant_url = $cuisineData[2];
     $cuisine->save();

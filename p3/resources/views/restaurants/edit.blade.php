@@ -17,7 +17,7 @@
         {{  method_field('put') }}
 
         <label for='title'>* Slug URL</label>
-        <div class='details'>* This slug may only contain letters, numbers, dashes and underscores.
+        <div class='details'>* May only contain letters, numbers, dashes and underscores.
         <input type='text' name='slug' id='slug' value='{{ old('slug', $restaurant->slug) }}'>
        
         <label for='name'>* Name of Restaurant</label>

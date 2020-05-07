@@ -15,13 +15,13 @@ class CreateCuisinesTable extends Migration
     {
         Schema::create('cuisines', function (Blueprint $table) {
             #Auto-incrementing UNSIGNED BIGINT
-            $table->bigIncrements('id');
+            $table->id();
             
             #Adds nullable created_at and updated_at TIMESTAMP
             $table->timestamps();
             
             #Name of Restaurant  VARCHAR
-            $table->string('restaurant_name');
+            $table->string('name');
                         
             #Type of cuisine VARCHAR
             $table->string('cuisine', 100);
