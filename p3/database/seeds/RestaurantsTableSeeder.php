@@ -16,7 +16,7 @@ class RestaurantsTableSeeder extends Seeder
    
     # Add a Restaurant listing
     $restaurant = new Restaurant();
-    $restaurant->name = 'milk-bar-east-village';
+    $restaurant->name = 'Milk Bar East Village';
     $restaurant->year_open = '2008';
     $restaurant->location = '251 E 13th St New York, NY 10003 b/t 3rd Ave & 2nd Ave East Village';
     $restaurant->borough = 'manhattan';
@@ -32,7 +32,7 @@ class RestaurantsTableSeeder extends Seeder
 
     # Add a Restaurant listing
     $restaurant = new Restaurant();
-    $restaurant->name = 'toms';
+    $restaurant->name = 'Toms';
     $restaurant->year_open = '1936';
     $restaurant->location = 'E 782 Washington Ave Brookly, NY 11238';
     $restaurant->borough = 'brooklyn';
@@ -47,7 +47,7 @@ class RestaurantsTableSeeder extends Seeder
 
     # Add a Restaurant listing
     $restaurant = new Restaurant();
-    $restaurant->name = 'the-alcove';
+    $restaurant->name = 'The Alcove';
     $restaurant->year_open = '2015';
     $restaurant->location = '41-11 49 St Sunnyside, NY 11104';
     $restaurant->borough = 'queens';
@@ -62,7 +62,7 @@ class RestaurantsTableSeeder extends Seeder
 
       # Add a Restaurant listing
     $restaurant = new Restaurant();
-    $restaurant->name = 'antonios-trattoria';
+    $restaurant->name = 'Antonios Trattoria';
     $restaurant->year_open = '2007';
     $restaurant->location = '2370 Belmont Ave Bronx NY 10458';
     $restaurant->borough = 'bronx';
@@ -76,7 +76,7 @@ class RestaurantsTableSeeder extends Seeder
 
      # Add a Restaurant listing
      $restaurant = new Restaurant();
-     $restaurant->name = 'taverna-on-the-bay';
+     $restaurant->name = 'Taverna on the Bay';
      $restaurant->year_open = '2017';
      $restaurant->location = '661 Bay St Staten Island NY 10304';
      $restaurant->borough = 'staten-island';
@@ -92,7 +92,7 @@ class RestaurantsTableSeeder extends Seeder
 
     # Add a Restaurant listing
     $restaurant = new Restaurant();
-    $restaurant->name = 'chickaLicious-dessert-bar';
+    $restaurant->name = 'ChickaLicious Dessert Bar';
     $restaurant->year_open = '2003';
     $restaurant->location = '203 E 10th St New York NY 10003';
     $restaurant->borough = 'manhattan';
@@ -107,7 +107,7 @@ class RestaurantsTableSeeder extends Seeder
 
     # Add a Restaurant listing
     $restaurant = new Restaurant();
-    $restaurant->name = 'clinton-street-baking-company';
+    $restaurant->name = 'Clinton Street Baking Company';
     $restaurant->year_open = '2001';
     $restaurant->location = '4 Clinton St New York NY 10002';
     $restaurant->borough = 'manhattan';
@@ -121,7 +121,7 @@ class RestaurantsTableSeeder extends Seeder
 
     # Add a Restaurant listing
     $restaurant = new Restaurant();
-    $restaurant->name = 'raclette';
+    $restaurant->name = 'Raclette';
     $restaurant->year_open = '2015';
     $restaurant->location = '511 E 12th St New York, NY 10009';
     $restaurant->borough = 'manhattan';
@@ -135,7 +135,7 @@ class RestaurantsTableSeeder extends Seeder
 
     # Add a Restaurant listing
     $restaurant = new Restaurant();
-    $restaurant->name = 'guadalupe-restaurant';
+    $restaurant->name = 'Guadalupe Restaurant';
     $restaurant->year_open = '2004';
     $restaurant->location = '597 W 207 St New York, NY 10034';
     $restaurant->borough = 'manhattan';
@@ -149,7 +149,7 @@ class RestaurantsTableSeeder extends Seeder
 
     # Add a Restaurant listing
     $restaurant = new Restaurant();
-    $restaurant->name = 'haswell-greens';
+    $restaurant->name = 'Haswell Greens';
     $restaurant->year_open = '2018';
     $restaurant->location = '240 W 52nd St New York, NY 10019';
     $restaurant->borough = 'manhattan';
@@ -162,7 +162,7 @@ class RestaurantsTableSeeder extends Seeder
     $restaurant->save();
 
     $restaurant = new Restaurant();
-    $restaurant->name = 'madame-sousou-cafe';
+    $restaurant->name = 'Madame Sousou Cafe';
     $restaurant->year_open = '2014';
     $restaurant->location = '31-05 33 St Astoria NY 11106';
     $restaurant->borough = 'queens';
@@ -176,7 +176,7 @@ class RestaurantsTableSeeder extends Seeder
 
     # Add a Restaurant listing
     $restaurant = new Restaurant();
-    $restaurant->name = 'pates-et-traditions';
+    $restaurant->name = 'Pates et Traditions';
     $restaurant->year_open = '2008';
     $restaurant->location = '52 Havemeyer St Brooklyn NY 11211';
     $restaurant->borough = 'brooklyn';
@@ -186,8 +186,8 @@ class RestaurantsTableSeeder extends Seeder
     $restaurant->description = 'We prepare old school French crepes , authentique receipes , from my grand mother!! Fresh pastas also and more ... We focus on quality , quantity and good prices .. And of course a very friendly and good service See you soon A bientot.';
     $restaurant->review = 'The items were built beautifully, and despite being a French cuisine...their portions are generous and filling. The strawberries and bananas were plentiful and the sud ouest had plenty of slices of cheese melted to a gooey consistency and perfectly peeked out of the dark crepe envelope.';
     $restaurant->rating = 5;
-    $restaurant->save();  
-
+    $restaurant->save();
+    
     }
 }
 
