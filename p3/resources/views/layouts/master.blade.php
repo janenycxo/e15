@@ -33,7 +33,10 @@
                 @if(Auth::user())
                 <li><a href='/restaurants'>All Restaurants</a></li>
                 <li><a href='/restaurants/create'>Add a Restaurant</a></li>
+                <li><a href='/restaurants/edit'>Edit a Restaurant</a></li>
+                <li><a href='/restaurants/delete'>Remove a Restaurant</a></li>  
                 <li><a href='/list'>Your list</a></li>
+
                 @endif
 
                 

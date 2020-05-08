@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-{{ $rstaurant ? $restaurant->name : 'Restaurant not found' }}
+{{ $restaurant ? $restaurant->name : 'Restaurant not found' }}
 @endsection
 
 @section('head')
@@ -13,16 +13,24 @@
 @if(!$restaurant)
     Restaurant not found. <a href='/restaurants'>Check out the other restaurants in our archived collection. </a>
 @else    
-<h1>{{ $restaurant->name }}</h1>
+<h1 dusk='restaurant-sign'>{{ $restaurant->name }}</h1>
 
-<p>By {{ $restaurant->cuisine }} ({{$restaurant->location}})</p>
-<a href='{{ $restaurant->description }}'>Description</a>
+@if($restaurant->'cuisine')
+<p dusk='restaurant-details'>By {{ $restaurant->cuisine->meal. ' '. $restaurant->cuisine->location }}</p>
+@endif
+
+<p>({{ $restaurant->year_opened }})</p>
 
 <p class='description'>
     {{ $restaurant->description }}
-    <a href='{{ $restaurant->year_opened }}'>Year Opened.</a>
+    <a href='{{ $restaurant->restaurant_url }}'>Learn more...</a>
 </p>
-<a href='/restaurant/{{ $restaurant->slug }}/edit'>Edit this Restaurant</a>
+
+<ul class='restaurantActions'>
+    <li><a href='/list/{{ $restaurant->name }}/add' dusk='add-to-list-button'><i class="fa fa-plus"></i> Add to your list</a>
+    <li><a href='/restaurants/{{ $restaurant->name }}/edit'><i class="fa fa-edit"></i> Edit</a>
+    <li><a href='/restaurants/{{ $restaurant->name }}/delete'><i class="fa fa-trash"></i> Delete</a>
+</ul>
 @endif
 
 @endsection
