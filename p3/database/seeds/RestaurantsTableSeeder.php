@@ -55,7 +55,7 @@ class RestaurantsTableSeeder extends Seeder
     $restaurant->meal = 'brunch';
     $restaurant->restaurant_url = 'https://www.yelp.com/biz/the-alcove-sunnyside?osq=alcove';
     $restaurant->description = 'The place is small and a bit hard to navigate but it gave off a rustic and cozy backyard sort of comfort.';
-    $restaurant->review = ' The food is delicious, the ambiance and appeal are comforting, but I truly believe the service adds to the magic. Look the bottom line is that there is something special about the Alcove and since we were in a rush I really could not pinpoint what it was.';
+    $restaurant->review = 'The food is delicious, the ambiance and appeal are comforting, but I truly believe the service adds to the magic. Look the bottom line is that there is something special about the Alcove and since we were in a rush I really could not pinpoint what it was.';
     $restaurant->rating = 5;
     $restaurant->save();
 
@@ -151,7 +151,7 @@ class RestaurantsTableSeeder extends Seeder
     $restaurant = new Restaurant();
     $restaurant->name = 'haswell-greens';
     $restaurant->year_open = '2018';
-    $restaurant->location = '251 E 13th St New York, NY 10003 b/t 3rd Ave & 2nd Ave East Village';
+    $restaurant->location = '240 W 52nd St New York, NY 10019';
     $restaurant->borough = 'manhattan';
     $restaurant->cuisine = 'cocktail-bar';
     $restaurant->meal = 'happy-hour';
@@ -164,7 +164,7 @@ class RestaurantsTableSeeder extends Seeder
     $restaurant = new Restaurant();
     $restaurant->name = 'madame-sousou-cafe';
     $restaurant->year_open = '2014';
-    $restaurant->location = '251 E 13th St New York, NY 10003 b/t 3rd Ave & 2nd Ave East Village';
+    $restaurant->location = '31-05 33 St Astoria NY 11106';
     $restaurant->borough = 'queens';
     $restaurant->cuisine = 'cafe';
     $restaurant->meal = 'brunch';
@@ -178,11 +178,11 @@ class RestaurantsTableSeeder extends Seeder
     $restaurant = new Restaurant();
     $restaurant->name = 'pates-et-traditions';
     $restaurant->year_open = '2008';
-    $restaurant->location = '251 E 13th St New York, NY 10003 b/t 3rd Ave & 2nd Ave East Village';
+    $restaurant->location = '52 Havemeyer St Brooklyn NY 11211';
     $restaurant->borough = 'brooklyn';
     $restaurant->cuisine = 'french';
     $restaurant->meal = 'dessert';
-    $restaurant->restaurant_url = ' https://www.yelp.com/biz/pates-et-traditions-brooklyn';
+    $restaurant->restaurant_url = 'https://www.yelp.com/biz/pates-et-traditions-brooklyn';
     $restaurant->description = 'We prepare old school French crepes , authentique receipes , from my grand mother!! Fresh pastas also and more ... We focus on quality , quantity and good prices .. And of course a very friendly and good service See you soon A bientot.';
     $restaurant->review = 'The items were built beautifully, and despite being a French cuisine...their portions are generous and filling. The strawberries and bananas were plentiful and the sud ouest had plenty of slices of cheese melted to a gooey consistency and perfectly peeked out of the dark crepe envelope.';
     $restaurant->rating = 5;
