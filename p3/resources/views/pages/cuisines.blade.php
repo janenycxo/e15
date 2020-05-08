@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('content')
-<h1>Categories of Cuisines</h1>
+<strong><h1>Categories of Cuisines</h1></strong>
 
 <p>Mexican</p>
 <p>Thai</p>

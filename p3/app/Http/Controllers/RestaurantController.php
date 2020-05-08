@@ -14,11 +14,11 @@ class RestaurantController extends Controller
     public function create(Request $request)
     {
         # Get authors for our dropdown
-        $locations = location::orderBy('county')
+        $locations = Location::orderBy('county')
             ->select(['id'])
             ->get();
 
-        return view('restaurant.create')->with([
+        return view('restaurants.create')->with([
             'locations' => $locations
         ]);
     }
@@ -31,12 +31,13 @@ class RestaurantController extends Controller
     public function store(Request $request)
     {
             $request->validate([
-            'restaurant_name' => 'required',
-            'year_opened' => 'required|digits:4',
+            'name' => 'required',
+            'year_open' => 'required|digits:4',
             'location' => 'required',
+            'county' => 'required',
             'cuisine' => 'required',
             'meal' => 'required',
-            'restaurant_url' => 'required|url',
+            'restaurant_url' => 'required',
             'description' => 'required|min:50',
             'review' => 'required|min:50',
             'rating' => 'required|min:1',
@@ -50,17 +51,20 @@ class RestaurantController extends Controller
         # Add the restaurant to the database
         $newRestaurant = new Restaurant();
         $newRestaurant->name = $request->name;
+        $newRestaurant->year_open = $request->year_open;
+        $newRestaurant->location = $request->location;
+        $newRestaurant->county = $request->county;
         $newRestaurant->cuisine = $request->cuisine;
-        $newRestaurant->location_id = $request->location_id;
-        $newRestaurant->established_year = $request->established_year;
-        $newRestaurant->cover_url = $request->cover_url;
-        $newRestaurant->info_url = $request->info_url;
-        $newRestaurant->details_url = $request->details_url;
-        $newRestaurant->description = $request->description;
+        $newRestaurant->meal = $request->meal;
+        $newRestaurant->restaurant_url = $request->rstaurant_url;
+        $newRestaurant->description = $request->description;          
+        $newRestaurant->review = $request->review;
+        $newRestaurant->rating = $request->rating;
+        
         $newRestaurant->save();
 
         return redirect('/restaurants/create')->with([
-            'flash-alert' => 'Your restaurant '.$newRestaurantnewBook->name.' was added.'
+            'flash-alert' => 'Your restaurant '.$newRestaurant->name.' was added.'
         ]);
     }
 
@@ -72,8 +76,6 @@ class RestaurantController extends Controller
         $request->validate([
             'searchTerms' => 'required',
             'searchType' => 'required',
-
-
         ]);
 
       
@@ -82,13 +84,8 @@ class RestaurantController extends Controller
         $searchTerms = $request->input('searchTerms', null);
         $searchType = $request->input('searchType', null);
         
-        $restaurantData = file_get_contents(database_path('restaurants.json'));
-    
-        $restaurants = json_decode($restaurantData, true);
-    
-        $searchResults = array_filter($restaurants, function ($restaurant) use ($searchTerms, $searchType) {
-            return Str::contains(strtolower($book[$searchType]), strtolower($searchTerms));
-        });
+        $searchResults = Restaurant::where($searchType, 'LIKE', $searchTerms)->get();  
+        
 
         return redirect('/')->with([
             'searchTerms' => $searchTerms,
@@ -159,11 +156,12 @@ class RestaurantController extends Controller
 
         $restaurant->validate([
                 'name' => 'required',
-                'year_opened' => 'required|digits:4',
+                'year_open' => 'required|digits:4',
                 'location' => 'required',
+                'county' => 'required',
                 'cuisine' => 'required',
                 'meal' => 'required',
-                'restaurant_url' => 'required|url',
+                'restaurant_url' => 'required',
                 'description' => 'required|min:50',
                 'review' => 'required|min:50',
                 'rating' => 'required|min:1',
@@ -171,13 +169,16 @@ class RestaurantController extends Controller
 
         $newRestaurant = new Restaurant();
         $newRestaurant->name = $request->name;
+        $newRestaurant->year_open = $request->year_open;
+        $newRestaurant->location = $request->location_id;
+        $newRestaurant->county = $request->county;
         $newRestaurant->cuisine = $request->cuisine;
-        $newRestaurant->location_id = $request->location_id;
-        $newRestaurant->established_year = $request->established_year;
-        $newRestaurant->cover_url = $request->cover_url;
-        $newRestaurant->info_url = $request->info_url;
-        $newRestaurant->details_url = $request->details_url;
+        $newRestaurant->meal = $request->meal;
+        $newRestaurant->restaurant_url = $request->restaurant_url;
         $newRestaurant->description = $request->description;
+        $newRestaurant->review = $request->review;
+        $newRestaurant->rating = $request->rating;
+
         $newRestaurant->save();
 
         return redirect('/restaurants/'.$restaurant.'/edit')->with([

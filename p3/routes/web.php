@@ -52,10 +52,12 @@ Route::get('/example', function () {
 });
 
 # Existing route
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'PageController@welcome');
+ 
 
+# Add search route 
+Route::get('/search', 'RestaurantController@search');
+    
 
 Route::group(['middleware' => 'auth'], function () {
     # Create a restaurant listing

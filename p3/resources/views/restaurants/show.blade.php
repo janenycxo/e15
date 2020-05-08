@@ -19,7 +19,7 @@
 <p dusk='restaurant-details'>By {{ $restaurant->cuisine->meal. ' '. $restaurant->cuisine->location }}</p>
 @endif
 
-<p>({{ $restaurant->year_opened }})</p>
+<p>({{ $restaurant->year_open }})</p>
 
 <p class='description'>
     {{ $restaurant->description }}

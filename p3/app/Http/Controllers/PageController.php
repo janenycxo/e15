@@ -16,14 +16,13 @@ class PageController extends Controller
      */
     public function welcome(Request $request)
     {
-        
         $searchTerms = session('searchTerms', null);
         $searchType = session('searchType', null);
         $searchResults = session('searchResults', null);
 
         $user = $request->user();
 
-        return view('pages.welcome')->with([
+        return view('welcome')->with([
             'userName' => $user->name ?? null,
             'searchTerms' => $searchTerms,
             'searchType' => $searchType,

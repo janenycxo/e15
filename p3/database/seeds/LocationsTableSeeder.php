@@ -34,7 +34,7 @@ class LocationsTableSeeder extends Seeder
         $location->name = $locationData[0];
         $location->meal = $locationData[1];
         $location->location = $locationData[2];
-        $location->borough = $locationData[3];
+        $location->county = $locationData[3];
         $location->save();
         
         $count--;

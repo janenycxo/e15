@@ -30,7 +30,7 @@ class CreateRestaurantsTable extends Migration
             $table->string('location', 100);
              
             #County of Restaurant (Brooklyn/Queens/Manhattan/Bronx/Staten Island) VARCHAR
-            $table->string('borough', 100);
+            $table->string('county');
 
             #Type of cuisine VARCHAR
             $table->string('cuisine', 100);
@@ -39,13 +39,13 @@ class CreateRestaurantsTable extends Migration
             $table->string('meal', 100);
            
             #Website of Restaurant VARCHAR
-            $table->string('restaurant_url', 100)->nullable();
+            $table->string('restaurant_url');
             
             #Brief description of Restaurant TEXT
             $table->text('description')->nullable();
             
             #User input or review of Restaurant/Dining experience  TEXT
-            $table->text('review', 100);
+            $table->text('review');
 
             #User rating of overall visit  TEXT
             $table->tinyInteger('rating');

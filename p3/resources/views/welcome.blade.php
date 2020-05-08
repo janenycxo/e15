@@ -79,7 +79,9 @@
 
     </form>
 
-    @if(!is_null($searchResults ?? '' ))
+    @if(!is_null($searchResults))
+    
+       @if(count($searchResults) == 0) 
             <div class='results alert alert-warning'>
                 No results found.
                 <a href='/restaurants/create'>Want to add this restaurant to our distribution list?</a>
@@ -87,8 +89,8 @@
         @else
             <div class='results alert alert-primary'>
 
-            {{ count($searchResults ?? '' ) }} 
-            {{ Str::plural('Result', count($searchResults ?? '' )) }}:
+            {{ count($searchResults) }} 
+            {{ Str::plural('Result', count($searchResults )) }}:
 
                 <ul>
                     @foreach($searchResults ?? '' as $restaurant_name => $restaurant)
@@ -97,6 +99,9 @@
                 </ul>
             </div>
         @endif
+    
     @endif
+
+@endif
 
 @endsection
