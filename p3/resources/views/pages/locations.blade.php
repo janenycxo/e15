@@ -8,7 +8,7 @@
 <strong>Name:</strong>The Alcove <br>
 <strong>Year Opened:</strong> 2015<br>
 <strong>Address:</strong> 41-11 49 St Sunnyside, NY 11104<br>
-<strong>Borough:</strong> Queens<br>
+<strong>County:</strong> Queens<br>
 <strong>Cuisine:</strong> Gastropub<br>
 <strong>Meal:</strong> Brunch<br>
 <strong>Restaurant Link:</strong> https://www.yelp.com/biz/the-alcove-sunnyside?osq=alcove <br>
@@ -23,7 +23,7 @@
 <strong>Name:</strong> Madame Sousou Cafe<br>
 <strong>Year Opened:</strong> 2014<br>
 <strong>Address:</strong> 31-05 33 St Astoria NY 11106<br>
-<strong>Borough:</strong> Queens<br>
+<strong>County:</strong> Queens<br>
 <strong>Cuisine:</strong> Cafe<br>
 <strong>Meal:</strong> Brunch<br>
 <strong>Restaurant Link:</strong> https://www.yelp.com/biz/madame-sousou-cafe-astoria<br>
@@ -37,7 +37,7 @@
 <strong>Name:</strong> Toms<br>
 <strong>Year Opened:</strong> 1936<br>
 <strong>Address:</strong> E 782 Washington Ave Brookly, NY 11238<br>
-<strong>Borough:</strong> Brooklyn<br>
+<strong>County:</strong> Brooklyn<br>
 <strong>Cuisine:</strong> American<br>
 <strong>Meal:</strong> Breakfast<br>
 <strong>Restaurant Link:</strong> https://www.yelp.com/biz/toms-brooklyn?osq=toms<br>
@@ -52,7 +52,7 @@
 <strong>Name:</strong> Pates et Traditions<br>
 <strong>Year Opened:</strong> 2008<br>
 <strong>Address:</strong> 52 Havemeyer St Brooklyn NY 11211<br>
-<strong>Borough:</strong> Brooklyn<br>
+<strong>County:</strong> Brooklyn<br>
 <strong>Cuisine:</strong> French<br>
 <strong>Meal:</strong> Dessert<br>
 <strong>Restaurant Link:</strong> https://www.yelp.com/biz/pates-et-traditions-brooklyn<br>
@@ -67,7 +67,7 @@
 <strong>Name:</strong> Taverna on the Bay<br>
 <strong>Year Opened:</strong> 2017<br>
 <strong>Address:</strong> 661 Bay St Staten Island NY 10304<br>
-<strong>Borough:</strong> Staten Island<br>
+<strong>County:</strong> Staten Island<br>
 <strong>Cuisine:</strong> Mediterranean<br>
 <strong>Meal:</strong> Dinner<br>
 <strong>Restaurant Link:</strong> https://www.yelp.com/biz/taverna-on-the-bay-staten-island-5?osq=taverna+on+the+bay<br>
@@ -82,7 +82,7 @@
 <strong>Name:</strong> Antonio's Trattoria<br>
 <strong>Year Opened:</strong> 2007<br>
 <strong>Address:</strong> 2370 Belmont Ave Bronx NY 10458<br>
-<strong>Borough:</strong> Bronx<br>
+<strong>County:</strong> Bronx<br>
 <strong>Cuisine:</strong> Italian<br>
 <strong>Meal:</strong> Lunch<br>
 <strong>Restaurant Link:</strong> https://www.yelp.com/biz/antonios-trattoria-bronx?osq=Antonio%27s+Trattoria<br>
@@ -97,7 +97,7 @@
 <strong>Name:</strong> Milk Bar East Village<br>
 <strong>Year Opened:</strong> 2008<br>
 <strong>Address:</strong> 251 E 13th St New York, NY 10003 b/t 3rd Ave & 2nd Ave East Village<br>
-<strong>Borough:</strong> Manhattan<br>
+<strong>County:</strong> Manhattan<br>
 <strong>Cuisine:</strong> Bakeries<br>
 <strong>Meal:</strong> Brunch<br>
 <strong>Restaurant Link:</strong> https://www.yelp.com/biz/milk-bar-east-village-new-york-2?osq=Momofuku+Milk+Bar<br>
@@ -110,7 +110,7 @@
 <strong>Name:</strong> Chickalicious Dessert Bar<br>
 <strong>Year Opened:</strong> 2003<br>
 <strong>Address:</strong> 203 E 10th St New York NY 10003<br>
-<strong>Borough:</strong> Manhattan<br>
+<strong>County:</strong> Manhattan<br>
 <strong>Cuisine:</strong> Coffee<br>
 <strong>Meal:</strong> Dessert<br>
 <strong>Restaurant Link:</strong> https://www.yelp.com/biz/chikalicious-dessert-bar-new-york-3?osq=dessert<br>
@@ -124,7 +124,7 @@
 <strong>Name:</strong> Raclette<br>
 <strong>Year Opened:</strong> 2015<br>
 <strong>Address:</strong> 511 E 12th St New York, NY 10009<br>
-<strong>Borough:</strong> Manhattan<br>
+<strong>County:</strong> Manhattan<br>
 <strong>Cuisine:</strong> French<br>
 <strong>Meal:</strong> Lunch<br>
 <strong>Restaurant Link:</strong> https://www.yelp.com/biz/raclette-new-york?osq=%27Raclette%27<br>
@@ -138,7 +138,7 @@
 <strong>Name:</strong> Guadalupe Restaurant<br>
 <strong>Year Opened:</strong> 2004<br>
 <strong>Address:</strong> 597 W 207 St New York, NY 10034<br>
-<strong>Borough:</strong> Manhattan<br>
+<strong>County:</strong> Manhattan<br>
 <strong>Cuisine:</strong> Mexican<br>
 <strong>Meal:</strong> Dinner<br>
 <strong>Restaurant Link:</strong> https://www.yelp.com/biz/guadalupe-restaurant-new-york-3?osq=%27Guadalupe+Restaurant<br>
@@ -152,7 +152,7 @@
 <strong>Name:</strong> Haswell Greens<br>
 <strong>Year Opened:</strong> 2018<br>
 <strong>Address:</strong> 240 W 52nd St New York, NY 10019<br>
-<strong>Borough:</strong> Manhattan<br>
+<strong>County:</strong> Manhattan<br>
 <strong>Cuisine:</strong> Cocktail Bar<br>
 <strong>Meal:</strong> Happy Hour<br>
 <strong>Restaurant Link:</strong> https://www.yelp.com/biz/guadalupe-restaurant-new-york-3?osq=%27Guadalupe+Restaurant<br>
@@ -166,7 +166,7 @@
 <strong>Name:</strong> Clinton Street Baking Company<br>
 <strong>Year Opened:</strong> 2001<br>
 <strong>Address:</strong> 4 Clinton St New York NY 10002<br>
-<strong>Borough:</strong> Manhattan<br>
+<strong>County:</strong> Manhattan<br>
 <strong>Cuisine:</strong> American<br>
 <strong>Meal:</strong> Breakfast<br>
 <strong>Restaurant Link:</strong> https://www.yelp.com/biz/clinton-street-baking-company-new-york-5?osq=%27Clinton+Street+Baking+Company%27<br>

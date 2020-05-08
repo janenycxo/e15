@@ -15,11 +15,11 @@ class LocationsTableSeeder extends Seeder
     {
     # Add a location 
     $locations = [
-            ['Milk Bar East Village', '2008', 'Brunch', '251 E 13th St New York, NY 10003 b/t 3rd Ave & 2nd Ave East Village', 'Manhattan'],
-            ['ChickaLicious Dessert Bar', '2003', 'Dessert', '203 E 10th St New York, NY 10003', 'Manhattan'],
-            ['Clinton Street Baking Company', '2001', 'Breakfast', '4 Clinton St New York, NY 10002', 'Manhattan'],
-            ['Raclette', '2012', 'Lunch', '511 E 12th St New York, NY 10009', 'Manhattan'],
-            ['Guadalupe Restaurant', '2004', 'Dinner', '597 W 207 St New York, NY 10034', 'Manhattan'],
+            ['Milk Bar East Village', 'Brunch', '251 E 13th St New York NY 10003 b/t 3rd Ave & 2nd Ave East Village', 'Manhattan'],
+            ['ChickaLicious Dessert Bar', 'Dessert', '203 E 10th St New York NY 10003', 'Manhattan'],
+            ['Clinton Street Baking Company', 'Breakfast', '4 Clinton St New York NY 10002', 'Manhattan'],
+            ['Raclette', 'Lunch', '511 E 12th St New York NY 10009', 'Manhattan'],
+            ['Guadalupe Restaurant', 'Dinner', '597 W 207 St New York NY 10034', 'Manhattan'],
 
     ];
 

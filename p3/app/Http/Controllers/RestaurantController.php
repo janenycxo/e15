@@ -13,8 +13,8 @@ class RestaurantController extends Controller
     
     public function create(Request $request)
     {
-        # Get authors for our dropdown
-        $locations = Location::orderBy('county')
+        # Get restaurants for our dropdown
+        $locations = Location::orderBy('name')
             ->select(['id'])
             ->get();
 
@@ -56,7 +56,7 @@ class RestaurantController extends Controller
         $newRestaurant->county = $request->county;
         $newRestaurant->cuisine = $request->cuisine;
         $newRestaurant->meal = $request->meal;
-        $newRestaurant->restaurant_url = $request->rstaurant_url;
+        $newRestaurant->restaurant_url = $request->restaurant_url;
         $newRestaurant->description = $request->description;          
         $newRestaurant->review = $request->review;
         $newRestaurant->rating = $request->rating;
@@ -85,8 +85,6 @@ class RestaurantController extends Controller
         $searchType = $request->input('searchType', null);
         
         $searchResults = Restaurant::where($searchType, 'LIKE', $searchTerms)->get();  
-        
-
         return redirect('/')->with([
             'searchTerms' => $searchTerms,
             'searchType' => $searchType,
@@ -161,7 +159,7 @@ class RestaurantController extends Controller
                 'county' => 'required',
                 'cuisine' => 'required',
                 'meal' => 'required',
-                'restaurant_url' => 'required',
+                'restaurant_url' => 'required|url',
                 'description' => 'required|min:50',
                 'review' => 'required|min:50',
                 'rating' => 'required|min:1',
