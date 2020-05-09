@@ -60,16 +60,16 @@ Route::get('/search', 'RestaurantController@search');
     
 
 Route::group(['middleware' => 'auth'], function () {
+   
     # Create a restaurant listing
     Route::get('/restaurants/create', 'RestaurantController@create');
     Route::post('/restaurants', 'RestaurantController@store');
 
     # Edit a listing
-    Route::get('/restaurants/{slug}/edit', 'RestaurantController@edit');
-    Route::put('/restaurants/{slug}', 'RestaurantController@update');
+    Route::get('/restaurants/{restaurant_url}/edit', 'RestaurantController@edit');
+    Route::put('/restaurants/{restaurant_url}', 'RestaurantController@update');
 
-    # [... etc ...]
-});
+   });
 
 
 Route::get('/restaurants', 'RestaurantController@index');

@@ -125,12 +125,14 @@ class RestaurantController extends Controller
      */
     public function show($restaurant)
     {
-        $restaurant = Restaurant::where('name', '=', $name)->first();
+        $restaurant = Restaurant::where('name', 'LIKE', $name)->first();
 
-        return view('restauants.show')->with([
+        return view('restaurants.show')->with([
+            'restaurant' => $restaurant,
             'name' => $name,
-            'restaurant_url' => $restaurant_url,
         ]);
+
+      
     }
 
     /**

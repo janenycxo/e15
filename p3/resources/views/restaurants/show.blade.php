@@ -15,8 +15,8 @@
 @else    
 <h1 dusk='restaurant-sign'>{{ $restaurant->name }}</h1>
 
-@if($restaurant->'cuisine')
-<p dusk='restaurant-details'>By {{ $restaurant->cuisine->meal. ' '. $restaurant->cuisine->location }}</p>
+@if($restaurant->cuisine)
+<p dusk='restaurant-details'>By {{ $restaurant->cuisine->name. ' '. $restaurant->cuisine->location }}</p>
 @endif
 
 <p>({{ $restaurant->year_open }})</p>
