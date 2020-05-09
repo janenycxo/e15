@@ -200,6 +200,8 @@ class RestaurantsTableSeeder extends Seeder
     $restaurant->rating = 5;
     $restaurant->save();
     
+
+    
        }
     }
 

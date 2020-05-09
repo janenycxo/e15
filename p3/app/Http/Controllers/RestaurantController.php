@@ -30,7 +30,7 @@ class RestaurantController extends Controller
     public function store(Request $request)
     {
             $request->validate([
-            'slug' => 'required|unique:resturants,slug|alpha_dash',
+            'slug' => 'required|unique:restaurants,slug|alpha_dash',
             'name' => 'required',
             'year_open' => 'required|digits:4',
             'location' => 'required',
