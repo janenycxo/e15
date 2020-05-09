@@ -47,15 +47,7 @@
             >
             <label for='name'> Restaurant Name</label>
 
-            <input 
-                type='radio' 
-                name='searchType' 
-                id='location' 
-                value='location'
-                {{ (old('searchType') == 'location' or $searchType ?? '' == 'location') ? 'checked' : '' }}
-            >
-            <label for='location'> Location</label>
-            
+                      
             <input 
                 type='radio' 
                 name='searchType' 
@@ -63,8 +55,17 @@
                 value='cuisine'
                 {{ (old('searchType') == 'cuisine' or $searchType ?? '' == 'cuisine') ? 'checked' : '' }}
             >
-            <label for='cuisine'> Cuisine</label>
+            <label for='cuisine'> Type of Cuisine</label>
             
+            <input 
+                type='radio' 
+                name='searchType' 
+                id='county' 
+                value='county'
+                {{ (old('searchType') == 'county' or $searchType ?? '' == 'county') ? 'checked' : '' }}
+            >
+            <label for='county'> Which County?</label>
+
         </fieldset>
 
         <input type='submit' class='btn btn-primary' value='Search'>
