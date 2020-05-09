@@ -102,7 +102,7 @@ class RestaurantsTableSeeder extends Seeder
     $restaurant->year_open = '2003';
     $restaurant->location = '203 E 10th St New York NY 10003';
     $restaurant->county = 'manhattan';
-    $restaurant->cuisine = 'coffee';
+    $restaurant->cuisine = 'cafe';
     $restaurant->meal = 'dessert';
     $restaurant->restaurant_url = 'https://www.yelp.com/biz/chikalicious-dessert-bar-new-york-3?osq=dessert';
     $restaurant->description = 'We were established as one of the first Dessert Only Bar, run by owners and couple, Chika and Don. Our mission was to show off the magic as it happens, showing customers how we prepare, plate and serve elegantly crafted and tasty desserts. Eat and drink alongside our jazz vibes for the perfect night out, whether date night or chill, relaxing evening.';

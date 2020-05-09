@@ -1,7 +1,18 @@
 @extends('layouts.master')
 
+@section('title')
+    Your List
+@endsection
+
+@section('head')
+    
+@endsection
+
 @section('content')
-<h1>List of Restaurants in All 5 Boros</h1>
+    <h1>List of Restaurants by County</h1>
+
+    <em>This page displays all the restaurants...</em>
+   
 <br>
 <br>
 <p><h1>QUEENS</h1></p>
@@ -33,6 +44,22 @@
 
 <br>
 <br>
+
+<strong>Name:</strong> Taverna Kyclades<br>
+<strong>Year Opened:</strong> 2018<br>
+<strong>Address:</strong> 39-28 Bell Blvd Bayside, NY 11361<br>
+<strong>County:</strong> Queens<br>
+<strong>Cuisine:</strong> Greek<br>
+<strong>Meal:</strong> Lunch<br>
+<strong>Restaurant Link:</strong> https://www.yelp.com/biz/taverna-kyclades-bayside-bayside<br>
+<strong>Description:</strong> Nicely decorated and relaxing space to enjoy an impromptu lunch date.<br>
+<strong>Review:</strong> The branzino was beautifully de-boned and had a slight crisp outer texture. It was a large fish for a table of 2. While the shrimp santorini came on a sizzling platter, i am fortunate it settled by the time it reached our table so it wouldn't splatter stains. The broccoli rabe had a little too much feta going on, but still the meal was so delicious!
+<br>
+<strong>Rating:</strong> 5<br>
+
+<br>
+<br>
+
 <p><h1>BROOKLYN</h1></p>
 <strong>Name:</strong> Toms<br>
 <strong>Year Opened:</strong> 1936<br>
@@ -54,7 +81,7 @@
 <strong>Address:</strong> 52 Havemeyer St Brooklyn NY 11211<br>
 <strong>County:</strong> Brooklyn<br>
 <strong>Cuisine:</strong> French<br>
-<strong>Meal:</strong> Dessert<br>
+<strong>Meal:</strong> Brunch<br>
 <strong>Restaurant Link:</strong> https://www.yelp.com/biz/pates-et-traditions-brooklyn<br>
 <strong>Description:</strong> We prepare old school French crepes , authentique receipes , from my grand mother!! Fresh pastas also and more ... We focus on quality , quantity and good prices .. And of course a very friendly and good service See you soon A bientot.<br>
 <strong>Review:</strong> The items were built beautifully, and despite being a French cuisine...their portions are generous and filling. The strawberries and bananas were plentiful and the sud ouest had plenty of slices of cheese melted to a gooey consistency and perfectly peeked out of the dark crepe envelope.<br>
@@ -111,7 +138,7 @@
 <strong>Year Opened:</strong> 2003<br>
 <strong>Address:</strong> 203 E 10th St New York NY 10003<br>
 <strong>County:</strong> Manhattan<br>
-<strong>Cuisine:</strong> Coffee<br>
+<strong>Cuisine:</strong> Cafe<br>
 <strong>Meal:</strong> Dessert<br>
 <strong>Restaurant Link:</strong> https://www.yelp.com/biz/chikalicious-dessert-bar-new-york-3?osq=dessert<br>
 <strong>Description:</strong> We were established as one of the first Dessert Only Bar, run by owners and couple, Chika and Don. Our mission was to show off the magic as it happens, showing customers how we prepare, plate and serve elegantly crafted and tasty desserts. Eat and drink alongside our jazz vibes for the perfect night out, whether date night or chill, relaxing evening.<br>
@@ -175,5 +202,4 @@
 <strong>Rating:</strong> 4<br>
 
 
-  
 @endsection

@@ -12,7 +12,7 @@
     </div>
     @endif
 
-    <h1>Add a Restaurant</h1>
+    <h1>Add a NEW Restaurant</h1>
 
     <p><h2>Did you discover a new pop-up, or a new restaurant? You can add it here!</p></h2>
 
