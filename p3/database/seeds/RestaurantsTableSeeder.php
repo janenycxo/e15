@@ -16,6 +16,7 @@ class RestaurantsTableSeeder extends Seeder
    
     # Add a Restaurant listing
     $restaurant = new Restaurant();
+    $restaurant->slug = 'the-milk-bar-east-village';
     $restaurant->name = 'Milk Bar East Village';
     $restaurant->year_open = '2008';
     $restaurant->location = '251 E 13th St New York, NY 10003 b/t 3rd Ave & 2nd Ave East Village';
@@ -32,6 +33,7 @@ class RestaurantsTableSeeder extends Seeder
 
     # Add a Restaurant listing
     $restaurant = new Restaurant();
+    $restaurant->slug = 'toms';
     $restaurant->name = 'Toms';
     $restaurant->year_open = '1936';
     $restaurant->location = 'E 782 Washington Ave Brookly, NY 11238';
@@ -47,6 +49,7 @@ class RestaurantsTableSeeder extends Seeder
 
     # Add a Restaurant listing
     $restaurant = new Restaurant();
+    $restaurant->slug = 'the-alcove';
     $restaurant->name = 'The Alcove';
     $restaurant->year_open = '2015';
     $restaurant->location = '41-11 49 St Sunnyside, NY 11104';
@@ -62,6 +65,7 @@ class RestaurantsTableSeeder extends Seeder
 
       # Add a Restaurant listing
     $restaurant = new Restaurant();
+    $restaurant->slug = 'antonios-trattoria';
     $restaurant->name = 'Antonios Trattoria';
     $restaurant->year_open = '2007';
     $restaurant->location = '2370 Belmont Ave Bronx NY 10458';
@@ -76,6 +80,7 @@ class RestaurantsTableSeeder extends Seeder
 
      # Add a Restaurant listing
      $restaurant = new Restaurant();
+     $restaurant->slug = 'taverna-on-the-bay';
      $restaurant->name = 'Taverna on the Bay';
      $restaurant->year_open = '2017';
      $restaurant->location = '661 Bay St Staten Island NY 10304';
@@ -92,6 +97,7 @@ class RestaurantsTableSeeder extends Seeder
 
     # Add a Restaurant listing
     $restaurant = new Restaurant();
+    $restaurant->slug = 'chickaLicious-dessert-bar';
     $restaurant->name = 'ChickaLicious Dessert Bar';
     $restaurant->year_open = '2003';
     $restaurant->location = '203 E 10th St New York NY 10003';
@@ -107,6 +113,7 @@ class RestaurantsTableSeeder extends Seeder
 
     # Add a Restaurant listing
     $restaurant = new Restaurant();
+    $restaurant->slug = 'clinton-street-baking-company';
     $restaurant->name = 'Clinton Street Baking Company';
     $restaurant->year_open = '2001';
     $restaurant->location = '4 Clinton St New York NY 10002';
@@ -121,6 +128,7 @@ class RestaurantsTableSeeder extends Seeder
 
     # Add a Restaurant listing
     $restaurant = new Restaurant();
+    $restaurant->slug = 'raclette';
     $restaurant->name = 'Raclette';
     $restaurant->year_open = '2015';
     $restaurant->location = '511 E 12th St New York, NY 10009';
@@ -135,6 +143,7 @@ class RestaurantsTableSeeder extends Seeder
 
     # Add a Restaurant listing
     $restaurant = new Restaurant();
+    $restaurant->slug = 'guadlupe-restaurant';
     $restaurant->name = 'Guadalupe Restaurant';
     $restaurant->year_open = '2004';
     $restaurant->location = '597 W 207 St New York, NY 10034';
@@ -149,6 +158,7 @@ class RestaurantsTableSeeder extends Seeder
 
     # Add a Restaurant listing
     $restaurant = new Restaurant();
+    $restaurant->slug = 'haswell-greens';
     $restaurant->name = 'Haswell Greens';
     $restaurant->year_open = '2018';
     $restaurant->location = '240 W 52nd St New York, NY 10019';
@@ -162,6 +172,7 @@ class RestaurantsTableSeeder extends Seeder
     $restaurant->save();
 
     $restaurant = new Restaurant();
+    $restaurant->slug = 'madame-sousou-cafe';
     $restaurant->name = 'Madame Sousou Cafe';
     $restaurant->year_open = '2014';
     $restaurant->location = '31-05 33 St Astoria NY 11106';
@@ -176,6 +187,7 @@ class RestaurantsTableSeeder extends Seeder
 
     # Add a Restaurant listing
     $restaurant = new Restaurant();
+    $restaurant->slug = 'pates-et-traditions';
     $restaurant->name = 'Pates et Traditions';
     $restaurant->year_open = '2008';
     $restaurant->location = '52 Havemeyer St Brooklyn NY 11211';
@@ -188,13 +200,7 @@ class RestaurantsTableSeeder extends Seeder
     $restaurant->rating = 5;
     $restaurant->save();
     
-  
-      }
-
-
-
-
-
+       }
     }
 
 

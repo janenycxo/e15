@@ -13,9 +13,8 @@ class RestaurantController extends Controller
     
     public function create(Request $request)
     {
-        # Get restaurants for our dropdown
         $locations = Location::orderBy('name')
-            ->select(['id'])
+            ->select(['id', 'name'])
             ->get();
 
         return view('restaurants.create')->with([
@@ -31,15 +30,16 @@ class RestaurantController extends Controller
     public function store(Request $request)
     {
             $request->validate([
+            'slug' => 'required|unique:resturants,slug|alpha_dash',
             'name' => 'required',
             'year_open' => 'required|digits:4',
             'location' => 'required',
             'county' => 'required',
             'cuisine' => 'required',
             'meal' => 'required',
-            'restaurant_url' => 'required',
-            'description' => 'required|min:50',
-            'review' => 'required|min:50',
+            'restaurant_url' => 'required|URL',
+            'description' => 'required|min:255',
+            'review' => 'required|min:255',
             'rating' => 'required|min:1',
      
         ]);
@@ -50,6 +50,7 @@ class RestaurantController extends Controller
         
         # Add the restaurant to the database
         $newRestaurant = new Restaurant();
+        $newRestaurant->slug = $request->slug;
         $newRestaurant->name = $request->name;
         $newRestaurant->year_open = $request->year_open;
         $newRestaurant->location = $request->location;
@@ -117,22 +118,14 @@ class RestaurantController extends Controller
         ]);
     }
 
-
-
- /**
-     * GET 
-     * Show the details for an individual restaurant
-     */
-    public function show($restaurant)
+    public function show($slug)
     {
-        $restaurant = Restaurant::where('name', 'LIKE', $name)->first();
+        $restaurant = Restaurant::where('slug', 'LIKE', $slug)->first();
 
         return view('restaurants.show')->with([
             'restaurant' => $restaurant,
-            'name' => $name,
-        ]);
-
-      
+            'slug' => $slug,
+        ]);   
     }
 
     /**
@@ -140,7 +133,7 @@ class RestaurantController extends Controller
      */
     public function edit(Request $request, $restaurant)
     {
-        $restaurant = Restaurant::where('name', '=', $name)->first();
+        $restaurant = Restaurant::where('slug', '=', $slug)->first();
 
         return view('restaurants.edit')->with([
             'restaurant' => $restaurant
@@ -152,9 +145,10 @@ class RestaurantController extends Controller
      */
     public function update(Request $request, $restaurant)
     {
-        $restaurant = Restaurant::where('name', '=', $name)->first();
+        $restaurant = Restaurant::where('slug', '=', $slug)->first();
 
         $restaurant->validate([
+                'slug' => 'required|unique:restaurants,slug,'.$restaurant->id.'|alpha_dash',
                 'name' => 'required',
                 'year_open' => 'required|digits:4',
                 'location' => 'required',
@@ -167,21 +161,22 @@ class RestaurantController extends Controller
                 'rating' => 'required|min:1',
         ]);
 
-        $newRestaurant = new Restaurant();
-        $newRestaurant->name = $request->name;
-        $newRestaurant->year_open = $request->year_open;
-        $newRestaurant->location = $request->location_id;
-        $newRestaurant->county = $request->county;
-        $newRestaurant->cuisine = $request->cuisine;
-        $newRestaurant->meal = $request->meal;
-        $newRestaurant->restaurant_url = $request->restaurant_url;
-        $newRestaurant->description = $request->description;
-        $newRestaurant->review = $request->review;
-        $newRestaurant->rating = $request->rating;
+        $Restaurant = new Restaurant();
+        $Restaurant->slug = $request->slug;
+        $Restaurant->name = $request->name;
+        $Restaurant->year_open = $request->year_open;
+        $Restaurant->location = $request->location_id;
+        $Restaurant->county = $request->county;
+        $Restaurant->cuisine = $request->cuisine;
+        $Restaurant->meal = $request->meal;
+        $Restaurant->restaurant_url = $request->restaurant_url;
+        $Restaurant->description = $request->description;
+        $Restaurant->review = $request->review;
+        $Restaurant->rating = $request->rating;
 
-        $newRestaurant->save();
+        $Restaurant->save();
 
-        return redirect('/restaurants/'.$restaurant.'/edit')->with([
+        return redirect('/restaurants/'.$slug.'/edit')->with([
             'flash-alert' => 'Your changes were saved.'
         ]);
     }
@@ -189,13 +184,9 @@ class RestaurantController extends Controller
  
     //add delete restaurant
 
-    /**
-    * confirm whether user wishes to delete the restaurant listing
-    * delete
-    */
-    public function delete($restaurant)
+    public function delete($slug)
     {
-        $restaurant = Restaurant::findBySlug($restaurant);
+        $restaurant = Restaurant::findBySlug($slug);
 
         if (!$restaurant) {
             return redirect('/restaurants')->with([
@@ -213,9 +204,9 @@ class RestaurantController extends Controller
     * Deletes the restaurant
     * DELETE 
     */
-    public function destroy($restaurant)
+    public function destroy($slug)
     {
-        $restaurant = Restaurant::findByRestaurant($restaurant);
+        $restaurant = Restaurant::findBySlug($slug);
 
         $restaurant->delete();
 

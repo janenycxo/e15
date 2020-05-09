@@ -10,17 +10,21 @@ use Illuminate\Database\Eloquent\Model;
 
 class Restaurant extends Model
 {
-    public function cuisine()
+    public function location()
     {
         # Restaurants include different cuisines and locations
         # Define a one-to-many relationship.
-        return $this->belongsTo('App\Cuisine');
+        return $this->belongsTo('App\location');
     }
 
-    public static function findByMeal($meal)
+    public static function findBySlug($slug)
     {
-        return self::where('meal', '=', $meal)->first();
+        return self::where('slug', '=', $slug)->first();
     }
 
-    
+    public function reverseCounty()
+    {
+        $this->county = strrev($this->county);
+        return $this->county;
+    }
 }

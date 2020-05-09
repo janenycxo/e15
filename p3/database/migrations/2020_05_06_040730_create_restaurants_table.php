@@ -20,6 +20,8 @@ class CreateRestaurantsTable extends Migration
             #TIMESTAMP
             $table->timestamps(0);
             
+            $table->string('slug');
+            
             #Name of Restaurant  VARCHAR
             $table->string('name');
             

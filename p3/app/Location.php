@@ -10,9 +10,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Location extends Model
 {
-    public function locations()
+    public function restaurants()
     {
-        return $this->hasMany('App\Location');
+        return $this->hasMany('App\Restaurant');
     }
 
      
