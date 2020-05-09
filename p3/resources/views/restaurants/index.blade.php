@@ -25,7 +25,7 @@
     @else
     <div id='restaurants'>
         @foreach($restaurants as $restaurant)
-        <a class='restaurant' href='/restaurants/{{ $restaurant->name }}'>
+        <a class='restaurant' href='/restaurants{{ $restaurant->name }}'>
             <h3>{{ $restaurant->name }}</h3>
         </a>
         @endforeach
