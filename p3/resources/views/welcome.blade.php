@@ -65,7 +65,7 @@
                 {{ (old('searchType') == 'county' or $searchType ?? '' == 'county') ? 'checked' : '' }}
             >
             <label for='county'> Which County?</label>
-
+ 
         </fieldset>
 
         <input type='submit' class='btn btn-primary' value='Search'>
