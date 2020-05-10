@@ -45,7 +45,7 @@
                 value='name'
                 {{ (old('searchType') == 'name' or $searchType ?? '' == 'name') ? 'checked' : '' }}
             >
-            <label for='name'> Restaurant Name</label>
+            <label for='name'> Search by Restaurant Name</label>
 
                       
             <input 
@@ -55,7 +55,7 @@
                 value='cuisine'
                 {{ (old('searchType') == 'cuisine' or $searchType ?? '' == 'cuisine') ? 'checked' : '' }}
             >
-            <label for='cuisine'> Type of Cuisine</label>
+            <label for='cuisine'> Search by Cuisine</label>
             
             <input 
                 type='radio' 
@@ -64,7 +64,7 @@
                 value='county'
                 {{ (old('searchType') == 'county' or $searchType ?? '' == 'county') ? 'checked' : '' }}
             >
-            <label for='county'> Which County?</label>
+            <label for='county'> Search by County</label>
  
         </fieldset>
 
@@ -94,8 +94,8 @@
             {{ Str::plural('Result', count($searchResults )) }}:
 
                 <ul>
-                    @foreach($searchResults ?? '' as $restaurant_name => $restaurant)
-                    <li><a href='/restaurants/{{ $restaurant_name }}'> {{ $restaurant['name'] }}</a></li>
+                    @foreach($searchResults ?? '' as $slug => $restaurant)
+                    <li><a href='/restaurants/{{ $slug }}'> {{ $restaurant['name'] }}</a></li>
                     @endforeach
                 </ul>
             </div>

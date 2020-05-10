@@ -11,7 +11,7 @@
 @section('content')
   
       <div id='newRestaurants'>
-        <h2>Recently Added Restaurants</h2>
+        <h2>Check out the recently added restaurants</h2>
             <ul>
             @foreach($newRestaurants as $restaurant)
             <li>{{ $restaurant->name }}</li>
@@ -19,13 +19,13 @@
             </ul>
     </div>
 
-    <h1>All Restaurants</h1>
+    <h1>List of All the Restaurants</h1>
     @if(count($restaurants) == 0) 
         No restaurants have been added yet...
     @else
     <div id='restaurants'>
         @foreach($restaurants as $restaurant)
-        <a class='restaurant' href='/restaurants{{ $restaurant->name }}'>
+        <a class='restaurant' href='/restaurants{{ $restaurant->slug }}'>
             <h3>{{ $restaurant->name }}</h3>
         </a>
         @endforeach

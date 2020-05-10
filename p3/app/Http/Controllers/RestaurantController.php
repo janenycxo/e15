@@ -111,7 +111,7 @@ class RestaurantController extends Controller
         # Query DB alphabetical listing of all the restaurants in database
         $restaurants = Restaurant::orderBy('name')->get();
         # Query existing restaurants for the 3 most recently added listings
-        $newRestaurants = $restaurants->sortByDesc('created_at')->take(3);
+        $newRestaurants = $restaurants->sortByDesc('created_at')->take(5);
         return view('restaurants.index')->with([
             'restaurants' => $restaurants,
             'newRestaurants' => $newRestaurants
@@ -131,7 +131,7 @@ class RestaurantController extends Controller
     /**
      * edit
      */
-    public function edit(Request $request, $restaurant)
+    public function edit(Request $request, $slug)
     {
         $restaurant = Restaurant::where('slug', '=', $slug)->first();
 
@@ -143,7 +143,7 @@ class RestaurantController extends Controller
     /**
      *update
      */
-    public function update(Request $request, $restaurant)
+    public function update(Request $request, $slug)
     {
         $restaurant = Restaurant::where('slug', '=', $slug)->first();
 
@@ -161,7 +161,6 @@ class RestaurantController extends Controller
                 'rating' => 'required|min:1',
         ]);
 
-        $Restaurant = new Restaurant();
         $Restaurant->slug = $request->slug;
         $Restaurant->name = $request->name;
         $Restaurant->year_open = $request->year_open;
