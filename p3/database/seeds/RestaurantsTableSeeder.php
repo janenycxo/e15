@@ -19,7 +19,7 @@ class RestaurantsTableSeeder extends Seeder
     $restaurant->slug = 'the-milk-bar-east-village';
     $restaurant->name = 'Milk Bar East Village';
     $restaurant->year_open = '2008';
-    $restaurant->location = '251 E 13th St New York, NY 10003 b/t 3rd Ave & 2nd Ave East Village';
+    $restaurant->location_id = '251 E 13th St New York, NY 10003 b/t 3rd Ave & 2nd Ave East Village';
     $restaurant->county = 'manhattan';
     $restaurant->cuisine = 'bakeries';
     $restaurant->meal = 'brunch';
@@ -36,7 +36,7 @@ class RestaurantsTableSeeder extends Seeder
     $restaurant->slug = 'toms';
     $restaurant->name = 'Toms';
     $restaurant->year_open = '1936';
-    $restaurant->location = 'E 782 Washington Ave Brookly, NY 11238';
+    $restaurant->location_id = 'E 782 Washington Ave Brookly, NY 11238';
     $restaurant->county = 'brooklyn';
     $restaurant->cuisine = 'american';
     $restaurant->meal = 'breakfast';
@@ -52,7 +52,7 @@ class RestaurantsTableSeeder extends Seeder
     $restaurant->slug = 'the-alcove';
     $restaurant->name = 'The Alcove';
     $restaurant->year_open = '2015';
-    $restaurant->location = '41-11 49 St Sunnyside, NY 11104';
+    $restaurant->location_id = '41-11 49 St Sunnyside, NY 11104';
     $restaurant->county = 'queens';
     $restaurant->cuisine = 'gastropub';
     $restaurant->meal = 'brunch';
@@ -68,7 +68,7 @@ class RestaurantsTableSeeder extends Seeder
     $restaurant->slug = 'antonios-trattoria';
     $restaurant->name = 'Antonios Trattoria';
     $restaurant->year_open = '2007';
-    $restaurant->location = '2370 Belmont Ave Bronx NY 10458';
+    $restaurant->location_id = '2370 Belmont Ave Bronx NY 10458';
     $restaurant->county = 'bronx';
     $restaurant->cuisine = 'italian';
     $restaurant->meal = 'lunch';
@@ -83,7 +83,7 @@ class RestaurantsTableSeeder extends Seeder
      $restaurant->slug = 'taverna-on-the-bay';
      $restaurant->name = 'Taverna on the Bay';
      $restaurant->year_open = '2017';
-     $restaurant->location = '661 Bay St Staten Island NY 10304';
+     $restaurant->location_id = '661 Bay St Staten Island NY 10304';
      $restaurant->county = 'staten-island';
      $restaurant->cuisine = 'mediterranean';
      $restaurant->meal = 'dinner';
@@ -100,7 +100,7 @@ class RestaurantsTableSeeder extends Seeder
     $restaurant->slug = 'chickaLicious-dessert-bar';
     $restaurant->name = 'ChickaLicious Dessert Bar';
     $restaurant->year_open = '2003';
-    $restaurant->location = '203 E 10th St New York NY 10003';
+    $restaurant->location_id = '203 E 10th St New York NY 10003';
     $restaurant->county = 'manhattan';
     $restaurant->cuisine = 'cafe';
     $restaurant->meal = 'dessert';
@@ -116,7 +116,7 @@ class RestaurantsTableSeeder extends Seeder
     $restaurant->slug = 'clinton-street-baking-company';
     $restaurant->name = 'Clinton Street Baking Company';
     $restaurant->year_open = '2001';
-    $restaurant->location = '4 Clinton St New York NY 10002';
+    $restaurant->location_id = '4 Clinton St New York NY 10002';
     $restaurant->county = 'manhattan';
     $restaurant->cuisine = 'american';
     $restaurant->meal = 'breakfast';
@@ -131,7 +131,7 @@ class RestaurantsTableSeeder extends Seeder
     $restaurant->slug = 'raclette';
     $restaurant->name = 'Raclette';
     $restaurant->year_open = '2015';
-    $restaurant->location = '511 E 12th St New York, NY 10009';
+    $restaurant->location_id = '511 E 12th St New York, NY 10009';
     $restaurant->county = 'manhattan';
     $restaurant->cuisine = 'french';
     $restaurant->meal = 'lunch';
@@ -146,7 +146,7 @@ class RestaurantsTableSeeder extends Seeder
     $restaurant->slug = 'guadlupe-restaurant';
     $restaurant->name = 'Guadalupe Restaurant';
     $restaurant->year_open = '2004';
-    $restaurant->location = '597 W 207 St New York, NY 10034';
+    $restaurant->location_id = '597 W 207 St New York, NY 10034';
     $restaurant->county = 'manhattan';
     $restaurant->cuisine = 'mexican';
     $restaurant->meal = 'dinner';
@@ -161,7 +161,7 @@ class RestaurantsTableSeeder extends Seeder
     $restaurant->slug = 'haswell-greens';
     $restaurant->name = 'Haswell Greens';
     $restaurant->year_open = '2018';
-    $restaurant->location = '240 W 52nd St New York, NY 10019';
+    $restaurant->location_id = '240 W 52nd St New York, NY 10019';
     $restaurant->county = 'manhattan';
     $restaurant->cuisine = 'cocktail-bar';
     $restaurant->meal = 'happy-hour';
@@ -175,7 +175,7 @@ class RestaurantsTableSeeder extends Seeder
     $restaurant->slug = 'madame-sousou-cafe';
     $restaurant->name = 'Madame Sousou Cafe';
     $restaurant->year_open = '2014';
-    $restaurant->location = '31-05 33 St Astoria NY 11106';
+    $restaurant->location_id= '31-05 33 St Astoria NY 11106';
     $restaurant->county = 'queens';
     $restaurant->cuisine = 'cafe';
     $restaurant->meal = 'brunch';
@@ -190,7 +190,7 @@ class RestaurantsTableSeeder extends Seeder
     $restaurant->slug = 'pates-et-traditions';
     $restaurant->name = 'Pates et Traditions';
     $restaurant->year_open = '2008';
-    $restaurant->location = '52 Havemeyer St Brooklyn NY 11211';
+    $restaurant->location_id = '52 Havemeyer St Brooklyn NY 11211';
     $restaurant->county = 'brooklyn';
     $restaurant->cuisine = 'french';
     $restaurant->meal = 'dessert';
@@ -200,9 +200,51 @@ class RestaurantsTableSeeder extends Seeder
     $restaurant->rating = 5;
     $restaurant->save();
     
-
     
-       }
-    }
+      
+        # Find that author in the authors table
+        $restaurant_id = Restaurant::where('name', '=', $name)->pluck('id')->first();
 
+        $restaurant = new Book();
+        $restaurant->created_at = Carbon\Carbon::now()->subDays($count)->toDateTimeString();
+        $restaurant->updated_at = Carbon\Carbon::now()->subDays($count)->toDateTimeString();
+        $restaurant->slug = $slug;
+        $restaurant->name = $restaurantData['name'];
+        $restaurant->year_open = $restaurantData['year_open'];
+        $restaurant->location = $restaurantData['location'];
+        $restaurant->county = $restaurantData['county'];
+        $restaurant->cuisine = $restaurantData['cuisine'];
+        $restaurant->meal = $restaurantData['meal'];
+        $restaurant->restaurant_url = $restaurantData['restaurant_url'];
+        $restaurant->description = $restaurantData['description'];
+        $restaurant->review = $restaurantData['review'];
+        $restaurant->rating = $restaurantData['rating'];
+        $restaurant->location_id = $location_id;
+
+        $restaurant->save();
+        $count--;
+    }
+  }
+
+    $faker = Faker\Factory::create();
+
+    for ($i = 0; $i < 5; $i++) {
+        $name = $faker->words(rand(3, 6), true);
+        $slug = Str::slug($name, '-');
+        $restaurant = new Restaurant();
+        $restaurant->name = $name;
+        $restaurant->slug = $slug;
+        $restaurant->year_open = $faker->year;
+        $restaurant->location_id= $location_id;
+        $restaurant->county = $faker->words(rand(3, 6), true);
+        $restaurant->cuisine = $faker->words(rand(3, 6), true); 
+        $restaurant->meal = $faker->words(rand(3, 6), true);
+        $restaurant->restaurant_url = 'https:/yelp.com/' .$slug;
+        $restaurant->description = $faker->paragraphs(1, true);
+        $restaurant->review = $faker->paragraphs(1, true);
+        $restaurant->rating = $slug;
+
+
+        $restaurant->save();
+    }
 

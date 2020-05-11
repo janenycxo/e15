@@ -26,9 +26,9 @@
         <label for='year_open'> *Year Open (YYYY)</label>
         <input type='text' name='year_open' id='year_open' value='{{ old('year_open', $restaurant->year_open) }}'>
 
-        <label for='location'> *Location </label>
+        <label for='location_id'> *Location </label>
         <div class='details'> Please include the address of the restaurant you wish to add here. (123 Main St Elmhurst NY 11375). </div>
-        <input type='text' name='location' id='location' value='{{ old('location', $restaurant->location) }}'>
+        <input type='text' name='location_id' id='location_id' value='{{ old('location_id', $restaurant->location_id) }}'>
 
         <label for='county'> *County</label>
         <div class='details'> Input one of the Five Counties (also known as the boroughs) of NYC (Manhattan, Queens, Brooklyn, Bronx, or Staten Island). </div>

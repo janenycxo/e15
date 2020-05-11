@@ -33,7 +33,7 @@ class LocationsTableSeeder extends Seeder
         $location->updated_at = Carbon\Carbon::now()->subDays($count)->toDateTimeString();
         $location->name = $locationData[0];
         $location->meal = $locationData[1];
-        $location->location = $locationData[2];
+        $location->location_id = $locationData[2];
         $location->county = $locationData[3];
         $location->save();
         

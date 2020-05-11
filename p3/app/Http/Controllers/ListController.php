@@ -19,20 +19,20 @@ class ListController extends Controller
 
     /**
      */
-    public function add($cuisine)
+    public function add($slug)
     {
-        $restaurant =Restaurants::findByCuisine($cuisine);
+        $restaurant =Restaurants::findBySlug($slug);
         return view('lists.add')->with(['restaurant' => $restaurant]);
     }
 
     /**
      * POST
      */
-    public function save(Request $request, $cuisine)
+    public function save(Request $request, $slug)
     {
         # TODO: Validate incoming data, making sure they entered a note
 
-        $restaurant = Restaurant::findByLocation($location);
+        $restaurant = Restaurant::findBySlug($slug);
 
         # Add Restaurant to user's list
         # (i.e. Create a new row in the eateries_user table)
