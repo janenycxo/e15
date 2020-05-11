@@ -24,7 +24,7 @@ class CreateLocationsTable extends Migration
           $table->string('name');
                       
           #Address of Restaurant VARCHAR
-          $table->string('location_id', 100);
+          $table->string('location', 100);
           
           #County of Restaurant (Brooklyn/Queens/Manhattan/Bronx/Staten Island) VARCHAR
           $table->string('county', 100);

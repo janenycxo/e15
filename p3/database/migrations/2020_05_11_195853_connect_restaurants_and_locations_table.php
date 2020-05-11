@@ -24,7 +24,7 @@ class ConnectRestaurantsAndLocationsTable extends Migration
             
             $table->dropForeign('restaurants_location_id_foreign');
 
-            $table->dropColumn('location_id');
+            $table->dropColumn('location');
         });
     }
 }

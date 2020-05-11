@@ -12,7 +12,7 @@
 @else    
 <h1 dusk='restaurant-title-heading'>{{ $restaurant->name }}</h1>
 @if($restaurant->name)
-    <p dusk='restaurant-info'>Is located: {{ $restaurant->location_id }}</p>
+    <p dusk='restaurant-info'>Is located: {{ $restaurant->location }}</p>
 @endif
 
 <p>Established: ({{$restaurant->year_open}})

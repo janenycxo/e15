@@ -33,7 +33,7 @@ class RestaurantController extends Controller
             'slug' => 'required|unique:restaurants,slug|alpha_dash',
             'name' => 'required',
             'year_open' => 'required|digits:4',
-            'location_id' => 'required',
+            'location' => 'required',
             'county' => 'required',
             'cuisine' => 'required',
             'meal' => 'required',
@@ -53,7 +53,7 @@ class RestaurantController extends Controller
         $newRestaurant->slug = $request->slug;
         $newRestaurant->name = $request->name;
         $newRestaurant->year_open = $request->year_open;
-        $newRestaurant->location_id = $request->location_id;
+        $newRestaurant->location = $request->location;
         $newRestaurant->county = $request->county;
         $newRestaurant->cuisine = $request->cuisine;
         $newRestaurant->meal = $request->meal;
@@ -151,7 +151,7 @@ class RestaurantController extends Controller
                 'slug' => 'required|unique:restaurants,slug,'.$restaurant->id.'|alpha_dash',
                 'name' => 'required',
                 'year_open' => 'required|digits:4',
-                'location_id' => 'required',
+                'location' => 'required',
                 'county' => 'required',
                 'cuisine' => 'required',
                 'meal' => 'required',
@@ -164,7 +164,7 @@ class RestaurantController extends Controller
         $Restaurant->slug = $request->slug;
         $Restaurant->name = $request->name;
         $Restaurant->year_open = $request->year_open;
-        $Restaurant->location_id = $request->location_id;
+        $Restaurant->location = $request->location;
         $Restaurant->county = $request->county;
         $Restaurant->cuisine = $request->cuisine;
         $Restaurant->meal = $request->meal;
