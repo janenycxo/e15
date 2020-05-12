@@ -28,7 +28,7 @@
 
         <nav>
             <ul>
-                <li><a href='/'>Home</a></li>
+                <li><a href='/'>Home - Search for Restaurants</a></li>
 
                 @if(Auth::user())
                 <li><a href='/restaurants'>List of Restaurants</a></li>

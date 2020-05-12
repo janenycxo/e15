@@ -12,7 +12,7 @@ class StoreNewRestaurant
         $newRestaurant->slug = $newRestaurantData->slug;
         $newRestaurant->name = $newRestaurantData->name;
         $newRestaurant->year_open = $newRestaurantData->year_open;
-        $newRestaurant->location = $newRestaurantData->location;
+        //$newRestaurant->location = $newRestaurantData->location;
         $newRestaurant->county = $newRestaurantData->county;
         $newRestaurant->cuisine = $newRestaurantData->cuisine;
         $newRestaurant->meal = $newRestaurantData->meal;

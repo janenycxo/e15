@@ -29,7 +29,7 @@ class CreateRestaurantsTable extends Migration
             $table->smallInteger('year_open');
                       
             #Location or address of Restaurant VARCHAR
-            $table->string('location_id', 100);
+            $table->string('location', 100);
              
             #County of Restaurant (Brooklyn/Queens/Manhattan/Bronx/Staten Island) VARCHAR
             $table->string('county');

@@ -7,6 +7,7 @@ use Arr;
 use Str;
 use App\Restaurant;
 use App\Location;
+use App\Actions\Restaurants\StoreNewRestaurant;
 
 class RestaurantController extends Controller
 {
@@ -38,15 +39,23 @@ class RestaurantController extends Controller
             'cuisine' => 'required',
             'meal' => 'required',
             'restaurant_url' => 'required|URL',
-            'description' => 'required|min:255',
-            'review' => 'required|min:255',
+            'description' => 'required|min:50',
+            'review' => 'required|min:50',
             'rating' => 'required|min:1',
+            ]);
+
+       // $action = new StoreNewRestaurant((object) $request->all());
+
+       // return redirect('/restaurants/'.$request->slug)->with([
+       //     'flash-alert' => 'Your restaurant '.$action->rda['name'].' was added.'
      
-        ]);
-    /**
+      //  ]);
+    //}
+
+        /**
         * Add /restaurants
         * Process the form for adding a new restaurant
-        */
+       */
         
         # Add the restaurant to the database
         $newRestaurant = new Restaurant();
@@ -68,6 +77,8 @@ class RestaurantController extends Controller
             'flash-alert' => 'Your restaurant '.$newRestaurant->name.' was added.'
         ]);
     }
+    
+    
 
     /**
      * GET /search
@@ -94,14 +105,6 @@ class RestaurantController extends Controller
     }
 
 
-    /**
-     * GET /restaurant list
-     */
-    public function list()
-    {
-        # TODO
-        return view('restaurants.list');
-    }
 
     /**
      * GET /all restaurants in collection
@@ -118,6 +121,8 @@ class RestaurantController extends Controller
         ]);
     }
 
+
+
     public function show($slug)
     {
         $restaurant = Restaurant::where('slug', '=', $slug)->first();
@@ -127,6 +132,7 @@ class RestaurantController extends Controller
             'slug' => $slug,
         ]);   
     }
+
 
     /**
      * edit
@@ -151,7 +157,7 @@ class RestaurantController extends Controller
                 'slug' => 'required|unique:restaurants,slug,'.$restaurant->id.'|alpha_dash',
                 'name' => 'required',
                 'year_open' => 'required|digits:4',
-                'location' => 'required',
+                //'location' => 'required',
                 'county' => 'required',
                 'cuisine' => 'required',
                 'meal' => 'required',
@@ -164,7 +170,7 @@ class RestaurantController extends Controller
         $Restaurant->slug = $request->slug;
         $Restaurant->name = $request->name;
         $Restaurant->year_open = $request->year_open;
-        $Restaurant->location = $request->location;
+        //$Restaurant->location = $request->location;
         $Restaurant->county = $request->county;
         $Restaurant->cuisine = $request->cuisine;
         $Restaurant->meal = $request->meal;
@@ -205,8 +211,9 @@ class RestaurantController extends Controller
     */
     public function destroy($slug)
     {
-        $restaurant = Restaurant::findBySlug($slug);
+        $book = Book::findBySlug($slug);
 
+        $restaurant->users()->detach();  
         $restaurant->delete();
 
         return redirect('/restaurants')->with([
@@ -215,4 +222,12 @@ class RestaurantController extends Controller
     }
 
     
+    /**
+     * GET /restaurant list
+     */
+    public function list()
+    {
+        # TODO
+        return view('restaurants.list');
+    }
 }

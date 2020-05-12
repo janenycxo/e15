@@ -7,6 +7,7 @@
 @endsection
 
 @section('content')
+
     @if(!$restaurant)
     Restaurant Listing Not Found. <a href='/restaurants'>Please visit one of the restaurant on our lists.</a>
 @else    

@@ -16,5 +16,10 @@ class ExampleTest extends DuskTestCase
             $response = $this->get('/');
             
         });
+
+
+
+   //     {{ $browser->click('#logo') }};
+
     }
 }

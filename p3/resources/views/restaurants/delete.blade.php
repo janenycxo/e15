@@ -13,6 +13,13 @@
     <h1>Confirm your deletion</h1>
 
     <p>Are you sure you want to delete <strong>{{ $restaurant->name }}</strong>?</p>
+@foreach($restaurants as $restaurant)
+  
+    {{$restaurants->name}}
+    
+      
+@endforeach
+
 
     <form method='POST' action='/restaurants/{{ $restaurant->slug }}'>
         {{ method_field('delete') }}

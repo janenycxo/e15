@@ -202,49 +202,10 @@ class RestaurantsTableSeeder extends Seeder
     
     
       
-        # Find that author in the authors table
-        $restaurant_id = Restaurant::where('name', '=', $name)->pluck('id')->first();
-
-        $restaurant = new Book();
-        $restaurant->created_at = Carbon\Carbon::now()->subDays($count)->toDateTimeString();
-        $restaurant->updated_at = Carbon\Carbon::now()->subDays($count)->toDateTimeString();
-        $restaurant->slug = $slug;
-        $restaurant->name = $restaurantData['name'];
-        $restaurant->year_open = $restaurantData['year_open'];
-        $restaurant->location = $restaurantData['location'];
-        $restaurant->county = $restaurantData['county'];
-        $restaurant->cuisine = $restaurantData['cuisine'];
-        $restaurant->meal = $restaurantData['meal'];
-        $restaurant->restaurant_url = $restaurantData['restaurant_url'];
-        $restaurant->description = $restaurantData['description'];
-        $restaurant->review = $restaurantData['review'];
-        $restaurant->rating = $restaurantData['rating'];
-        $restaurant->location_id = $location_id;
-
-        $restaurant->save();
-        $count--;
     }
   }
 
-    $faker = Faker\Factory::create();
-
-    for ($i = 0; $i < 5; $i++) {
-        $name = $faker->words(rand(3, 6), true);
-        $slug = Str::slug($name, '-');
-        $restaurant = new Restaurant();
-        $restaurant->name = $name;
-        $restaurant->slug = $slug;
-        $restaurant->year_open = $faker->year;
-        $restaurant->location= $location;
-        $restaurant->county = $faker->words(rand(3, 6), true);
-        $restaurant->cuisine = $faker->words(rand(3, 6), true); 
-        $restaurant->meal = $faker->words(rand(3, 6), true);
-        $restaurant->restaurant_url = 'https:/yelp.com/' .$slug;
-        $restaurant->description = $faker->paragraphs(1, true);
-        $restaurant->review = $faker->paragraphs(1, true);
-        $restaurant->rating = $slug;
-
-
-        $restaurant->save();
-    }
+ 
+ 
+    
 

@@ -14,8 +14,10 @@ class SupportTest extends DuskTestCase
 
 
 {
-   /**
-    *  public function testSupport()
+    /**
+     * Assert that the browser is on the page.
+     *
+     public function testSupport()
     {
             $this->browse(function (Browser $browser) {
                 $browser->visit('/support')
@@ -23,13 +25,17 @@ class SupportTest extends DuskTestCase
                 $response = $this->get('/');
             });
         }
-    
+        
     public function testCuisines()
     {
         $this->browse(function (Browser $browser) {
             $browser->visit('/cuisines')
                     ->assertSee('Vegetarian');
         });
+
+
+        {{ $browser->click('#logo') }};
+
     }
     */
 }

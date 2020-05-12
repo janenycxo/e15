@@ -21,10 +21,11 @@ class Restaurant extends Model
     {
         return self::where('slug', '=', $slug)->first();
     }
-
-    public function reverseCounty()
+    
+    public function users()
     {
-        $this->county = strrev($this->county);
-        return $this->county;
+        return $this->belongsToMany('App\User')
+        ->withTimestamps()
+        ->withPivot('review'); 
     }
 }
