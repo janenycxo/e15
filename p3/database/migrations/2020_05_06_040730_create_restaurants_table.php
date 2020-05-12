@@ -26,7 +26,7 @@ class CreateRestaurantsTable extends Migration
             $table->string('name');
             
             #The year restaurant opened TINYINT
-            $table->smallInteger('year_open');
+            $table->smallInteger('year_open')->nullable();
                       
             #Location or address of Restaurant VARCHAR
             $table->string('location', 100);
