@@ -16,18 +16,18 @@
     <p dusk='restaurant-info'>Is located: {{ $restaurant->location }}</p>
 @endif
 
-<p>Established: ({{$restaurant->year_open}})
+<p>Established: {{ $restaurant->year_open }}
 
 <p class='description'>
     {{ $restaurant->description }}
-   <a href='{{ $restaurant->restaurant_url }}'>Visit the restaurant page.</a>
+    <br>
+   <a href='{{ $restaurant->restaurant_url }}'> Visit the restaurant page.</a>
 
 </p>
-<ul class='restaurantActions'>
-    <li><a href='/list/{{ $restaurant->slug }}/add' dusk='add-to-list-button'><i class="fa fa-plus"></i> Add this Restaurant to your list</a>
-    <li><a href='/books/{{ $restaurant->slug }}/edit'><i class="fa fa-edit"></i> Edit this Restaurant Listing</a>
-    <li><a href='/books/{{ $restaurant->slug }}/delete'><i class="fa fa-trash"></i> Delete this Restaurant Listing</a>
-</ul>
+    <a href='/list/{{ $restaurant->slug }}/add' dusk='add-to-list-button'><i class="fa fa-plus"></i> Add this Restaurant to your list</a> 
+ <a href='/books/{{ $restaurant->slug }}/edit'><i class="fa fa-edit"></i> Edit this Restaurant Listing</a>
+   <a href='/books/{{ $restaurant->slug }}/delete'><i class="fa fa-trash"></i> Delete this Restaurant Listing</a>
+
 @endif
 
 @endsection

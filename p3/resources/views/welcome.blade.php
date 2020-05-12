@@ -84,9 +84,13 @@
     
        @if(count($searchResults) == 0) 
             <div class='results alert alert-warning'>
-                No results found.
-                <a href='/restaurants/create'>Want to add this restaurant to our distribution list?</a>
+            Restaurant Listing Not Found.<br>
+            <a href='/restaurants/create'>Want to add this restaurant to our distribution list?</a>
             </div>
+
+
+                 <a href='/restaurants'>Or visit one of the restaurant on our lists.</a>
+
         @else
             <div class='results alert alert-primary'>
 
@@ -94,10 +98,10 @@
             {{ Str::plural('Result', count($searchResults )) }}:
 
                 <ul>
-                    @foreach($searchResults ?? '' as $slug => $restaurant)
-                    <li><a href='/restaurants/{{ $slug }}'> {{ $restaurant['name'] }}</a></li>
+                    @foreach($searchResults ?? '' as $key => $restaurant)
+                   <li><a href='/restaurants/{{ $restaurant['slug'] }}'> {{ $restaurant['name'] }}</a></li>
                     @endforeach
-                </ul>
+                   </ul>
             </div>
         @endif
     
