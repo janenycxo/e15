@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-    Edit Restaurant {{ $restaurant->name }}
+    <p>Edit Restaurant {{ $restaurant->name }}
 @endsection
 
 @section('content')

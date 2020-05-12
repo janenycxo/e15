@@ -37,7 +37,6 @@
                 Search type:
             </label>
 
-
             <input 
                 type='radio' 
                 name='searchType' 
@@ -45,7 +44,7 @@
                 value='name'
                 {{ (old('searchType') == 'name' or $searchType ?? '' == 'name') ? 'checked' : '' }}
             >
-            <label for='name'> Search by Restaurant Name</label>
+            <label for='name'> Search by Restaurant Name (Bliss Bomb/ Haswell Greens/ Madame Sousou Cafe...)</label>
 
                       
             <input 
@@ -55,18 +54,9 @@
                 value='cuisine'
                 {{ (old('searchType') == 'cuisine' or $searchType ?? '' == 'cuisine') ? 'checked' : '' }}
             >
-            <label for='cuisine'> Search by Cuisine</label>
+            <label for='cuisine'> Search by Cuisine (Italian/French/Mediterranean...)</label>
             
-            <input 
-                type='radio' 
-                name='searchType' 
-                id='county' 
-                value='county'
-                {{ (old('searchType') == 'county' or $searchType ?? '' == 'county') ? 'checked' : '' }}
-            >
-            <label for='county'> Search by County</label>
- 
-        </fieldset>
+            </fieldset>
 
         <input type='submit' class='btn btn-primary' value='Search'>
 

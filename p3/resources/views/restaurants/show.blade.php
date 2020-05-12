@@ -1,13 +1,15 @@
 @extends('layouts.master')
 
 @section('title')
-{{ $restaurant ? $restaurant->name : 'Restaurant Listing Not Found' }}
+{{ $restaurant ? $restaurant['name'] : 'Book not found' }}
+@endsection
+
 @section('head')
 <link href='/css/restaurants/show.css' rel='stylesheet'>
 @endsection
 
 @section('content')
-
+   
     @if(!$restaurant)
     Restaurant Listing Not Found. <a href='/restaurants'>Please visit one of the restaurant on our lists.</a>
 @else    
@@ -17,9 +19,12 @@
 @endif
 
 <p>Established: {{ $restaurant->year_open }}
-
+<p>County: {{ $restaurant->county }}
+<p>Cuisine: {{ $restaurant->cuisine }}
+<p>Meal: {{ $restaurant->meal }}
 <p class='description'>
-    {{ $restaurant->description }}
+   <p>Description: {{ $restaurant->description }}
+    <p>Review: {{ $restaurant->review }} 
     <br>
    <a href='{{ $restaurant->restaurant_url }}'> Visit the restaurant page.</a>
 
